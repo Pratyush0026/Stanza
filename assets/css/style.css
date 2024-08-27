@@ -955,7 +955,7 @@ select:visited {
   content: "";
   right: -65px;
   position: absolute;
-  border-bottom: 80px solid #ea1e00;
+  /* border-bottom: 80px solid #ea1e00; */
   border-right: 65px solid transparent;
 }
 .ft-header-section.header-style-two .ft-header-main-menu .ft-site-logo:after {
@@ -965,7 +965,7 @@ select:visited {
   content: "";
   height: 120px;
   position: absolute;
-  background-color: #ea1e00;
+  /* background-color: #ea1e00; */
   -webkit-transform: rotate(-39deg);
           transform: rotate(-39deg);
 }
