@@ -2478,7 +2478,9 @@ select:visited {
 .ft-banner-section {
   overflow: hidden;
   padding: 395px 0px 255px;
+  /* height: 140vh; */
 }
+
 
 .ft-banner-text-content {
   color: #fff;
@@ -16725,6 +16727,9 @@ ul li {
 
   .ft-banner-section {
     padding: 250px 0px 200px;
+    .ft-banner-text-content h1 {
+      margin-top: 0px; /* Adjust this value to move the text further up */
+  }
   }
 
   .ft-testimonial-slider-2 #btn_prev1 {
@@ -17019,6 +17024,9 @@ ul li {
   .ft-banner-section {
     padding: 190px 0px 150px;
   }
+  .ft-banner-text-content h1 {
+    margin-top: 0px; /* Adjust this value to move the text further up */
+}
 
   .ft-section-title-2 h2 {
     font-size: 28px;
