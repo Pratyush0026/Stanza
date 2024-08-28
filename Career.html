@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page 3</title>
+    <meta name="description" content="Stanza - Logistics & Delivery Company HTML template">
+    <meta name="keywords"
+        content="cargo, clean, contractor, corporate, freight, industry, localization, logistics, page builder, shipment, transport, transportation, truck, trucking">
+    <meta name="author" content="Themexriver">
+    <link rel="shortcut icon" href="assets/img/logo/ficon.png" type="image/x-icon">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/video.min.css">
+    <link rel="stylesheet" href="assets/css/animated-slider.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/rs6.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<style>
+    .career-section1 {
+    width: 100%;
+    background-color: #f1f1f1;
+    margin-top: 140px;
+}
+
+.career-banner1 {
+    background-color: #b0b6b9;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.career-banner1 h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+.career-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.career-text {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.career-text h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.career-text p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.career-image {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.career-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contact-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.contact-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.career-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.positions, .apply-form {
+    flex: 1 1 45%;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.positions h2, .apply-form h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.position-item {
+    margin-bottom: 10px;
+}
+
+.position-header {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.position-header:hover {
+    background-color: #e2e2e2;
+}
+
+.position-description {
+    display: none;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.position-description ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.apply-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.apply-form input, .apply-form select, .apply-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.apply-form button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.apply-form button:hover {
+    background-color: #34495e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .career-section {
+        flex-direction: column;
+    }
+
+    .positions, .apply-form {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .career-content {
+        flex-direction: column;
+    }
+
+    .career-text, .career-image {
+        max-width: 90%;
+    }
+}
+
+
+.career-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.positions, .apply-form {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+}
+
+.positions h2, .apply-form h2 {
+    color: #2d4a85;
+    margin-bottom: 20px;
+}
+
+.position-item {
+    margin-bottom: 15px;
+}
+
+.position-header {
+    background-color: #e8eef7;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.position-header span {
+    margin-right: 8px;
+    color: #2d4a85;
+}
+
+.position-description {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.position-description h3, .position-description h4 {
+    margin-bottom: 10px;
+    color: #2d4a85;
+}
+
+.position-description ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.position-description ul li {
+    margin-bottom: 8px;
+}
+
+.apply-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.apply-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.apply-form input, .apply-form select, .apply-form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.apply-form button {
+    background-color: #2d4a85;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.apply-form button:hover {
+    background-color: #1c355c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .career-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .positions, .apply-form {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+</style>
+
+<body>
+    <div id="preloader"></div>
+    <div class="up">
+        <a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
+    </div>
+    <!-- Start of header section
+	============================================= -->
+    <header id="ft-header" class="ft-header-section header-style-two">
+        <div class="ft-header-top">
+            <div class="container">
+                <div class="ft-header-top-content d-flex justify-content-between align-items-center">
+                    <div class="ft-header-top-cta ul-li">
+                        <ul>
+                            <li><i class="fal fa-envelope"></i>info@stanzalogistics.com</li>
+                            <li><i class="fal fa-map-marker-alt"></i>15A, 3rd Floor, Mayur Vihar Phase 1, Pocket -1,
+                                Delhi, 110091</li>
+                        </ul>
+                    </div>
+                    <div class="ft-header-cta-info d-flex">
+                        <div class="ft-header-cta-icon d-flex justify-content-center align-items-center">
+                            <i class="flaticon-call"></i>
+                        </div>
+                        <div class="ft-header-cta-text headline pera-content">
+                            <p>Get In Touch</p>
+                            <h3>+91 9289799144</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ft-header-main-menu-wrapper">
+            <div class="container">
+                <div class="ft-header-main-menu-area position-relative">
+                    <div
+                        class="ft-header-main-menu d-flex align-items-center justify-content-between position-relative">
+                        <div class="ft-site-logo-area">
+                            <div class="ft-site-logo position-relative">
+                                <a href="index.html"><img src="assets/img/logo/stanza1.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="ft-main-navigation-area">
+                            <nav class="ft-main-navigation clearfix ul-li">
+                                <ul id="ft-main-nav" class="nav navbar-nav clearfix">
+                                    <li class="dropdown">
+                                        <a href="%21.html#">Home</a>
+                                        <ul class="dropdown-menu clearfix">
+                                            <li><a href="index-1.html">Home Page 1</a></li>
+                                            <li><a href="index-2.html">Home Page 2</a></li>
+                                            <li><a href="index-3.html">Home Page 3</a></li>
+                                            <li><a href="index-4.html">Home Page 4</a></li>
+                                            <li><a href="index-5.html">Home Page 5</a></li>
+                                            <li><a href="index-6.html">Home Page 6</a></li>
+                                            <li><a href="index-7.html">Home Page 7</a></li>
+                                            <li><a href="index-8.html">Home Page 8</a></li>
+                                            <li><a href="index-9.html">Home Page 9</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li class="dropdown">
+                                        <a href="%21.html#">Service</a>
+                                        <ul class="dropdown-menu clearfix">
+                                            <li><a href="service.html">Service Page </a></li>
+                                            <li><a href="service-single.html">Service Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="%21.html#">Project</a>
+                                        <ul class="dropdown-menu clearfix">
+                                            <li><a href="project.html">Project Page</a></li>
+                                            <li><a href="project-single.html">Project Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="%21.html#">News</a>
+                                        <ul class="dropdown-menu clearfix">
+                                            <li><a href="blog.html">News </a></li>
+                                            <li><a href="blog-single.html">News Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="%21.html#">Others</a>
+                                        <ul class="dropdown-menu clearfix">
+                                            <li><a href="team.html">Team Page </a></li>
+                                            <li><a href="team-single.html">Team Details </a></li>
+                                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                                            <li><a href="contact.html">Contact Page</a></li>
+                                            <li><a href="faq.html">Faq Page</a></li>
+                                            <li><a href="pricing.html">Pricing Page</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="ft-header-cta-btn">
+                            <a class="d-flex justify-content-center align-items-center" href="contact.html">Get Free
+                                Quote</a>
+                        </div>
+
+
+                    </div>
+                    <div class="mobile_menu position-relative">
+                        <div class="mobile_menu_button open_mobile_menu">
+                            <i class="fal fa-bars"></i>
+                        </div>
+                        <div class="mobile_menu_wrap">
+                            <div class="mobile_menu_overlay open_mobile_menu"></div>
+                            <div class="mobile_menu_content">
+                                <div class="mobile_menu_close open_mobile_menu">
+                                    <i class="fal fa-times"></i>
+                                </div>
+                                <div class="m-brand-logo">
+                                    <a href="/index.html"><img src="assets/img/logo/stanza1.png" alt=""></a>
+                                </div>
+                                <nav class="mobile-main-navigation  clearfix ul-li">
+                                    <ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
+                                        <li class="dropdown">
+                                            <a href="%21.html#">Home</a>
+                                            <ul class="dropdown-menu clearfix">
+                                                <li><a href="index-1.html">Home Page 1</a></li>
+                                                <li><a href="index-2.html">Home Page 2</a></li>
+                                                <li><a href="index-3.html">Home Page 3</a></li>
+                                                <li><a href="index-4.html">Home Page 4</a></li>
+                                                <li><a href="index-5.html">Home Page 5</a></li>
+                                                <li><a href="index-6.html">Home Page 6</a></li>
+                                                <li><a href="index-7.html">Home Page 7</a></li>
+                                                <li><a href="index-8.html">Home Page 8</a></li>
+                                                <li><a href="index-9.html">Home Page 9</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li class="dropdown">
+                                            <a href="%21.html#">Service</a>
+                                            <ul class="dropdown-menu clearfix">
+                                                <li><a href="service.html">Service Page </a></li>
+                                                <li><a href="service-single.html">Service Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="%21.html#">Project</a>
+                                            <ul class="dropdown-menu clearfix">
+                                                <li><a href="project.html">Project</a></li>
+                                                <li><a href="project-single.html">Project Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="%21.html#">News</a>
+                                            <ul class="dropdown-menu clearfix">
+                                                <li><a href="blog.html">News </a></li>
+                                                <li><a href="blog-single.html">News Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="%21.html#">Others</a>
+                                            <ul class="dropdown-menu clearfix">
+                                                <li><a href="team.html">Team Page </a></li>
+                                                <li><a href="team-single.html">Team Details </a></li>
+                                                <li><a href="coming-soon.html">Coming Soon</a></li>
+                                                <li><a href="contact.html">Contact Page</a></li>
+                                                <li><a href="faq.html">Faq Page</a></li>
+                                                <li><a href="pricing.html">Pricing Page</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- /Mobile-Menu -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End of header section
+	============================================= -->
+
+    <section class="career-section1">
+        <div class="career-banner1">
+            <h1>Career</h1>
+        </div>
+        <div class="career-content">
+            <div class="career-text">
+                <h2>We Are Hiring !!</h2>
+                <p>
+                    At Stanza we give a chance to young energetic people across the country. Once you enter the organization, there is a well-defined growth path that is mentored by senior managers. The culture to perform is deeply ingrained in our people’s philosophy. The organization lays emphasis on mandatory on-the-job training, value-added external training, and faculty improvement programs.
+                </p>
+            </div>
+            <div class="career-image">
+                <img src="assets/img/career.jpg" alt="Team Image">
+            </div>
+        </div>
+        <!-- <div class="contact-icon">
+            <img src="path/to/whatsapp-icon.png" alt="WhatsApp">
+        </div>   -->
+    </section>
+
+
+
+    <section class="career-section">
+        <div class="positions">
+            <h2>Open Positions</h2>
+            <div class="position-item">
+                <div class="position-header" onclick="toggleDescription('desc1')">
+                    <span>+</span> Sales Executive (Exp. 2-3 years)
+                </div>
+                <div class="position-description" id="desc1">
+                    <h3>Job Description</h3>
+                    <br>
+                    <p><strong>Job Profile:</strong> Sales Executive</p>
+                    <p><strong>Experience:</strong> Min 2-3 years</p>
+                    <p><strong>Qualification:</strong> Graduation</p>
+                    <p><strong>Joining:</strong> Immediate</p>
+                    <p><strong>Salary:</strong> As per Company Standard</p>
+                    <p><strong>Location:</strong> Noida</p>
+                    <h4>Logistics Sales Executive Responsibilities/Duties:</h4>
+                    <ul>
+                        <li>Cold-calling, generating new leads and prospecting accounts</li>
+                        <li>Analyzing consumer needs and developing innovative solutions</li>
+                        <li>Educating customers about our shipping solutions</li>
+                        <li>Conducting research on customers that have a need for our services</li>
+                        <li>Qualifying prospects for size, complexity, and overall fit for our company</li>
+                        <li>Using Salesforce automation tools to track progress and report goals</li>
+                        <li>Grow revenue and relationships with existing customer base</li>
+                        <li>Communicate effectively with customers, shippers, and receivers regarding changes in pick-up/delivery and potential service failures</li>
+                        <li>Exceed all standards for prospecting calls, presentations, proposals, and closes</li>
+                        <li>Provide documented activity reports of your sales efforts on a daily, weekly, and monthly basis</li>
+                        <li>Negotiate contracts and rate agreements</li>
+                        <li>Support carrier reps with the coordination of transportation freight in a cost-effective manner</li>
+                        <li>Document issues with orders thoroughly</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="position-item">
+                <div class="position-header" onclick="toggleDescription('desc2')">
+                    <span>+</span> Overseas Sales Coordinator (Exp. 2-3 years)
+                </div>
+                <div class="position-description" id="desc2">
+                    <h3>Job Description</h3>
+                    <br>
+                    <p><strong>Job Profile:</strong> Overseas Sales Coordinator</p>
+                    <p><strong>Experience:</strong> Min 2-3 years</p>
+                    <p><strong>Qualification:</strong> Graduation</p>
+                    <p><strong>Joining:</strong> Immediate</p>
+                    <p><strong>Salary:</strong> As per Company Standard</p>
+                    <p><strong>Location:</strong> Noida</p>
+                    <h4>Overseas Sales Coordinator Responsibilities/Duties:</h4>
+                    <ul>
+                        <li>Coordinate with international clients and manage overseas sales accounts</li>
+                        <li>Develop and implement effective sales strategies for foreign markets</li>
+                        <li>Maintain strong relationships with clients and partners across different regions</li>
+                        <li>Analyze market trends and adapt strategies to maximize sales growth</li>
+                        <li>Prepare sales reports and forecasts for upper management</li>
+                        <li>Ensure compliance with international trade regulations and company policies</li>
+                        <li>Assist in the negotiation of contracts and agreements with foreign clients</li>
+                        <li>Collaborate with logistics teams to ensure timely and accurate delivery of products</li>
+                        <li>Resolve any customer issues or complaints promptly and professionally</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="position-item">
+                <div class="position-header" onclick="toggleDescription('desc3')">
+                    <span>+</span> Account Executive (Exp. 3-4 years)
+                </div>
+                <div class="position-description" id="desc3">
+                    <h3>Job Description</h3>
+                    <br>
+                    <p><strong>Job Profile:</strong> Account Executive</p>
+                    <p><strong>Experience:</strong> Min 3-4 years</p>
+                    <p><strong>Qualification:</strong> Graduation</p>
+                    <p><strong>Joining:</strong> Immediate</p>
+                    <p><strong>Salary:</strong> As per Company Standard</p>
+                    <p><strong>Location:</strong> Noida</p>
+                    <h4>Account Executive Responsibilities/Duties:</h4>
+                    <ul>
+                        <li>Manage and oversee client accounts, ensuring client satisfaction and retention</li>
+                        <li>Develop and maintain strategic relationships with key clients</li>
+                        <li>Identify upsell and cross-sell opportunities to maximize revenue</li>
+                        <li>Prepare and present detailed sales proposals to clients</li>
+                        <li>Monitor and report on sales metrics and KPIs</li>
+                        <li>Collaborate with internal teams to ensure successful delivery of services and products</li>
+                        <li>Provide regular updates and feedback to clients on project status and progress</li>
+                        <li>Handle client queries and complaints promptly and effectively</li>
+                        <li>Conduct regular business reviews with clients to identify opportunities for growth</li>
+                        <li>Stay updated on industry trends and competitor activities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="apply-form">
+            <h2>Apply Now Here !!</h2>
+            <form>
+                <label for="full-name">Full Name*</label>
+                <input type="text" id="full-name" placeholder="Enter Full Name" required>
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" placeholder="Enter Email" required>
+                <label for="mobile">Mobile No.*</label>
+                <input type="tel" id="mobile" placeholder="Enter Mobile No." required>
+                <label for="job-select">Select Job</label>
+                <select id="job-select" required>
+                    <option value="">Select Job</option>
+                    <option value="sales-executive">Sales Executive</option>
+                    <option value="overseas-coordinator">Overseas Sales Coordinator</option>
+                    <option value="account-executive">Account Executive</option>
+                </select>
+                <label for="experience">Total Experience *</label>
+                <input type="text" id="experience" placeholder="Enter Experience" required>
+                <label for="resume">Upload Resume*</label>
+                <input type="file" id="resume" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!-- End of blog  section
+	============================================= -->
+
+    <!-- Start of Footer   section
+	============================================= -->
+    <footer id="ft-footer-2" class="ft-footer-section-2" data-background="assets/img/bg/f-bg.png">
+		<div class="ft-footer-newslatter position-relative">
+			<div class="container">
+				<div class="ft-footer-newslatter-content d-flex justify-content-between align-items-center flex-wrap">
+					<div class="ft-footer-newslatter-text headline">
+						<h2>Sign up for alerts,
+							news & insights from Equita.</h2>
+					</div>
+					<div class="ft-footer-newslatter-form position-relative">
+						<form action="#">
+							<input type="text" placeholder="Email">
+							<button type="submit">Subscribe Now</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ft-footer-widget-wrapper-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="ft-footer-widget ul-li-block headline pera-content">
+							<div class="logo-widget">
+								<div class="site-logo">
+									<a href="#"><img style="width: 200px;" src="assets/img/logo/stanza.jpeg" alt=""></a>
+								</div>
+								<div class="ft-footer-address">
+									<span>Address: 15A, 3rd Floor, Mayur Vihar Phase 1, Pocket -1, Delhi, 110091</span>
+									<span>Website: www.Stanzalogistics.com</span>
+									<span>Email: info@stanzalogistics.com</span>
+									<span>Phone: +91 9289799144</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ft-footer-widget ul-li-block headline pera-content">
+							<div class="menu-widget">
+								<h3 class="widget-title">Our Services</h3>
+								<ul>
+									<li><a href="service-single.html">Air Freight</a></li>
+									<li><a href="service-single.html">Ocen Freight</a></li>
+									<li><a href="service-single.html">Warehousing</a></li>
+									<li><a href="service-single.html">Global stock transparency</a></li>
+									<li><a href="service-single.html">Transport consolidation</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ft-footer-widget ul-li-block headline pera-content">
+							<div class="menu-widget">
+								<h3 class="widget-title">Industry Sectors</h3>
+								<ul>
+									<li><a href="service-single.html">Electronics Industry</a></li>
+									<li><a href="service-single.html">Industrial & Manufacturing</a></li>
+									<li><a href="service-single.html">Semicon & Solar</a></li>
+									<li><a href="service-single.html">Oil & Gas Cargo</a></li>
+									<li><a href="service-single.html">Energy & Chemicals</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ft-footer-widget ul-li-block headline pera-content">
+							<div class="menu-widget">
+								<h3 class="widget-title">Quick Links</h3>
+								<ul>
+									<li><a href="service-single.html">How it Works</a></li>
+									<li><a href="service-single.html">Help Link</a></li>
+									<li><a href="service-single.html">Terms & Conditions</a></li>
+									<li><a href="service-single.html">Contact Us</a></li>
+									<li><a href="service-single.html">Privacy Policy</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ft-footer-copywrite-2 text-center">
+			<span>Copyright @ 2021 Logistics.All Rights Reserved</span>
+		</div>
+	</footer>
+    <!-- End of FAQ why choose  section
+	============================================= -->
+
+
+    <!-- For Js Library -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.filterizr.js"></script>
+    <script src="assets/js/rbtools.min.js"></script>
+    <script src="assets/js/jquery.cssslider.min.js"></script>
+    <script src="assets/js/rs6.min.js"></script>
+    <script src="assets/js/knob.js"></script>
+    <script src="assets/js/typer.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        function toggleDescription(id) {
+    const desc = document.getElementById(id);
+    const symbol = desc.previousElementSibling.querySelector('span');
+    if (desc.style.display === "block") {
+        desc.style.display = "none";
+        symbol.textContent = "+";
+    } else {
+        desc.style.display = "block";
+        symbol.textContent = "-";
+    }
+}
+
+    </script>
+</body>
+
+</html>
