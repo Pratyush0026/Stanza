@@ -2347,6 +2347,7 @@ select:visited {
   position: absolute;
   white-space: nowrap;
   display: inline-block;
+  font-size: 70px;
 }
 
 .cd-words-wrapper b.is-visible {
