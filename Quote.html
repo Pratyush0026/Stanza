@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,47 +33,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<style>
-    .table-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 0 auto;
 
-        margin-top: 200px;
-    }
-
-    .conversion-table {
-        width: 45%;
-        border-collapse: collapse;
-        margin-bottom: 20px;
-        background-color: white;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .conversion-table thead {
-        background-color: #f0f0f0;
-    }
-
-    .conversion-table th,
-    .conversion-table td {
-        padding: 8px 12px;
-        text-align: left;
-        border: 1px solid #ddd;
-        color: black;
-    }
-
-    .conversion-table th {
-        font-weight: bold;
-        color: black;
-    }
-
-    @media (max-width: 768px) {
-        .conversion-table {
-            width: 100%;
-        }
-    }
-</style>
 
 <body>
     <div id="preloader"></div>
@@ -76,7 +43,7 @@
     <!-- Start of header section
 	============================================= -->
     <header id="ft-header" class="ft-header-section header-style-two">
-        
+
         <div class="ft-header-main-menu-wrapper">
             <div class="container">
                 <div class="ft-header-main-menu-area position-relative">
@@ -224,190 +191,181 @@
 
 
 
-    <div style="margin-top: 100px;" class="ft-funfact-content-2 position-relative">
-        <span class="map-bg position-absolute text-center"><img src="assets/img/bg/map.png" alt=""></span>
-      
-        <!-- <div class="ft-funfact-slug-text text-center">
-            <span>Join over 3000 people who engage with sector. <a href="#">Join Now!</a></span>
-        </div> -->
-    </div>
 
+    <section style="margin-top: 200px;" id="ft-product-mesurment" class="ft-product-mesurment-section">
+        <div class="container">
+            <div class="ft-product-mesurment-content position-relative">
+                <span class="ft-pm-bg-img position-absolute"><img src="assets/img/bg/pm-bg.png" alt=""></span>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="ft-product-mesurment-form">
+                            <div class="ft-product-mesurment-tab-btn">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                            data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                            aria-selected="true">Request A Quote</button>
+                                    </li>
+                                    <!-- <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                            data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                                            aria-selected="false">Track & Trace</button>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <div class="ft-product-mesurment-form-input">
+                                        <form action="#">
+                                            <div class="ft-product-mesurment-form-input-area">
+                                                <label class="ft-pm-title">Personal Data</label>
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="ft-pm-input">
+                                                            <input type="text" placeholder="First Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="ft-pm-input">
+                                                            <input type="text" placeholder="Last Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="ft-pm-input">
+                                                            <input type="email" placeholder="Your Email">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ft-product-mesurment-form-input-area">
+                                                <label class="ft-pm-title">Shipment Date</label>
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="ft-pm-input ft-select-option position-relative">
+                                                            <select name="#">
+                                                                <option value="#">Shipment Type</option>
+                                                                <option value="#">By Air</option>
+                                                                <option value="#">By Ship</option>
+                                                                <option value="#">By Road</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="ft-pm-input">
+                                                            <input type="text" placeholder="City Type Departure">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="ft-pm-input">
+                                                            <input type="Text" placeholder="Delivery City">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="ft-pm-input ft-select-option position-relative">
+                                                            <select name="#">
+                                                                <option value="#">Incoterms</option>
+                                                                <option value="#">FOB</option>
+                                                                <option value="#">EX WORKS</option>
+                                                                <option value="#">CIF</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <div class="ft-pm-input">
+                                                            <input type="Text" placeholder="Weight">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <div class="ft-pm-input">
+                                                            <input type="Text" placeholder="CBM">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="ft-pm-input">
+                                                            <input type="Text" placeholder="SIZE: 20/40 ft.">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <div class="ft-pm-input">
+                                                            <input type="Text" placeholder="Qty.">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="ft-product-mesurment-checkbox">
+                                                <label>
+                                                    <input class="condition" name="#" type="radio" value="#" checked="">
+                                                    <span class="checkmark-circle"></span>
+                                                    <span class="slug">Incoterms</span>
+                                                </label>
+                                                <label>
+                                                    <input class="condition" name="#" type="radio" value="#">
+                                                    <span class="checkmark-circle"></span>
+                                                    <span class="slug">Express Delivery</span>
+                                                </label>
+                                                <label>
+                                                    <input class="condition" name="#" type="radio" value="#">
+                                                    <span class="checkmark-circle"></span>
+                                                    <span class="slug">Insurance</span>
+                                                </label>
+                                                <label>
+                                                    <input class="condition" name="#" type="radio" value="#">
+                                                    <span class="checkmark-circle"></span>
+                                                    <span class="slug">Packaging</span>
+                                                </label>
+                                            </div> -->
+                                            <button>Request For A Quote</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="ft-product-mesurment-form-input">
+                                        <form action="#">
+                                            <div class="ft-product-mesurment-form-input-area">
+                                                <label class="ft-pm-title">Personal Data</label>
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="ft-pm-input">
+                                                            <input type="text" placeholder="First Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="ft-pm-input">
+                                                            <input type="text" placeholder="Last Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="ft-pm-input">
+                                                            <input type="email" placeholder="Your Email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="ft-pm-input">
+                                                            <input type="text" placeholder="Your Tracking Id">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button>Track & Trace</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="table-container">
-        <table class="conversion-table">
-            <thead>
-                <tr>
-                    <th>Distance</th>
-                    <th></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1 inch</td>
-                    <td>= 2.54 centimeters</td>
-                    <td>= 25.4 millimeters</td>
-                </tr>
-                <tr>
-                    <td>1 foot</td>
-                    <td>= 0.305 meter</td>
-                    <td>= 30.48 centimeters</td>
-                </tr>
-                <tr>
-                    <td>1 yard</td>
-                    <td>= 0.9144 meter</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>1 mile</td>
-                    <td>= 1.61 kilometers</td>
-                    <td>= 5,280 feet</td>
-                </tr>
-                <tr>
-                    <td>1 kilometer</td>
-                    <td>= 1,000 meters</td>
-                    <td>= 0.6214 mile</td>
-                </tr>
-                <tr>
-                    <td>1 meter</td>
-                    <td>= 100 centimeters</td>
-                    <td>= 1,000 millimeters</td>
-                </tr>
-                <tr>
-                    <td>1 meter</td>
-                    <td>= 3.28 feet</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>1 centimeter</td>
-                    <td>= 0.3937 inch</td>
-                    <td>= 10 millimeters</td>
-                </tr>
-                <tr>
-                    <td>1 millimeter</td>
-                    <td>= 0.039 inch</td>
-                    <td>= 0.1 centimeter</td>
-                </tr>
-                <tr>
-                    <td>1 micron</td>
-                    <td>= 10 meter</td>
-                    <td>= 1 micrometer</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table class="conversion-table">
-            <thead>
-                <tr>
-                    <th>Volume</th>
-                    <th></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1 kilolitre</td>
-                    <td>= 1,000 litres</td>
-                    <td>= 1 cubic meter</td>
-                </tr>
-                <tr>
-                    <td>1 liter</td>
-                    <td>= 1,000 millilitres</td>
-                    <td>= 1,000 cc</td>
-                </tr>
-                <tr>
-                    <td>1 millilitre</td>
-                    <td>= 1 cc (exactly 1.000027 cc)</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>1 fluid ounce</td>
-                    <td>= 29.57 millilitres</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>1 US gallon</td>
-                    <td>= 3.785 litres</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>1 imperial gallon</td>
-                    <td>= 4.546 litres</td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-
-
-        <table style="margin-top: 50px;" class="conversion-table">
-            <thead>
-                <tr>
-                    <th>Weight</th>
-                    <th></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1 kilogram</td>
-                    <td>= 1,000 grams</td>
-                    <td>= 2.2 pounds</td>
-                </tr>
-                <tr>
-                    <td>1 gram</td>
-                    <td>= 1,000 milligrams</td>
-                    <td>= 1,000 milligrams</td>
-                </tr>
-                <tr>
-                    <td>1 milligram</td>
-                    <td>= 1,000 micrograms</td>
-                    <td>= 1/1,000 gram</td>
-                </tr>
-                <tr>
-                    <td>1 microgram</td>
-                    <td>= 10^-6 grams</td>
-                    <td>= 1/1,000 milligram</td>
-                </tr>
-                <tr>
-                    <td>1 nanogram</td>
-                    <td>= 10^-9 grams</td>
-                    <td>= 1/1,000 microgram</td>
-                </tr>
-                <tr>
-                    <td>1 pound</td>
-                    <td>= 0.45 kilogram</td>
-                    <td>= 16 ounces</td>
-                </tr>
-                <tr>
-                    <td>1 ounce</td>
-                    <td>= 28.35 grams</td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
     <!-- End of blog  section
 	============================================= -->
 
     <!-- Start of Footer   section
 	============================================= -->
     <footer id="ft-footer-2" class="ft-footer-section-2" data-background="assets/img/bg/f-bg.png">
-		<div class="ft-footer-newslatter position-relative">
-			<div class="container">
-				<div class="ft-footer-newslatter-content d-flex justify-content-between align-items-center flex-wrap">
-					<div class="ft-footer-newslatter-text headline">
-						<h2>Sign up for alerts,
-							news & insights from Equita.</h2>
-					</div>
-					<div class="ft-footer-newslatter-form position-relative">
-						<form action="#">
-							<input type="text" placeholder="Email">
-							<button type="submit">Subscribe Now</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
+	
 		<div class="ft-footer-widget-wrapper-2">
 			<div class="container">
 				<div class="row">
@@ -475,6 +433,7 @@
 			<span>Copyright @ 2021 Logistics.All Rights Reserved</span>
 		</div>
 	</footer>
+
     <!-- End of FAQ why choose  section
 	============================================= -->
 
