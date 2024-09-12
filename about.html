@@ -26,6 +26,68 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
+<style>
+    .container-dimensions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        /* margin-top: 200px; */
+    }
+
+    .content {
+        flex: 1;
+        padding-right: 20px;
+    }
+
+    .content h2 {
+        font-size: 2rem;
+        color: #2a3d83;
+        /* Matching the heading color */
+        margin-bottom: 10px;
+    }
+
+    .content p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    .image-container {
+        flex: 1;
+        text-align: center;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .container-dimensions {
+            flex-direction: column;
+        }
+
+        .content {
+            padding-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+
+
+
+
+
+
+</style>
+
 <body>
 	<div id="preloader"></div>
 	<div class="up">
@@ -34,7 +96,7 @@
 	<!-- Start of header section
 	============================================= -->
 	<header id="ft-header" class="ft-header-section header-style-two">
-		
+
 		<div class="ft-header-main-menu-wrapper">
 			<div class="container">
 				<div class="ft-header-main-menu-area position-relative">
@@ -200,46 +262,64 @@
 				<div class="row">
 					<div class="col-lg-6">
 						<div class="ft-about-text-wrapper-2">
-							<div class="ft-section-title-2 headline pera-content wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+							<div class="ft-section-title-2 headline pera-content wow fadeInUp" data-wow-delay="200ms"
+								data-wow-duration="1500ms">
 								<span class="sub-title">About Us</span>
 								<h2>Your Trusted Global Logistics Partner</h2>
-								<p>We are a global logistics company specializing in ocean & air freight, warehousing, and customs clearance. Our steady growth, driven by customer referrals and repeat business, reflects our competence, expertise, and commitment to excellent service at competitive rates. We operate as an extension of your team, ensuring seamless logistics solutions.</p>
+								<p>Stanza Shipping (India) Pvt Ltd was founded as part of the Shobha Group, a company
+									with a rich legacy of over 60 years in international trade. To continue and expand
+									this legacy into new business ventures, When our founder, Sarthak Gupta, sought a
+									logistics provider to match the high standards of customer service and transparency
+									required for his family's trading company, he couldn’t find one in the market. After
+									working with several logistics firms that didn’t meet his expectations, he decided
+									to create a company that prioritizes customer satisfaction, transparency, and
+									cutting-edge information systems.</p>
 							</div>
 							<div class="ft-about-feature-wrapper-2">
 								<div class="row">
-									<div class="col-lg-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+									<div class="col-lg-6 wow fadeInUp" data-wow-delay="400ms"
+										data-wow-duration="1500ms">
 										<div class="ft-about-feature-list-item d-flex align-items-center">
-											<div class="ft-about-feature-icon d-flex align-items-center justify-content-center">
+											<div
+												class="ft-about-feature-icon d-flex align-items-center justify-content-center">
 												<i class="fal fa-bullseye-arrow"></i>
 											</div>
 											<div class="ft-about-feature-text headline pera-content">
 												<h3>Our Mission</h3>
-												<p>Delivering exceptional logistics services with precision and dedication.</p>
+												<p>We are committed to creating a logistics experience that is reliable,
+													transparent, and built on strong customer relationships.
+												</p>
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+									<div class="col-lg-6 wow fadeInUp" data-wow-delay="600ms"
+										data-wow-duration="1500ms">
 										<div class="ft-about-feature-list-item d-flex align-items-center">
-											<div class="ft-about-feature-icon d-flex align-items-center justify-content-center">
+											<div
+												class="ft-about-feature-icon d-flex align-items-center justify-content-center">
 												<i class="fal fa-bullseye-arrow"></i>
 											</div>
 											<div class="ft-about-feature-text headline pera-content">
 												<h3>Our Vision</h3>
-												<p>To be the leading global logistics provider known for reliability and innovation.</p>
+												<p>Our vision is to provide innovative logistics solutions that enable
+													businesses to thrive in a competitive global market.</p>
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="ft-btn-3">
-									<a class="d-flex justify-content-center align-items-center" href="about.html">Learn More <i class="flaticon-right-arrow"></i></a>
+									<a class="d-flex justify-content-center align-items-center" href="about.html">Learn
+										More <i class="flaticon-right-arrow"></i></a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-6 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
 						<div class="ft-about-img-2-wrapper position-relative">
-							<span class="ft-about-shape1 position-absolute"><img src="assets/img/shape/ab-sh1.png" alt=""></span>
-							<span class="ft-about-shape2 position-absolute"><img src="assets/img/shape/ab-sh2.png" alt=""></span>
+							<span class="ft-about-shape1 position-absolute"><img src="assets/img/shape/ab-sh1.png"
+									alt=""></span>
+							<span class="ft-about-shape2 position-absolute"><img src="assets/img/shape/ab-sh2.png"
+									alt=""></span>
 							<div class="ft-about-img-2">
 								<img src="assets/img/about/ab2.jpg" alt="About Us Image">
 							</div>
@@ -256,49 +336,153 @@
 	============================================= -->
 	<section id="ft-funfact" class="ft-funfact-section">
 		<div class="container">
-			<div class="ft-funfact-content">
+		  <div class="ft-funfact-content">
+			<div class="row">
+			  <div class="col-lg-3 col-md-6">
+				<div class="ft-funfact-innerbox text-center">
+				  <div class="ft-funfact-icon">
+					<i class="fal fa-clipboard-list-check"></i>
+				  </div>
+				  <div class="ft-funfact-text headline pera-content">
+					<h3><span class="counter">52,480</span>+</h3>
+					<p>Tons of Cargo Moved</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-lg-3 col-md-6">
+				<div class="ft-funfact-innerbox text-center">
+				  <div class="ft-funfact-icon">
+					<i class="fal fa-users"></i>
+				  </div>
+				  <div class="ft-funfact-text headline pera-content">
+					<h3><span class="counter">54</span>+</h3>
+					<p>Countries Served</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-lg-3 col-md-6">
+				<div class="ft-funfact-innerbox text-center">
+				  <div class="ft-funfact-icon">
+					<i class="fas fa-trophy-alt"></i>
+				  </div>
+				  <div class="ft-funfact-text headline pera-content">
+					<h3><span class="counter">8,650</span>+</h3>
+					<p>Shipments Completed</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-lg-3 col-md-6">
+				<div class="ft-funfact-innerbox text-center">
+				  <div class="ft-funfact-icon">
+					<i class="fal fa-medal"></i>
+				  </div>
+				  <div class="ft-funfact-text headline pera-content">
+					<h3><span class="counter">22</span>+</h3>
+					<p>Industries Served</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
+	<!-- End of funfact section
+	============================================= -->
+
+	
+
+
+
+
+
+
+	<section id="ft-thx-why-choose-us" class="ft-thx-why-choose-us-section">
+		<div class="container">
+			<div class="ft-thx-why-choose-us-content">
 				<div class="row">
-					<div class="col-lg-3 col-md-6">
-						<div class="ft-funfact-innerbox text-center">
-							<div class="ft-funfact-icon">
-								<i class="fal fa-clipboard-list-check"></i>
-							</div>
-							<div class="ft-funfact-text headline pera-content">
-								<h3><span class="counter">4500</span></h3>
-								<p>Project Completed</p>
+					<div class="col-lg-6">
+						<div class="pr-an-why-choose-feature">
+							<div class="row">
+								<div class="col-md-6 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+									<div class="pr-an-why-choose-feature-item">
+										<div
+											class="pr-an-why-choose-ft-icon d-flex justify-content-center align-items-center">
+											<i class="flaticon-logistics"></i>
+										</div>
+
+										
+
+
+
+										<div class="pr-an-why-choose-ft-text headline pera-content">
+											<h3><a href="#">Customer-Centric Values </a></h3>
+											<p>Founded on the principles of delivering the highest level of customer service, we ensure that every client receives personalized support and solutions tailored to their specific needs.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+									<div class="pr-an-why-choose-feature-item">
+										<div
+											class="pr-an-why-choose-ft-icon d-flex justify-content-center align-items-center">
+											<i class="flaticon-delivery-truck"></i>
+										</div>
+										<div class="pr-an-why-choose-ft-text headline pera-content">
+											<h3><a href="#">Transparent Information Systems </a></h3>
+											<p>With real-time tracking and open communication, we keep you informed at every stage of your shipment’s journey.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+									<div class="pr-an-why-choose-feature-item">
+										<div
+											class="pr-an-why-choose-ft-icon d-flex justify-content-center align-items-center">
+											<i class="flaticon-worldwide"></i>
+										</div>
+										<div class="pr-an-why-choose-ft-text headline pera-content">
+											<h3><a href="#">Global Expertise</a></h3>
+											<p> Leveraging decades of experience in international trade, we offer unparalleled knowledge and expertise in global logistics, ensuring seamless cross-border operations.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+									<div class="pr-an-why-choose-feature-item">
+										<div
+											class="pr-an-why-choose-ft-icon d-flex justify-content-center align-items-center">
+											<i class="flaticon-free-shipping"></i>
+										</div>
+										<div class="pr-an-why-choose-ft-text headline pera-content">
+											<h3><a href="#">Fastest Shipping</a></h3>
+											<p>With Stanza Logistics, you can count on the fastest shipping services,
+												minimizing transit times while maintaining the highest standards of
+												service.</p>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="ft-funfact-innerbox text-center">
-							<div class="ft-funfact-icon">
-								<i class="fal fa-users"></i>
+					<div class="col-lg-6">
+						<div class="pr-an-why-choose-text-wrapper">
+							<div class="pr-cor-section-title headline pera-content wow fadeInUp" data-wow-delay="0ms"
+								data-wow-duration="1500ms">
+								<span class="pr-cor-title-tag">Why Choose Us</span>
+								<h2>We Provide the Best Facilities For Transport</h2>
+								<p>At Stanza Logistics, we offer top-notch transport services, ensuring every step of
+									the shipping process is handled with the utmost care and efficiency.</p>
 							</div>
-							<div class="ft-funfact-text headline pera-content">
-								<h3><span class="counter">54</span>+</h3>
-								<p>Active Members</p>
+							<div class="pr-an-why-choose-list ul-li-block wow fadeInUp" data-wow-delay="200ms"
+								data-wow-duration="1500ms">
+								<ul>
+									<li>We've been supporting logistics services worldwide for years.</li>
+									<li>Perfect for businesses or individuals needing reliable shipping services.</li>
+									<li>Our user-friendly interface allows you to manage shipments with ease.</li>
+								</ul>
 							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="ft-funfact-innerbox text-center">
-							<div class="ft-funfact-icon">
-								<i class="fas fa-trophy-alt"></i>
-							</div>
-							<div class="ft-funfact-text headline pera-content">
-								<h3><span class="counter">14</span>+</h3>
-								<p>Award Winning</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="ft-funfact-innerbox text-center">
-							<div class="ft-funfact-icon">
-								<i class="fal fa-medal"></i>
-							</div>
-							<div class="ft-funfact-text headline pera-content">
-								<h3><span class="counter">100</span>%</h3>
-								<p>Satisfaction Rate</p>
+							<div class="ft-thx-btn text-center wow flipInX" data-wow-delay="200ms"
+								data-wow-duration="1500ms">
+								<a class="d-flex justify-content-center align-items-center" href="#">Learn More</a>
 							</div>
 						</div>
 					</div>
@@ -306,8 +490,6 @@
 			</div>
 		</div>
 	</section>
-	<!-- End of funfact section
-	============================================= -->
 
 	<!-- Start of goodness feature section
 	============================================= -->
@@ -316,7 +498,7 @@
 			<div class="ft-section-title-2 headline pera-content text-center">
 				<span class="sub-title">Our Goodness</span>
 				<h2>What Make Us Special</h2>
-				
+
 			</div>
 			<div class="ft-goodness-featured-content">
 				<div class="row">
@@ -328,7 +510,8 @@
 							<div class="ft-goodness-featured-text headline pera-content">
 								<h3>Quick Quotations</h3>
 								<p>
-									Receive detailed pricing estimates swiftly, allowing you to make informed decisions without delay.</p>
+									Receive detailed pricing estimates swiftly, allowing you to make informed decisions
+									without delay.</p>
 							</div>
 						</div>
 					</div>
@@ -338,10 +521,11 @@
 								<i class="fal fa-user-headset"></i>
 							</div>
 							<div class="ft-goodness-featured-text headline pera-content">
-							<h3>Real-Time Tracking</h3>
-							<p>
-								
-								Stay updated with live tracking for every stage of your project, ensuring transparency and control.</p>
+								<h3>Real-Time Tracking</h3>
+								<p>
+
+									Stay updated with live tracking for every stage of your project, ensuring
+									transparency and control.</p>
 							</div>
 						</div>
 					</div>
@@ -351,9 +535,10 @@
 								<i class="fal fa-badge-sheriff"></i>
 							</div>
 							<div class="ft-goodness-featured-text headline pera-content">
-							<h3>End-to-End Solutions</h3>
-							<p>
-								From inception to completion, we handle every detail, offering seamless and comprehensive services.</p>
+								<h3>End-to-End Solutions</h3>
+								<p>
+									From inception to completion, we handle every detail, offering seamless and
+									comprehensive services.</p>
 							</div>
 						</div>
 					</div>
@@ -366,7 +551,7 @@
 
 	<!-- Start of Video section
 	============================================= -->
-	<section id="ft-video" class="ft-video-section">
+	<!-- <section id="ft-video" class="ft-video-section">
 		<div class="container">
 			<div class="ft-video-content position-relative">
 				<div class="ft-video-img-play-btn">
@@ -384,7 +569,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- End of Video section
 	============================================= -->
 
@@ -400,7 +585,9 @@
 					</h2>
 				</div>
 				<div class="ft-title-text">
-					We pride ourselves on delivering exceptional service and creating value for our clients. Here's what some of our clients have to say about their experiences working with us. Their feedback helps us continue improving and striving for excellence.
+					We pride ourselves on delivering exceptional service and creating value for our clients. Here's what
+					some of our clients have to say about their experiences working with us. Their feedback helps us
+					continue improving and striving for excellence.
 				</div>
 			</div>
 			<div class="ft-testimonial-slider-wrapper-2 swiper-container">
@@ -417,7 +604,11 @@
 											<h3>Gallen Maxwell</h3>
 											<span>UI/UX Designer</span>
 										</div>
-										<p>The team at Stanza exceeded my expectations. Their attention to detail and dedication to understanding my needs were truly impressive. The UI/UX design they created was not only visually appealing but also user-friendly. I highly recommend their services to anyone looking to elevate their digital presence.</p>
+										<p>The team at Stanza exceeded my expectations. Their attention to detail and
+											dedication to understanding my needs were truly impressive. The UI/UX design
+											they created was not only visually appealing but also user-friendly. I
+											highly recommend their services to anyone looking to elevate their digital
+											presence.</p>
 										<div class="ft-testimonial-rate ul-li">
 											<ul>
 												<li><i class="fas fa-star"></i></li>
@@ -440,7 +631,10 @@
 											<h3>Jordan Avery</h3>
 											<span>Project Manager</span>
 										</div>
-										<p>Working with Stanza was a seamless experience from start to finish. Their project management skills were top-notch, and they delivered everything on time and within budget. Their ability to solve problems and communicate effectively made the project a success.</p>
+										<p>Working with Stanza was a seamless experience from start to finish. Their
+											project management skills were top-notch, and they delivered everything on
+											time and within budget. Their ability to solve problems and communicate
+											effectively made the project a success.</p>
 										<div class="ft-testimonial-rate ul-li">
 											<ul>
 												<li><i class="fas fa-star"></i></li>
@@ -463,7 +657,10 @@
 											<h3>Jessica Harper</h3>
 											<span>Marketing Director</span>
 										</div>
-										<p>Stanza brought our vision to life with their creative marketing strategies. Their expertise in digital marketing helped us reach new audiences and grow our brand. The team was responsive, professional, and truly invested in our success.</p>
+										<p>Stanza brought our vision to life with their creative marketing strategies.
+											Their expertise in digital marketing helped us reach new audiences and grow
+											our brand. The team was responsive, professional, and truly invested in our
+											success.</p>
 										<div class="ft-testimonial-rate ul-li">
 											<ul>
 												<li><i class="fas fa-star"></i></li>
@@ -486,7 +683,10 @@
 											<h3>Samuel Davis</h3>
 											<span>Business Owner</span>
 										</div>
-										<p>As a small business owner, finding reliable partners is crucial. [Your Company] provided outstanding service, helping us to optimize our processes and improve efficiency. Their solutions were tailored to our specific needs, and the results have been phenomenal.</p>
+										<p>As a small business owner, finding reliable partners is crucial. [Your
+											Company] provided outstanding service, helping us to optimize our processes
+											and improve efficiency. Their solutions were tailored to our specific needs,
+											and the results have been phenomenal.</p>
 										<div class="ft-testimonial-rate ul-li">
 											<ul>
 												<li><i class="fas fa-star"></i></li>
@@ -509,7 +709,10 @@
 											<h3>Emily Turner</h3>
 											<span>Software Engineer</span>
 										</div>
-										<p>I was thoroughly impressed by the technical expertise and innovative solutions provided by [Your Company]. They tackled complex challenges with ease and delivered a product that exceeded our expectations. Their commitment to quality is evident in everything they do.</p>
+										<p>I was thoroughly impressed by the technical expertise and innovative
+											solutions provided by [Your Company]. They tackled complex challenges with
+											ease and delivered a product that exceeded our expectations. Their
+											commitment to quality is evident in everything they do.</p>
 										<div class="ft-testimonial-rate ul-li">
 											<ul>
 												<li><i class="fas fa-star"></i></li>
@@ -532,7 +735,9 @@
 											<h3>Michael Roberts</h3>
 											<span>Entrepreneur</span>
 										</div>
-										<p>stanza is a true partner in business. Their guidance and support have been invaluable as we've grown our company. They bring a wealth of knowledge and a personal touch that makes working with them a pleasure.</p>
+										<p>stanza is a true partner in business. Their guidance and support have been
+											invaluable as we've grown our company. They bring a wealth of knowledge and
+											a personal touch that makes working with them a pleasure.</p>
 										<div class="ft-testimonial-rate ul-li">
 											<ul>
 												<li><i class="fas fa-star"></i></li>
@@ -559,7 +764,7 @@
 	<!-- Start of Footer   section
 	============================================= -->
 	<footer id="ft-footer-2" class="ft-footer-section-2" data-background="assets/img/bg/f-bg.png">
-		<div class="ft-footer-newslatter position-relative">
+		<!-- <div class="ft-footer-newslatter position-relative">
 			<div class="container">
 				<div class="ft-footer-newslatter-content d-flex justify-content-between align-items-center flex-wrap">
 					<div class="ft-footer-newslatter-text headline">
@@ -574,7 +779,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="ft-footer-widget-wrapper-2">
 			<div class="container">
 				<div class="row">

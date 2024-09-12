@@ -3,15 +3,30 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Home Page 3</title>
-	<meta name="description" content="Stanza - Logistics & Delivery Company HTML template">
-	<meta name="keywords"
-		content="cargo, clean, contractor, corporate, freight, industry, localization, logistics, page builder, shipment, transport, transportation, truck, trucking">
-	<meta name="author" content="Themexriver">
-	<link rel="shortcut icon" href="assets/img/logo/ficon.png" type="image/x-icon">
+	<title>Stanza Logistics - Transportation & Logistics </title>
+	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Css Fils -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/flaticon.css">
+	<link rel="stylesheet" href="assets/css/flaticon-02.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.css">
+	<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="assets/css/jquery-ui.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/custom-animate.css">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
 
+	<link href="assets/plugins/revolution/css/settings.css" rel="stylesheet" type="text/css">
+	<!-- REVOLUTION SETTINGS STYLES -->
+	<link href="assets/plugins/revolution/css/layers.css" rel="stylesheet" type="text/css">
+	<!-- REVOLUTION LAYERS STYLES -->
+	<link href="assets/plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css">
+	<!-- REVOLUTION NAVIGATION STYLES -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/fontawesome-all.css">
 	<link rel="stylesheet" href="assets/css/flaticon.css">
@@ -24,6 +39,12 @@
 	<link rel="stylesheet" href="assets/css/rs6.css">
 	<link rel="stylesheet" href="assets/css/slick-theme.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- jQuery CountTo Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countTo/1.2.0/jquery.countTo.min.js"></script>
+
 </head>
 
 
@@ -122,19 +143,54 @@
 	}
 
 
-	.ft-banner-text-content h1 {
-		margin-top: -200px;
-		/* Adjust this value to move the text further up */
-	}
+
+
+	.counter {
+    font-size: 2rem; /* Adjust as needed */
+    font-weight: bold;
+    color: #fff; /* Adjust text color if needed */
+}
+
+.counter {
+    color: orangered;
+    font-weight: bold;
+}
+
+
 </style>
 
-<body>
+<body class="nlhu-body">
 	<div id="preloader"></div>
 	<div class="up">
 		<a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
 	</div>
-	<!-- Start of header section
-	============================================= -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&amp;family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto:wght@100;300;400;500;700;900&amp;display=swap"
+		rel="stylesheet">
+
+	<div class="nlhu-body-overlay"></div>
+
+	<!-- Preloader-->
+	<div class="loading-preloader">
+		<div id="loading-preloader">
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+
+	<!-- Main Header / Header Style Three -->
+
+	<!-- End Main Header -->
+
 	<header id="ft-header" class="ft-header-section header-style-two">
 		<!-- <div class="ft-header-top">
 			<div class="container">
@@ -232,6 +288,8 @@
 									<li class="dropdown">
 										<a href="%21.html#">Others</a>
 										<ul class="dropdown-menu clearfix">
+											<li><a href="industries.html">Industries Served </a></li>
+
 											<li><a href="Career.html">Career </a></li>
 											<li><a href="software.html">Software </a></li>
 											<li><a href="network.html">Our Network</a></li>
@@ -251,10 +309,17 @@
 								</ul>
 							</nav>
 						</div>
-						<div class="ft-header-cta-btn">
-							<a class="d-flex justify-content-center align-items-center" href="Quote.html">Get Free
+						<!-- <div class="ft-header-cta-btn">
+							<a class="d-flex justify-content-center align-items-center" href="Quote.html">Get
 								Quote</a>
+						
+						</div> -->
+						<div class="ft-header-cta-btn" style="display: flex; align-items: center; gap: 10px;">
+							<a class="cta-button" href="Quote.html">Get Quote</a>
+							<a class="cta-button" href="https://stanza.manage.shipthis.co/session/signin?redirect_uri=%2F">Login</a>
 						</div>
+						
+						
 
 
 					</div>
@@ -333,272 +398,259 @@
 			</div>
 		</div>
 	</header>
-	<!-- End of header section
-	============================================= -->
 
-	<!-- Start of banner section
-	============================================= -->
-	<!-- <section id="ft-thx-banner" class="ft-thx-banner-section position-relative" data-background="assets/imgs/bg/banner-bg.jpg">
-		<div class="background_overlay"></div>
-		<div class="container"> -->
-	<section id="ft-banner" class="ft-banner-section" data-background="assets/img/bg/slider1-bg.jpg">
-		<div class="ft-banner-content">
-			<div class="container">
-				<div class="ft-banner-text-content headline pera-content text-center">
-					<h1 class="cd-headline letters scale">Shipping Products
-						<span class="cd-words-wrapper">
-							<!-- <b class="is-visible">WorldWide</b> -->
-							<!-- <b>Safely</b> -->
-							<b class="is-visible">96.5% On Time Delivery</b>
+	<!-- Main Slider Two -->
+	<section style="margin-top: 85px;" class="ft3-main-slider-two">
 
-							<b>Priority Sailings</b>
-							<b>Zero Hidden Charges</b>
-							<b>Quick Quotes</b>
-							<!-- <b>Everywhere</b> -->
-						</span>
-					</h1>
-					<br>
+		<!-- Shop Single -->
+		<div class="product-details">
 
-
-					<br>
-					<br>
-					<div class="ft-funfact-inner-items-wrapper position-relative">
-						<div class="row">
-							<div class="col-lg-3 col-md-6">
-								<div class="ft-funfact-inner-items text-center">
-									<div
-										class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
-										<i class="flaticon-delivery-truck"></i>
+			<!-- Basic Details -->
+			<div class="basic-details">
+				<div class="image-column">
+					<div class="carousel-outer">
+						<ul class="image-carousel owl-carousel owl-theme">
+							<li>
+								<!--Slide-->
+								<div class="slide-two-content">
+									<div class="inner-box">
+										<div class="pattern-layer"></div>
+										<div class="image-box">
+											<div class="image">
+												<img class="wow fadeIn" data-wow-delay="0ms" data-wow-duration="2500ms"
+													src="assets/img/bg/banner-bg1.jpg" alt="" />
+												<div class="overlay-box">
+													<div class="overlay-inner">
+														<div class="content">
+															<div class="content-inner">
+																<h2><a href="#">Ocean Freight</a></h2>
+																<div class="text">We specialise in the transportation of
+																	goods across the UK, France, Belgium and Northern
+																	Spain and are widely regarded as one of the UK's
+																	leading transport companies to and from these areas.
+																</div>
+																<a href="#" class="read-more theme-btn">Read more</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
-									<div class="ft-funfact-inner-text headline pera-content">
-										<h3><span class="counter">50000</span>+</h3>
-										<p style="color: white; font-weight: bold;">Goods Moved</p>
+
+								</div>
+							</li>
+							<li>
+								<!--Slide-->
+								<div class="slide-two-content">
+									<div class="inner-box">
+										<div class="pattern-layer"></div>
+										<div class="image-box">
+											<div class="image">
+												<img class="wow fadeIn" data-wow-delay="0ms" data-wow-duration="2500ms"
+													src="assets/images/main-slider/road.jpg" alt="" />
+												<div class="overlay-box">
+													<div class="overlay-inner">
+														<div class="content">
+															<div class="content-inner">
+																<h2><a href="#">Road Freight</a></h2>
+																<div class="text">We specialise in the transportation of
+																	goods across the UK, France, Belgium and Northern
+																	Spain and are widely regarded as one of the UK's
+																	leading transport companies to and from these areas.
+																</div>
+																<a href="#" class="read-more theme-btn">Read more</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="ft-funfact-inner-items text-center">
-									<div
-										class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
-										<i class="flaticon-community"></i>
-									</div>
-									<div class="ft-funfact-inner-text headline pera-content">
-										<h3><span class="counter">50</span>+</h3>
-										<p style="color: white; font-weight: bold;">Countries</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="ft-funfact-inner-items text-center">
-									<div
-										class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
-										<i class="flaticon-compliance"></i>
-									</div>
-									<div class="ft-funfact-inner-text headline pera-content">
-										<h3><span class="counter">5000</span>+</h3>
-										<p style="color: white; font-weight: bold;">Delivery Completed</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="ft-funfact-inner-items text-center">
-									<div
-										class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
-										<i class="flaticon-face-detection"></i>
-									</div>
-									<div class="ft-funfact-inner-text headline pera-content">
-										<h3><span class="counter">155</span>+</h3>
-										<p style="color: white; font-weight: bold;">Team Members</p>
+							</li>
+							<li>
+								<!--Slide-->
+								<div class="slide-two-content">
+									<div class="inner-box">
+										<div class="pattern-layer"></div>
+										<div class="image-box">
+											<div class="image">
+												<img class="wow fadeIn" data-wow-delay="0ms" data-wow-duration="2500ms"
+													src="assets/images/main-slider/plane.jpg" alt="" />
+												<div class="overlay-box">
+													<div class="overlay-inner">
+														<div class="content">
+															<div class="content-inner">
+																<h2><a href="#">Air Freight</a></h2>
+																<div class="text">We specialise in the transportation of
+																	goods across the UK, France, Belgium and Northern
+																	Spain and are widely regarded as one of the UK's
+																	leading transport companies to and from these areas.
+																</div>
+																<a href="#" class="read-more theme-btn">Read more</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-					<br>
-					<!-- <p> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
-						ultrices gravida. </p> -->
-					<div class="ft-banner-btn-wrapper d-flex justify-content-center align-items-center">
-						<div class="ft-banner-btn">
-							<a class="d-flex justify-content-center align-items-center" href="service.html">Our
-								Services</a>
-						</div>
-						<div class="ft-banner-video-btn">
-							<a class="video_box" href="https://www.youtube.com/watch?v=C4jjFanHZo8">
-								<i class="fas fa-play"></i>
-								<span>How It Work</span>
-							</a>
-						</div>
+							</li>
+							<li>
+								<!--Slide-->
+								<div class="slide-two-content">
+									<div class="inner-box">
+										<div class="pattern-layer"></div>
+										<div class="image-box">
+											<div class="image">
+												<img class="wow fadeIn" data-wow-delay="0ms" data-wow-duration="2500ms"
+													src="assets/images/main-slider/load.jpg" alt="" />
+												<div class="overlay-box">
+													<div class="overlay-inner">
+														<div class="content">
+															<div class="content-inner">
+																<h2><a href="#">Part Load</a></h2>
+																<div class="text">We specialise in the transportation of
+																	goods across the UK, France, Belgium and Northern
+																	Spain and are widely regarded as one of the UK's
+																	leading transport companies to and from these areas.
+																</div>
+																<a href="#" class="read-more theme-btn">Read more</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<!--Slide-->
+								<div class="slide-two-content">
+									<div class="inner-box">
+										<div class="pattern-layer"></div>
+										<div class="image-box">
+											<div class="image">
+												<img class="wow fadeIn" data-wow-delay="0ms" data-wow-duration="2500ms"
+													src="assets/images/main-slider/banner-2.jpg" alt="" />
+												<div class="overlay-box">
+													<div class="overlay-inner">
+														<div class="content">
+															<div class="content-inner">
+																<h2><a href="#">Warehousing</a></h2>
+																<div class="text">We specialise in the transportation of
+																	goods across the UK, France, Belgium and Northern
+																	Spain and are widely regarded as one of the UK's
+																	leading transport companies to and from these areas.
+																</div>
+																<a href="#" class="read-more theme-btn">Read more</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="thumbs-carousel owl-carousel owl-theme">
+							<!-- <li>Air Freight</li>
+							<li>Road Freight</li>
+							<li>Ocean Freight</li>
+							<li>Warehousing</li> -->
+						</ul>
+
 					</div>
 				</div>
+
 			</div>
+			<!--Basic Details-->
+
 		</div>
+
 	</section>
 
-	
-	<!-- End of banner section
-	============================================= -->
+	<!-- End Main Slider Two -->
 
-	<!-- Start of Service section
-	============================================= -->
-	<section id="ft-service-2" class="ft-service-section-2 position-relative">
-		<span class="ft-service-bg position-absolute"> <img src="assets/img/bg/ser-bg.png" alt=""></span>
+
+	<section  id="ft-funfact-2" class="ft-funfact-section-2" data-background="assets/img/bg/ser-bg.png">
 		<div class="container">
-			<div class="ft-section-title-2 headline pera-content text-center">
-				<h2>What We Do</h2>
-				<!-- <h2>We are optimists who Love
-					to work together.
-				</h2> -->
+			<div class="ft-section-title-3 headline text-center">
+				<!-- <span class="text-uppercase">We specialise in the transportation</span> -->
+				<h2 style="color: orangered;">Our Statistics</h2>
 			</div>
-			<div class="ft-service-content-2">
-				<div class="ft-service-slider-2">
-
-					<div class="ft-item-innerbox">
-						<div class="ft-service-innerbox-2 position-relative">
-							<div class="ft-service-img text-center">
-								<img src="assets/img/service/ser4.4.jpg" alt="">
-							</div>
-							<div class="ft-service-text position-relative headline">
-								<div
-									class="ft-service-icon position-absolute d-flex align-items-center justify-content-center">
-									<i class="flaticon-boat"></i>
+			<div class="ft-funfact-content-2 position-relative">
+				<span class="map-bg position-absolute text-center"><img src="" alt=""></span>
+				<div class="ft-funfact-inner-items-wrapper position-relative">
+					<div class="row">
+						<div class="col-lg-3 col-md-6">
+							<div class="ft-funfact-inner-items text-center">
+								<div class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
+									<i class="flaticon-delivery-truck"></i>
 								</div>
-								<h3><a href="service-single.html">Ocean Freight</a></h3>
-								<div class="ft-btn-2">
-									<a href="service-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
+								<div class="ft-funfact-inner-text headline pera-content">
+									<h3><span class="counter" data-count="52480">0</span>+</h3>
+									<p style="font-weight: 800; color: white;">Tons of cargo moved</p>
 								</div>
-							</div>
-							<div class="ft-service-serial position-absolute">
-								1
 							</div>
 						</div>
-					</div>
-					<div class="ft-item-innerbox">
-						<div class="ft-service-innerbox-2 position-relative">
-							<div class="ft-service-img text-center">
-								<img src="assets/img/service/ser4.3.jpg" alt="">
-							</div>
-							<div class="ft-service-text position-relative headline">
-								<div
-									class="ft-service-icon position-absolute d-flex align-items-center justify-content-center">
-									<i class="flaticon-free-shipping"></i>
+						<div class="col-lg-3 col-md-6">
+							<div class="ft-funfact-inner-items text-center">
+								<div class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
+									<i class="flaticon-community"></i>
 								</div>
-								<h3><a href="service-single.html">Air Freight</a></h3>
-								<div class="ft-btn-2">
-									<a href="service-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
+								<div class="ft-funfact-inner-text headline pera-content">
+									<h3><span class="counter" data-count="54">0</span>+</h3>
+									<p style="font-weight: 800; color: white;">Countries Served</p>
 								</div>
-							</div>
-							<div class="ft-service-serial position-absolute">
-								2
 							</div>
 						</div>
-					</div>
-					<div class="ft-item-innerbox">
-						<div class="ft-service-innerbox-2 position-relative">
-							<div class="ft-service-img text-center">
-								<img src="assets/img/service/ser4.2.jpg" alt="">
-							</div>
-							<div class="ft-service-text position-relative headline">
-								<div
-									class="ft-service-icon position-absolute d-flex align-items-center justify-content-center">
-									<i class="flaticon-plane"></i>
+						<div class="col-lg-3 col-md-6">
+							<div class="ft-funfact-inner-items text-center">
+								<div class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
+									<i class="flaticon-compliance"></i>
 								</div>
-								<h3><a href="service-single.html">PART LOAD (LCL)</a></h3>
-								<div class="ft-btn-2">
-									<a href="service-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
+								<div class="ft-funfact-inner-text headline pera-content">
+									<h3><span class="counter" data-count="8650">0</span>+</h3>
+									<p style="font-weight: 800; color: white;">Shipments Completed</p>
 								</div>
-							</div>
-							<div class="ft-service-serial position-absolute">
-								3
 							</div>
 						</div>
-					</div>
-					<div class="ft-item-innerbox">
-						<div class="ft-service-innerbox-2 position-relative">
-							<div class="ft-service-img text-center">
-								<img src="assets/img/service/ser4.jpg" alt="">
-							</div>
-							<div class="ft-service-text position-relative headline">
-								<div
-									class="ft-service-icon position-absolute d-flex align-items-center justify-content-center">
-									<i class="flaticon-train"></i>
+						<div class="col-lg-3 col-md-6">
+							<div class="ft-funfact-inner-items text-center">
+								<div class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
+									<i class="flaticon-face-detection"></i>
 								</div>
-								<h3><a href="service-single.html">Custom Clearance</a></h3>
-								<div class="ft-btn-2">
-									<a href="service-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
+								<div class="ft-funfact-inner-text headline pera-content">
+									<h3><span class="counter" data-count="22">0</span>+</h3>
+									<p style="font-weight: 800; color: white;">Industries Served</p>
 								</div>
-							</div>
-							<div class="ft-service-serial position-absolute">
-								4
-							</div>
-						</div>
-					</div>
-					<!-- <div class="ft-item-innerbox">
-						<div class="ft-service-innerbox-2 position-relative">
-							<div class="ft-service-img text-center">
-								<img src="assets/img/service/ser4.3.jpg" alt="">
-							</div>
-							<div class="ft-service-text position-relative headline">
-								<div
-									class="ft-service-icon position-absolute d-flex align-items-center justify-content-center">
-									<i class="flaticon-free-shipping"></i>
-								</div>
-								<h3><a href="service-single.html">Part Load (LCL)</a></h3>
-								<div class="ft-btn-2">
-									<a href="service-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
-								</div>
-							</div>
-							<div class="ft-service-serial position-absolute">
-								5
-							</div>
-						</div>
-					</div>   -->
-					<div class="ft-item-innerbox">
-						<div class="ft-service-innerbox-2 position-relative">
-							<div class="ft-service-img text-center">
-								<img src="assets/img/service/ser4.4.jpg" alt="">
-							</div>
-							<div class="ft-service-text position-relative headline">
-								<div
-									class="ft-service-icon position-absolute d-flex align-items-center justify-content-center">
-									<i class="flaticon-boat"></i>
-								</div>
-								<h3><a href="service-single.html">Warehousing</a></h3>
-								<div class="ft-btn-2">
-									<a href="service-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
-								</div>
-							</div>
-							<div class="ft-service-serial position-absolute">
-								5
 							</div>
 						</div>
 					</div>
 				</div>
+				<!-- <div class="ft-funfact-slug-text text-center">
+					<span>Join over 3000 people who engage with the sector. <a href="#">Join Now!</a></span>
+				</div> -->
 			</div>
 		</div>
 	</section>
-	<!-- End of Service section
-	============================================= -->
+	
+	 
 
-	<!-- Start of featured section
-	============================================= -->
+
+
+
+
+
+
+
+
 	<section id="ft-featured" class="ft-featured-section">
 		<div class="container">
 			<div class="ft-section-title-2 headline pera-content text-center">
@@ -668,477 +720,129 @@
 		</div>
 	</section>
 
-	<!-- End of featured section
-	============================================= -->
-
-
-
-	<!-- Start of Fun fact section
-	============================================= -->
-	<!-- <section id="ft-funfact-2" class="ft-funfact-section-2" data-background="assets/img/bg/shape-bg.jpg">
+<!-- 
+	<section id="ft-service-2" class="ft-service-section-2 position-relative">
+		<span class="ft-service-bg position-absolute">
+			<img src="assets/img/bg/ser-bg.png" alt="">
+		</span>
 		<div class="container">
-			<div class="ft-section-title-3 headline text-center">
-				<span class="text-uppercase">We specialise in the transportation</span>
-				<h2>Together, we have your logistical
-					challenges covered.</h2>
+			<div class="ft-section-title-2 headline pera-content text-center">
+				<h2>What We Do</h2>
 			</div>
-			<div class="ft-funfact-content-2 position-relative">
-				<span class="map-bg position-absolute text-center"><img src="assets/img/bg/map.png" alt=""></span>
-				<div class="ft-funfact-inner-items-wrapper position-relative">
-					<div class="row">
-						<div class="col-lg-3 col-md-6">
-							<div class="ft-funfact-inner-items text-center">
-								<div
-									class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
-									<i class="flaticon-delivery-truck"></i>
-								</div>
-								<div class="ft-funfact-inner-text headline pera-content">
-									<h3><span class="counter">1656</span></h3>
-									<p>Completed Delivery</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="ft-funfact-inner-items text-center">
-								<div
-									class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
-									<i class="flaticon-community"></i>
-								</div>
-								<div class="ft-funfact-inner-text headline pera-content">
-									<h3><span class="counter">1250</span></h3>
-									<p>Satisfied Clients</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="ft-funfact-inner-items text-center">
-								<div
-									class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
-									<i class="flaticon-compliance"></i>
-								</div>
-								<div class="ft-funfact-inner-text headline pera-content">
-									<h3><span class="counter">30</span>+</h3>
-									<p>Awards Winner</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="ft-funfact-inner-items text-center">
-								<div
-									class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
-									<i class="flaticon-face-detection"></i>
-								</div>
-								<div class="ft-funfact-inner-text headline pera-content">
-									<h3><span class="counter">155</span>+</h3>
-									<p>Team Members</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="ft-funfact-slug-text text-center">
-					<span>Join over 3000 people who engage with sector. <a href="#">Join Now!</a></span>
-				</div>
-			</div>
-		</div>
-	</section>  -->
-	<!-- End of Fun fact section
-	============================================= -->
-
-	<!-- Start of Product mesurment section
-	============================================= -->
-	<section id="ft-product-mesurment" class="ft-product-mesurment-section">
-		<div class="container">
-			<div class="ft-product-mesurment-content position-relative">
-				<span class="ft-pm-bg-img position-absolute"><img src="assets/img/bg/pm-bg.png" alt=""></span>
+			<div class="ft-service-content-2">
 				<div class="row">
-					<div class="col-lg-8">
-						<div class="ft-product-mesurment-form">
-							<div class="ft-product-mesurment-tab-btn">
-								<ul class="nav nav-tabs" id="myTab" role="tablist">
-									<li class="nav-item" role="presentation">
-										<button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-											data-bs-target="#home" type="button" role="tab" aria-controls="home"
-											aria-selected="true">Request A Quote</button>
-									</li>
-									<!-- <li class="nav-item" role="presentation">
-										<button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-											data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
-											aria-selected="false">Track & Trace</button>
-									</li> -->
-								</ul>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="ft-service-innerbox-2 position-relative">
+							<div class="ft-service-img text-center">
+								<img src="assets/img/service/ser4.4.jpg" alt="">
 							</div>
-							<div class="tab-content" id="myTabContent">
-								<div class="tab-pane fade show active" id="home" role="tabpanel"
-									aria-labelledby="home-tab">
-									<div class="ft-product-mesurment-form-input">
-										<form action="#">
-											<div class="ft-product-mesurment-form-input-area">
-												<label class="ft-pm-title">Personal Data</label>
-												<div class="row">
-													<div class="col-lg-4">
-														<div class="ft-pm-input">
-															<input type="text" placeholder="First Name">
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<div class="ft-pm-input">
-															<input type="text" placeholder="Last Name">
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<div class="ft-pm-input">
-															<input type="email" placeholder="Your Email">
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="ft-product-mesurment-form-input-area">
-												<label class="ft-pm-title">Shipment Date</label>
-												<div class="row">
-													<div class="col-lg-4">
-														<div class="ft-pm-input ft-select-option position-relative">
-															<select name="#">
-																<option value="#">Shipment Type</option>
-																<option value="#">By Air</option>
-																<option value="#">By Ship</option>
-																<option value="#">By Road</option>
-															</select>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<div class="ft-pm-input">
-															<input type="text" placeholder="City Type Departure">
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<div class="ft-pm-input">
-															<input type="Text" placeholder="Delivery City">
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<div class="ft-pm-input ft-select-option position-relative">
-															<select name="#">
-																<option value="#">Incoterms</option>
-																<option value="#">FOB</option>
-																<option value="#">EX WORKS</option>
-																<option value="#">CIF</option>
-															</select>
-														</div>
-													</div>
-													<div class="col-lg-2">
-														<div class="ft-pm-input">
-															<input type="Text" placeholder="Weight">
-														</div>
-													</div>
-													<div class="col-lg-2">
-														<div class="ft-pm-input">
-															<input type="Text" placeholder="CBM">
-														</div>
-													</div>
-													<div class="col-lg-3">
-														<div class="ft-pm-input">
-															<input type="Text" placeholder="SIZE: 20/40 ft.">
-														</div>
-													</div>
-													<div class="col-lg-2">
-														<div class="ft-pm-input">
-															<input type="Text" placeholder="Qty.">
-														</div>
-													</div>
-												</div>
-											</div>
-											<!-- <div class="ft-product-mesurment-checkbox">
-												<label>
-													<input class="condition" name="#" type="radio" value="#" checked="">
-													<span class="checkmark-circle"></span>
-													<span class="slug">Incoterms</span>
-												</label>
-												<label>
-													<input class="condition" name="#" type="radio" value="#">
-													<span class="checkmark-circle"></span>
-													<span class="slug">Express Delivery</span>
-												</label>
-												<label>
-													<input class="condition" name="#" type="radio" value="#">
-													<span class="checkmark-circle"></span>
-													<span class="slug">Insurance</span>
-												</label>
-												<label>
-													<input class="condition" name="#" type="radio" value="#">
-													<span class="checkmark-circle"></span>
-													<span class="slug">Packaging</span>
-												</label>
-											</div> -->
-											<button>Request For A Quote</button>
-										</form>
-									</div>
+							<div class="ft-service-text position-relative headline">
+								<div class="ft-service-icon position-absolute d-flex align-items-center justify-content-center">
+									<i class="flaticon-boat"></i>
 								</div>
-								<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-									<div class="ft-product-mesurment-form-input">
-										<form action="#">
-											<div class="ft-product-mesurment-form-input-area">
-												<label class="ft-pm-title">Personal Data</label>
-												<div class="row">
-													<div class="col-lg-4">
-														<div class="ft-pm-input">
-															<input type="text" placeholder="First Name">
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<div class="ft-pm-input">
-															<input type="text" placeholder="Last Name">
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<div class="ft-pm-input">
-															<input type="email" placeholder="Your Email">
-														</div>
-													</div>
-													<div class="col-lg-12">
-														<div class="ft-pm-input">
-															<input type="text" placeholder="Your Tracking Id">
-														</div>
-													</div>
-												</div>
-											</div>
-											<button>Track & Trace</button>
-										</form>
-									</div>
+								<h3><a href="service-single.html">Ocean Freight</a></h3>
+								<div class="ft-btn-2">
+									<a href="service-single.html">
+										<i class="icon-first flaticon-right-arrow"></i>
+										<span>Read More</span>
+									</a>
 								</div>
+							</div>
+							<div class="ft-service-serial position-absolute">
+								1
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End of Product mesurment section
-	============================================= -->
-
-
-
-	<!-- Start of About section
-	============================================= -->
-	<section id="ft-about-2" class="ft-about-section-2">
-		<div class="container">
-			<div class="ft-about-content-2">
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="ft-about-text-wrapper-2">
-							<div class="ft-section-title-2 headline pera-content wow fadeInUp" data-wow-delay="200ms"
-								data-wow-duration="1500ms">
-								<span class="sub-title">About Us</span>
-								<h2>Your Trusted Global Logistics Partner</h2>
-								<p>We are a global logistics company specializing in ocean & air freight, warehousing,
-									and customs clearance. Our steady growth, driven by customer referrals and repeat
-									business, reflects our competence, expertise, and commitment to excellent service at
-									competitive rates. We operate as an extension of your team, ensuring seamless
-									logistics solutions.</p>
+	
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="ft-service-innerbox-2 position-relative">
+							<div class="ft-service-img text-center">
+								<img src="assets/img/service/ser4.3.jpg" alt="">
 							</div>
-							<div class="ft-about-feature-wrapper-2">
-								<div class="row">
-									<div class="col-lg-6 wow fadeInUp" data-wow-delay="400ms"
-										data-wow-duration="1500ms">
-										<div class="ft-about-feature-list-item d-flex align-items-center">
-											<div
-												class="ft-about-feature-icon d-flex align-items-center justify-content-center">
-												<i class="fal fa-bullseye-arrow"></i>
-											</div>
-											<div class="ft-about-feature-text headline pera-content">
-												<h3>Our Mission</h3>
-												<p>Delivering exceptional logistics services with precision and
-													dedication.</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-6 wow fadeInUp" data-wow-delay="600ms"
-										data-wow-duration="1500ms">
-										<div class="ft-about-feature-list-item d-flex align-items-center">
-											<div
-												class="ft-about-feature-icon d-flex align-items-center justify-content-center">
-												<i class="fal fa-bullseye-arrow"></i>
-											</div>
-											<div class="ft-about-feature-text headline pera-content">
-												<h3>Our Vision</h3>
-												<p>To be the leading global logistics provider known for reliability and
-													innovation.</p>
-											</div>
-										</div>
-									</div>
+							<div class="ft-service-text position-relative headline">
+								<div class="ft-service-icon position-absolute d-flex align-items-center justify-content-center">
+									<i class="flaticon-free-shipping"></i>
 								</div>
-								<div class="ft-btn-3">
-									<a class="d-flex justify-content-center align-items-center" href="about.html">Learn
-										More <i class="flaticon-right-arrow"></i></a>
+								<h3><a href="service-single.html">Air Freight</a></h3>
+								<div class="ft-btn-2">
+									<a href="service-single.html">
+										<i class="icon-first flaticon-right-arrow"></i>
+										<span>Read More</span>
+									</a>
 								</div>
+							</div>
+							<div class="ft-service-serial position-absolute">
+								2
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
-						<div class="ft-about-img-2-wrapper position-relative">
-							<span class="ft-about-shape1 position-absolute"><img src="assets/img/shape/ab-sh1.png"
-									alt=""></span>
-							<span class="ft-about-shape2 position-absolute"><img src="assets/img/shape/ab-sh2.png"
-									alt=""></span>
-							<div class="ft-about-img-2">
-								<img src="assets/img/about/ab2.jpg" alt="About Us Image">
+	
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="ft-service-innerbox-2 position-relative">
+							<div class="ft-service-img text-center">
+								<img src="assets/img/service/ser4.2.jpg" alt="">
+							</div>
+							<div class="ft-service-text position-relative headline">
+								<div class="ft-service-icon position-absolute d-flex align-items-center justify-content-center">
+									<i class="flaticon-plane"></i>
+								</div>
+								<h3><a href="service-single.html">PART LOAD (LCL)</a></h3>
+								<div class="ft-btn-2">
+									<a href="service-single.html">
+										<i class="icon-first flaticon-right-arrow"></i>
+										<span>Read More</span>
+									</a>
+								</div>
+							</div>
+							<div class="ft-service-serial position-absolute">
+								3
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- End of About section
-	============================================= -->
-
-
-	<section id="ft-thx-why-choose-us" class="ft-thx-why-choose-us-section">
-		<div class="container">
-			<div class="ft-thx-why-choose-us-content">
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="pr-an-why-choose-feature">
-							<div class="row">
-								<div class="col-md-6 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-									<div class="pr-an-why-choose-feature-item">
-										<div
-											class="pr-an-why-choose-ft-icon d-flex justify-content-center align-items-center">
-											<i class="flaticon-logistics"></i>
-										</div>
-										<div class="pr-an-why-choose-ft-text headline pera-content">
-											<h3><a href="#">Safe Packing</a></h3>
-											<p>At Stanza Logistics, we ensure your items are packed with care,
-												guaranteeing safe delivery to any destination worldwide.</p>
-										</div>
-									</div>
+					
+	
+					<div style="margin-top: 30px;" class="col-lg-4 col-md-6 col-sm-12">
+						<div class="ft-service-innerbox-2 position-relative">
+							<div class="ft-service-img text-center">
+								<img src="assets/img/service/ser4.jpg" alt="">
+							</div>
+							<div class="ft-service-text position-relative headline">
+								<div class="ft-service-icon position-absolute d-flex align-items-center justify-content-center">
+									<i class="flaticon-train"></i>
 								</div>
-								<div class="col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-									<div class="pr-an-why-choose-feature-item">
-										<div
-											class="pr-an-why-choose-ft-icon d-flex justify-content-center align-items-center">
-											<i class="flaticon-delivery-truck"></i>
-										</div>
-										<div class="pr-an-why-choose-ft-text headline pera-content">
-											<h3><a href="#">Right Time Delivery</a></h3>
-											<p>We pride ourselves on punctual deliveries, ensuring your shipments arrive
-												at the right time, every time.</p>
-										</div>
-									</div>
+								<h3><a href="service-single.html">Custom Clearance</a></h3>
+								<div class="ft-btn-2">
+									<a href="service-single.html">
+										<i class="icon-first flaticon-right-arrow"></i>
+										<span>Read More</span>
+									</a>
 								</div>
-								<div class="col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-									<div class="pr-an-why-choose-feature-item">
-										<div
-											class="pr-an-why-choose-ft-icon d-flex justify-content-center align-items-center">
-											<i class="flaticon-worldwide"></i>
-										</div>
-										<div class="pr-an-why-choose-ft-text headline pera-content">
-											<h3><a href="#">Ship Everywhere</a></h3>
-											<p>Whether it's across the street or across the globe, Stanza Logistics
-												ensures your shipment reaches its destination efficiently and safely.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
-									<div class="pr-an-why-choose-feature-item">
-										<div
-											class="pr-an-why-choose-ft-icon d-flex justify-content-center align-items-center">
-											<i class="flaticon-free-shipping"></i>
-										</div>
-										<div class="pr-an-why-choose-ft-text headline pera-content">
-											<h3><a href="#">Fastest Shipping</a></h3>
-											<p>With Stanza Logistics, you can count on the fastest shipping services,
-												minimizing transit times while maintaining the highest standards of
-												service.</p>
-										</div>
-									</div>
-								</div>
+							</div>
+							<div class="ft-service-serial position-absolute">
+								4
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6">
-						<div class="pr-an-why-choose-text-wrapper">
-							<div class="pr-cor-section-title headline pera-content wow fadeInUp" data-wow-delay="0ms"
-								data-wow-duration="1500ms">
-								<span class="pr-cor-title-tag">Why Choose Us</span>
-								<h2>We Provide the Best Facilities For Transport</h2>
-								<p>At Stanza Logistics, we offer top-notch transport services, ensuring every step of
-									the shipping process is handled with the utmost care and efficiency.</p>
+	
+					<div style="margin-top: 30px;"  class="col-lg-4 col-md-6 col-sm-12">
+						<div class="ft-service-innerbox-2 position-relative">
+							<div class="ft-service-img text-center">
+								<img src="assets/img/service/ser4.4.jpg" alt="">
 							</div>
-							<div class="pr-an-why-choose-list ul-li-block wow fadeInUp" data-wow-delay="200ms"
-								data-wow-duration="1500ms">
-								<ul>
-									<li>We've been supporting logistics services worldwide for years.</li>
-									<li>Perfect for businesses or individuals needing reliable shipping services.</li>
-									<li>Our user-friendly interface allows you to manage shipments with ease.</li>
-								</ul>
-							</div>
-							<div class="ft-thx-btn text-center wow flipInX" data-wow-delay="200ms"
-								data-wow-duration="1500ms">
-								<a class="d-flex justify-content-center align-items-center" href="#">Learn More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<!-- Start of Experience section
-	============================================= -->
-	<!-- <section id="ft-experience" class="ft-experience-section">
-		<div class="container">
-			<div class="ft-experience-content">
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="ft-experience-text">
-							<div class="ft-section-title-2 headline pera-content">
-								<span class="sub-title">Experience</span>
-								<h2>Global Shipping Partner
-									To World’s Famous Companies
-								</h2>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="ft-experience-circle-progress">
-							<div class="row">
-								<div class="col-lg-4">
-									<div class="counter-boxed text-center headline position-relative">
-										<div class="graph-outer">
-											<input type="text" class="dial" data-fgColor="#f22728" data-bgColor="#fff"
-												data-width="80" data-height="80" data-linecap="round" value="95">
-											<div class="inner-text count-box"><span class="count-text" data-stop="95"
-													data-speed="3500"></span>%</div>
-										</div>
-										<h3>Warehousing</h3>
-									</div>
+							<div class="ft-service-text position-relative headline">
+								<div class="ft-service-icon position-absolute d-flex align-items-center justify-content-center">
+									<i class="flaticon-boat"></i>
 								</div>
-								<div class="col-lg-4">
-									<div class="counter-boxed text-center headline position-relative">
-										<div class="graph-outer">
-											<input type="text" class="dial" data-fgColor="#f22728" data-bgColor="#fff"
-												data-width="80" data-height="80" data-linecap="round" value="85">
-											<div class="inner-text count-box"><span class="count-text" data-stop="85"
-													data-speed="3500"></span>%</div>
-										</div>
-										<h3>Oceann Freight</h3>
-									</div>
+								<h3><a href="service-single.html">Warehousing</a></h3>
+								<div class="ft-btn-2">
+									<a href="service-single.html">
+										<i class="icon-first flaticon-right-arrow"></i>
+										<span>Read More</span>
+									</a>
 								</div>
-								<div class="col-lg-4">
-									<div class="counter-boxed text-center headline position-relative">
-										<div class="graph-outer">
-											<input type="text" class="dial" data-fgColor="#f22728" data-bgColor="#fff"
-												data-width="80" data-height="80" data-linecap="round" value="90">
-											<div class="inner-text count-box"><span class="count-text" data-stop="90"
-													data-speed="3500"></span>%</div>
-										</div>
-										<h3>Air Freight</h3>
-									</div>
-								</div>
+							</div>
+							<div class="ft-service-serial position-absolute">
+								5
 							</div>
 						</div>
 					</div>
@@ -1146,8 +850,18 @@
 			</div>
 		</div>
 	</section> -->
-	<!-- End of Experience section
-	============================================= -->
+	
+
+
+
+	
+	
+
+
+
+
+	
+
 
 
 	<section class="slider-section">
@@ -1183,9 +897,9 @@
 	============================================= -->
 	<section id="ft-portfolio-2" class="ft-portfolio-section-2 position-relative">
 		<div class="ft-section-title-2 headline pera-content text-center">
-			<span class="sub-title">Project</span>
+			<span class="sub-title">Movements</span>
 			<h2>Let's Checkout our All
-				Latest Project
+				Latest Movements
 			</h2>
 		</div>
 		<div class="ft-portfolio-content-2">
@@ -1734,7 +1448,7 @@
 					<div class="ft-item-innerbox">
 						<div class="ft-blog-innerbox-2">
 							<div class="ft-blog-img-2 position-relative">
-								<img src="assets/img/blog/blg2.3.jpg" alt="">
+								<img src="assets/imgs/project/e33.jpg" alt="">
 								<div
 									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
 									21 Oct
@@ -1844,7 +1558,7 @@
 						<div class="ft-footer-widget ul-li-block headline pera-content">
 							<div class="logo-widget">
 								<div class="site-logo">
-									<a href="#"><img style="width: 200px;" src="assets/img/logo/stanza.jpeg" alt=""></a>
+									<a href="#"><img style="width: 200px; " src="assets/img/logo/stanza.jpeg" alt=""></a>
 								</div>
 								<div class="ft-footer-address">
 									<span>Address: 15A, 3rd Floor, Mayur Vihar Phase 1, Pocket -1, Delhi, 110091</span>
@@ -1904,8 +1618,42 @@
 			<span>Copyright @ 2021 Logistics.All Rights Reserved</span>
 		</div>
 	</footer>
-	<!-- End of FAQ why choose  section
-	============================================= -->
+
+
+	<!-- For Js Library -->
+	<!-- <script src="assets/js/appilo-js-plugin.js"></script> -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/appear-two.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/isotope.pkgd.js"></script>
+	<script src="assets/js/progress-bar.js"></script>
+	<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<!-- Revolution Slider -->
+	<script src="assets/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="assets/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script src="assets/plugins/revolution/js/main-slider-script.js"></script>
+	<!-- For Js Library -->
+
+	<script src="assets/js/jquery.fancybox.js"></script>
+	<script src="assets/js/wow.js"></script>
+	<script src="assets/js/jquery-ui.js"></script>
+	<script src="assets/js/knob.js"></script>
+	<script src="assets/js/isotope.js"></script>
+	<script src="assets/js/tilt.jquery.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/script-two.js"></script>
 
 
 	<!-- For Js Library -->
@@ -1964,6 +1712,42 @@
 
 
 	</script>
+
+
+
+
+
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const counters = document.querySelectorAll('.counter');
+		
+		counters.forEach(counter => {
+			const updateCount = () => {
+				const target = +counter.getAttribute('data-count');
+				const count = +counter.innerText;
+				const speed = 1000; // Duration in ms
+				const increment = target / speed;
+				
+				if (count < target) {
+					counter.innerText = Math.ceil(count + increment);
+					setTimeout(updateCount, 1);
+				} else {
+					counter.innerText = target;
+				}
+			};
+			updateCount();
+		});
+	});
+</script>
+
+
+
+
+
+
+
+
 </body>
 
 </html>
