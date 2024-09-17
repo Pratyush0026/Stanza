@@ -1118,6 +1118,38 @@ select:visited {
 }
 
 
+.ft-header-section.header-style-two .ft-header-cta-btn a {
+  color: #fff;
+  height: 40px; /* Button height */
+  width: 140px; /* Button width */
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid #fff;
+  background-color: #002a34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  
+  /* Tilt sides to the right */
+  transform: skew(-20deg); /* Skew the sides to the right */
+  
+  /* Keep rounded corners optional */
+  border-radius: 5px;
+}
+
+/* To fix the text inside the skewed button */
+.ft-header-section.header-style-two .ft-header-cta-btn a span {
+  transform: skew(20deg); /* Undo skew for the text inside */
+  display: inline-block;
+}
+
+
+
 .ft-header-section.header-style-three {
   top: 0;
   left: 0;
