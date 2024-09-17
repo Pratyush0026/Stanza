@@ -1139,7 +1139,7 @@ select:visited {
   transform: skew(-20deg); /* Skew the sides to the right */
   
   /* Keep rounded corners optional */
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 /* To fix the text inside the skewed button */
