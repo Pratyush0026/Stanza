@@ -566,9 +566,9 @@ select:visited {
 .pr-sx-secion-title .pr-sx-title-tag:after {
   top: 15px;
   height: 2px;
-  width: 35px;
+  width: 17px;
   content: "";
-  right: -40px;
+  right: -20px;
   position: absolute;
   background-color: #000d51;
 }
@@ -4819,7 +4819,7 @@ select:visited {
 }
 
 .ft-thx-why-choose-us-section {
-  padding: 110px 0px 90px;
+  padding: 110px 0px 0px;
   background-color: #fafbff;
 }
 
@@ -6929,7 +6929,7 @@ select:visited {
 .ft-blog-section-2 {
   z-index: 1;
   overflow: hidden;
-  padding: 110px 0px;
+  padding: 40px 0px;
 }
 .ft-blog-section-2:before {
   top: 0;
@@ -8019,7 +8019,7 @@ select:visited {
 /*Featured area*/
 /*----------------------------------------------------*/
 .ft-featured-section {
-  padding: 105px 0px;
+  padding: 50px 0px;
 }
 
 .ft-featured-content {
@@ -8098,7 +8098,7 @@ select:visited {
 }
 
 .ft-goodness-feature-section {
-  padding-bottom: 80px;
+  padding-bottom: 10px;
 }
 
 .ft-goodness-featured-content {
@@ -8972,7 +8972,7 @@ select:visited {
 /*Fun Fact area*/
 /*----------------------------------------------------*/
 .ft-funfact-section {
-  padding: 50px 0px 110px;
+  padding: 0px 0px 50px;
 }
 
 .ft-funfact-content {
@@ -9289,7 +9289,7 @@ select:visited {
 }
 
 .ft-footer-section-2 {
-  margin-top: 115px;
+  margin-top: 30px;
   background-color: #f4f4f4;
 }
 .ft-footer-section-2 .footer-shape1 {
@@ -14950,7 +14950,16 @@ ul li {
   padding: 100px 0px 240px;
   background-color: #111111;
   background-repeat: repeat;
+  height: auto; /* Default to auto for smaller and medium screens */
 }
+
+/* For larger screens */
+@media (min-width: 1024px) {
+  .ft3-counter-section {
+    height: 400px;
+  }
+}
+
 
 /*** 
 
