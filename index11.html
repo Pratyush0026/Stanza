@@ -200,6 +200,30 @@
 		align-items: center;
 
 	}
+
+	.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* WhatsApp green color */
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.whatsapp-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* Button size */
+    height: 60px; /* Button size */
+    text-decoration: none;
+}
+
+.whatsapp-button img {
+    width: 100%; /* Image should take up full button size */
+    height: auto;
+}
 </style>
 
 <body class="nlhu-body">
@@ -385,7 +409,11 @@
 
 	</header>
 
-
+	<div style="margin-right:100px !important;" class="whatsapp-button" id="whatsapp-button">
+        <a href="https://wa.me/918595903711" target="_blank" id="whatsapp-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+        </a>
+    </div>
 
 	<!-- End Main Header -->
 
