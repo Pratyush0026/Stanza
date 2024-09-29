@@ -109,6 +109,49 @@
 			margin-bottom: 20px;
 		}
 	}
+
+
+		/* header update */
+
+		.header-upper .inner-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.header-upper .logo-box {
+		margin-left: 5px;
+		/* Removes any additional left margin */
+	}
+
+	.header-upper .pull-left.logo-box {
+		float: none;
+		/* Override float if necessary */
+		display: flex;
+		/* Make it part of the flex layout */
+		justify-content: flex-start;
+		/* Align logo to the start (left) */
+	}
+
+	.header-upper .logo a {
+		display: inline-block;
+	}
+
+	.auto-container {
+		max-width: 100%;
+		/* Ensure the container takes full width */
+		padding-left: 0;
+		/* Remove any left padding */
+		padding-right: 0;
+		/* Optional: Remove any right padding */
+	}
+
+	.sticky-header {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+
+	}
 </style>
 
 <body>
@@ -118,6 +161,8 @@
 	</div>
 	<!-- Start of header section
 	============================================= -->
+
+
 	<header class="ft1-main-header ft3-header-style-three">
 
 		<!-- Header Top Three -->
@@ -149,7 +194,7 @@
 
 					<!-- Logo -->
 					<div class="pull-left logo-box">
-						<div class="logo"><a href="index.html"><img src="assets/images/imresizer-1727268006872.jpg"
+						<div class="logo"><a href="index11.html"><img src="assets/images/imresizer-1726802846647.jpg"
 									alt="" title=""></a></div>
 					</div>
 
@@ -173,25 +218,15 @@
 							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 								<ul class="navigation clearfix">
 									<li class="current"><a href="index11.html">Home</a>
-										<!-- <ul>
-											<li><a href="index-1.html">Home Page 1</a></li>
-											<li><a href="index-2.html">Home Page 2</a></li>
-											<li><a href="index-3.html">Home Page 3</a></li>
-											<li><a href="index-4.html">Home Page 4</a></li>
-											<li><a href="index-5.html">Home Page 5</a></li>
-											<li><a href="index-6.html">Home Page 6</a></li>
-											<li><a href="index-7.html">Home Page 7</a></li>
-											<li><a href="index-8.html">Home Page 8</a></li>
-											<li><a href="index-9.html">Home Page 9</a></li>
-										</ul> -->
+
 									</li>
-									<li class="dropdown" ><a href="about.html">About us</a>
+									<li class="dropdown"><a href="about.html">About us</a>
 										<ul>
 											<li><a href="about.html">About us</a></li>
 											<li><a href="team-single.html">Management</a></li>
 
 										</ul>
-									
+
 									</li>
 									<li class="dropdown"><a href="#">Services</a>
 										<ul>
@@ -217,32 +252,42 @@
 									</li>
 									<li class="dropdown"><a href="#">Others</a>
 										<ul>
-											<!-- <li><a href="industries.html">Industries </a></li> -->
 
 											<li><a href="Career.html">Career </a></li>
-											<!-- <li><a href="software.html">Software </a></li> -->
-											<!-- <li><a href="network.html">Our Network</a></li> -->
 											<li><a href="Participation.html">Events and Participation </a></li>
-
-
 											<li><a href="project.html">Movements</a></li>
 											<li><a href="associations.html">Associations and Certificates</a></li>
-
-											<!-- <li><a href="project-single.html">Project Details</a></li> -->
-
-
-											<!-- <li><a href="team.html">Team Page </a></li> -->
-											<!-- <li><a href="team-single.html">Team Details </a></li> -->
-											<!-- <li><a href="coming-soon.html">Coming Soon</a></li> -->
-											<!-- <li><a href="contact.html">Contact Page</a></li> -->
-											<!-- <li><a href="faq.html">Faq Page</a></li> -->
-											<!-- <li><a href="pricing.html">Pricing Page</a></li> -->
 										</ul>
 									</li>
-									<li ><a href="contact.html">Contact Us</a>
-										
+									<li><a href="contact.html">Contact Us</a>
+
 									</li>
 									<!-- <li><a href="contact.html">Contact Page</a></li> -->
+									<div class="outer-box clearfix">
+
+										<!-- Btn Box -->
+										<div class="btn-box">
+
+											<a href="https://stanza.manage.shipthis.co/"
+												class="theme-btn btn-style-one">Get Quote<span
+													class="icon fas fa-angle-double-right"></span></a>
+
+
+											<a href="https://stanza.manage.shipthis.co/"
+												class="theme-btn btn-style-one">Login<span
+													class="icon fas fa-angle-double-right"></span></a>
+
+
+
+
+										</div>
+
+
+										<!-- Mobile Navigation Toggler -->
+										<!-- <div class="mobile-nav-toggler"><span class="icon"><img
+													src="assets/images/icons/menu.png" alt="" /></span></div> -->
+
+									</div>
 								</ul>
 							</div>
 						</nav>
@@ -254,43 +299,7 @@
 		</div>
 		<!--End Header Upper-->
 
-		<!-- Sticky Header  -->
-		<div class="sticky-header">
-			<div class="auto-container clearfix">
-				<!--Logo-->
-				<div class="logo pull-left">
-					<a href="index.html" title=""><img src="assets/images/imresizer-1726802846647.jpg" alt=""
-							title=""></a>
-				</div>
-				<!--Right Col-->
-				<div class="pull-right">
-					<!-- Main Menu -->
-					<nav class="main-menu">
-						<!--Keep This Empty / Menu will come through Javascript-->
-					</nav><!-- Main Menu End-->
 
-					<!-- Main Menu End-->
-					<div class="outer-box clearfix">
-
-						<!-- Btn Box -->
-						<div class="btn-box">
-							<a href="Quote.html" class="theme-btn btn-style-one">Get Quote <span
-									class="icon fas fa-angle-double-right"></span></a>
-							<a href="https://stanza.manage.shipthis.co/" class="theme-btn btn-style-one">Login<span
-									class="icon fas fa-angle-double-right"></span></a>
-
-						</div>
-
-
-						<!-- Mobile Navigation Toggler -->
-						<div class="mobile-nav-toggler"><span class="icon"><img src="assets/images/icons/menu.png"
-									alt="" /></span></div>
-
-					</div>
-
-				</div>
-			</div>
-		</div><!-- End Sticky Menu -->
 
 		<!-- Mobile Menu  -->
 		<div class="mobile-menu">
@@ -300,18 +309,23 @@
 			<nav class="menu-box">
 				<div class="nav-logo"><a href="index.html"><img src="assets/images/imresizer-1727268006872.jpg" alt=""
 							title=""></a></div>
-				<div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+				<div class="menu-outer">
 				</div>
 			</nav>
-		</div><!-- End Mobile Menu -->
+		</div>
+		
+		<!-- End Mobile Menu -->
 
 	</header>
+
+
+
 	<!-- End of header section
 	============================================= -->
 
 	<!-- Start of Breadcrumb section
 	============================================= -->
-	<section id="ft-breadcrumb" class="ft-breadcrumb-section position-relative"
+	<!-- <section id="ft-breadcrumb" class="ft-breadcrumb-section position-relative"
 		data-background="assets/img/bg/bread-bg.jpg">
 		<span class="background_overlay"></span>
 		<span class="design-shape position-absolute"><img src="assets/img/shape/tmd-sh.png" alt=""></span>
@@ -326,7 +340,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- End of Breadcrumb section
 	============================================= -->
 
@@ -397,7 +411,7 @@
 							<span class="ft-about-shape2 position-absolute"><img src="assets/img/shape/ab-sh2.png"
 									alt=""></span>
 							<div class="ft-about-img-2">
-								<img src="assets/imgs/about/ab3.jpg" alt="About Us Image">
+								<img src="assets/images/main-slider/about-as-service-contact-information-concept_53876-138509.avif" alt="About Us Image">
 							</div>
 						</div>
 					</div>
