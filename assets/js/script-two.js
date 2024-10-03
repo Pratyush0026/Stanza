@@ -652,7 +652,7 @@
 					navText: [ '<span class="icon fa fa-angle-left"></span>', '<span class="icon fa fa-angle-right"></span>' ],
 					dots: false,
 					autoplay: true,
-					autoplayTimeout: 5000
+					autoplayTimeout: 10000
 				})
 				.on('changed.owl.carousel', function (e) {
 					if (!flag) {
@@ -672,7 +672,7 @@
 					dots: false,
 					center: false,
 					autoplay: true,
-					autoplayTimeout: 5000,
+					autoplayTimeout: 10000,
 					responsive: {
 						0:{
 				            items:1,

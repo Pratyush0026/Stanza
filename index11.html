@@ -48,6 +48,9 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countTo/1.2.0/jquery.countTo.min.js"></script>
 
+
+
+
 </head>
 
 
@@ -148,18 +151,7 @@
 
 
 
-	.counter {
-		font-size: 2rem;
-		/* Adjust as needed */
-		font-weight: bold;
-		color: #fff;
-		/* Adjust text color if needed */
-	}
 
-	.counter {
-		color: orangered;
-		font-weight: bold;
-	}
 
 
 	/* header update */
@@ -227,6 +219,39 @@
     width: 100%; /* Image should take up full button size */
     height: auto;
 }
+
+
+
+/* Portfolio Slider Navigation Buttons */
+.portfolio-left_arrow, .portfolio-right_arrow {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  background-color: white; /* Semi-transparent background */
+  color: orangered; /* White arrow color */
+  border: none; /* Remove default borders */
+  border-radius: 50%; /* Make them circular */
+  padding: 10px 10px;
+  cursor: pointer;
+  z-index: 10; /* Ensure it's above other elements */
+  font-size: 28px;
+}
+
+.portfolio-left_arrow {
+  left: -5px; /* Move the left arrow outside the slider */
+}
+
+.portfolio-right_arrow {
+  right: -5px; /* Move the right arrow outside the slider */
+}
+
+/* Hover effect for buttons */
+.portfolio-left_arrow:hover, .portfolio-right_arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darken background on hover */
+  color: white;
+}
+
+
 </style>
 
 <body class="nlhu-body">
@@ -412,8 +437,8 @@
 
 	</header>
 
-	<div style="margin-right:100px !important;" class="whatsapp-button" id="whatsapp-button">
-        <a href="https://wa.me/918595903711" target="_blank" id="whatsapp-link">
+	<div style="margin-right:80px !important;" class="whatsapp-button" id="whatsapp-button">
+        <a href="https://wa.me/919289799144" target="_blank" id="whatsapp-link">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
         </a>
     </div>
@@ -699,19 +724,15 @@
 	</section> -->
 
 
-
-	<!-- Counter Section -->
+<!-- 
 	<section style="margin-bottom: 100px;" class="ft3-counter-section" data-background="assets/imgs/bg/tst-bg.jpg">
 		<div class="auto-container">
 			<div class="ft-section-title-3 headline text-center">
-				<!-- <span class="text-uppercase">We specialise in the transportation</span> -->
-				<!-- <h2 style="color: orangered; margin-bottom: 10px;">Our Statistics</h2> -->
+			
 			</div>
-			<!-- Fact Counter -->
 			<div class="ft-fact-counter style-two">
 				<div class="row clearfix">
 
-					<!-- Column -->
 					<div class="column col-lg-3 col-md-6 col-ms-12">
 						<div class="inner">
 							<div class="content">
@@ -727,7 +748,6 @@
 						</div>
 					</div>
 
-					<!-- Column -->
 					<div class="column col-lg-3 col-md-6 col-ms-12">
 						<div class="inner">
 							<div class="content">
@@ -742,7 +762,6 @@
 						</div>
 					</div>
 
-					<!-- Column -->
 					<div class="column col-lg-3 col-md-6 col-ms-12">
 						<div class="inner">
 							<div class="content">
@@ -757,7 +776,6 @@
 						</div>
 					</div>
 
-					<!-- Column -->
 					<div class="column col-lg-3 col-md-6 col-ms-12">
 						<div class="inner">
 							<div class="content">
@@ -776,8 +794,62 @@
 			</div>
 
 		</div>
-	</section>
-	<!-- End Counter Section -->
+	</section> -->
+
+
+	<section style="margin-bottom: 100px; background-color: rgb(236, 230, 230);"  id="ft-funfact" class="ft-funfact-section">
+		<div class="container">
+		  <div class="ft-funfact-content">
+			<div class="row">
+			  <div class="col-lg-3 col-md-6">
+				<div class="ft-funfact-innerbox text-center">
+				  <div class="ft-funfact-icon">
+					<i class="fal fa-clipboard-list-check"></i>
+				  </div>
+				  <div class="ft-funfact-text headline pera-content">
+					<h3><span class="counter" data-stop="52480">0</span>+</h3>
+					<p>Tons of Cargo Moved</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-lg-3 col-md-6">
+				<div class="ft-funfact-innerbox text-center">
+				  <div class="ft-funfact-icon">
+					<i class="fal fa-users"></i>
+				  </div>
+				  <div class="ft-funfact-text headline pera-content">
+					<h3><span class="counter" data-stop="54">0</span>+</h3>
+					<p>Countries Served</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-lg-3 col-md-6">
+				<div class="ft-funfact-innerbox text-center">
+				  <div class="ft-funfact-icon">
+					<i class="fas fa-trophy-alt"></i>
+				  </div>
+				  <div class="ft-funfact-text headline pera-content">
+					<h3><span class="counter" data-stop="8650">0</span>+</h3>
+					<p>Shipments Completed</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-lg-3 col-md-6">
+				<div class="ft-funfact-innerbox text-center">
+				  <div class="ft-funfact-icon">
+					<i class="fal fa-medal"></i>
+				  </div>
+				  <div class="ft-funfact-text headline pera-content">
+					<h3><span class="counter" data-stop="22">0</span>+</h3>
+					<p>Industries Served</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
 
 
 
@@ -899,14 +971,16 @@
 	</section>
 
 
-	<section id="ft-portfolio-2" class="ft-portfolio-section-2 position-relative">
-		<div class="ft-section-title-2 headline pera-content text-center">
-			<span class="sub-title">Movements</span>
-			<h2>Let's Checkout our All
+	<section style="padding-top: 30px; padding-bottom: 0px; margin-bottom: 0px;" id="ft-portfolio-2" class="ft-portfolio-section-2 position-relative">
+		<div   class="ft-section-title-2 headline pera-content text-center">
+			<span   class="sub-title"> Our Movements</span>
+			<h2>Checkout our All
 				Latest Movements
 			</h2>
 		</div>
 		<div class="ft-portfolio-content-2">
+
+
 			<div class="ft-portfolio-slider-2">
 				<div class="ft-portfolio-slider-item">
 					<div class="ft-portfolio-slider-innerbox position-relative">
@@ -926,7 +1000,7 @@
 				<div class="ft-portfolio-slider-item">
 					<div class="ft-portfolio-slider-innerbox position-relative">
 						<div class="ft-portfolio-img">
-							<img src="assets/img/project/DG movement/imresizer-1727274833560.jpg" alt="">
+							<img src="assets/img/project/DG movement/imresizer-1726555460209.jpg" alt="">
 						</div>
 						<div class="ft-portfolio-text headline headline pera-content">
 							<h3><a href="project.html">Dangerous Goods Movement</a></h3>
@@ -1006,7 +1080,7 @@
 				<div class="ft-portfolio-slider-item">
 					<div class="ft-portfolio-slider-innerbox position-relative">
 						<div class="ft-portfolio-img">
-							<img src="assets/img/project/GC/imresizer-1727354752453.jpg" alt="">
+							<img src="assets/img/project/GC/imresizer-1727618865987.jpg" alt="">
 						</div>
 						<div class="ft-portfolio-text headline headline pera-content">
 							<h3><a href="project.html">General Cargo</a></h3>
@@ -1037,16 +1111,28 @@
 						</div>
 					</div>
 				</div>
+
+
+				
 			</div>
+
+			<div class="carousel_nav clearfix">
+				<button type="button" class="portfolio-left_arrow"><i class="far fa-arrow-left"></i></button>
+				<button type="button" class="portfolio-right_arrow"><i class="far fa-arrow-right"></i></button>
+			 </div>
+			 
+		
+
+			
 		</div>
 	</section>
 
 
 
-	<section style="margin-top: 0px;" class="slider-section">
-		<h2 class="slider-heading">Our Partners 🤝</h2>
+	<section style="margin-top: 0px; padding-top: 0px;" class="slider-section">
+		<h2 class="slider-heading">Our Partners</h2>
 		<br>
-		<div style="margin-top: 50px;" class="slider-wrapper">
+		<div style="margin-top: 10px;" class="slider-wrapper">
 			<div class="slider">
 				<div class="slide"><img src="assets/partner/MmzJFy1R1646704953.png" alt="CTS"></div>
 				<div class="slide"><img src="assets/partner/6579882a8dc4fd2275cdedfb_6578c0b49f90df5ad405b228_OOCL.png"
@@ -1091,10 +1177,10 @@
 							<div class="ft-blog-img-2 position-relative">
 								<img src="assets/imgs/project/New folder/Delhi, Norway India Chamber of commerece , 2023/WhatsApp Image 2024-09-08 at 16.38.59_11fac46e.jpg"
 									alt="">
-								<div
+								<!-- <div
 									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
 									21 Oct
-								</div>
+								</div> -->
 							</div>
 							<div class="ft-blog-text-2 headline pera-content">
 								<h3><a href="Norway.html">Norway 2024
@@ -1115,10 +1201,10 @@
 							<div class="ft-blog-img-2 position-relative">
 								<img src="assets/imgs/project/New folder/Hong Kong , Jc trans Expo 2023/imresizer-1726550019941.jpg"
 									alt="">
-								<div
+								<!-- <div
 									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
 									21 Oct
-								</div>
+								</div> -->
 							</div>
 							<div class="ft-blog-text-2 headline pera-content">
 								<h3><a href="hongkong.html">Hong Kong 2023
@@ -1137,10 +1223,10 @@
 						<div class="ft-blog-innerbox-2">
 							<div class="ft-blog-img-2 position-relative">
 								<img src="assets/imgs/project/e22.jpg" alt="">
-								<div
+								<!-- <div
 									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
 									21 Oct
-								</div>
+								</div> -->
 							</div>
 							<div class="ft-blog-text-2 headline pera-content">
 								<h3><a href="Participation.html">Istanbul 2023
@@ -1159,10 +1245,10 @@
 						<div class="ft-blog-innerbox-2">
 							<div class="ft-blog-img-2 position-relative">
 								<img src="assets/imgs/project/New folder/Mumbai, Pamex 2023/imresizer-1726551878169.jpg" alt="">
-								<div
+								<!-- <div
 									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
 									21 Oct
-								</div>
+								</div> -->
 							</div>
 							<div class="ft-blog-text-2 headline pera-content">
 								<h3><a href="Mumbai23.html">Mumbai 2023
@@ -1182,10 +1268,10 @@
 							<div class="ft-blog-img-2 position-relative">
 								<img src="assets/imgs/project/New folder/Dubai, Paper Arabia 2023/imresizer-1726551180295.jpg"
 									alt="">
-								<div
+								<!-- <div
 									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
 									21 Oct
-								</div>
+								</div> -->
 							</div>
 							<div class="ft-blog-text-2 headline pera-content">
 								<h3><a href="Dubai23.html">Dubai 2023
@@ -1205,10 +1291,10 @@
 							<div class="ft-blog-img-2 position-relative">
 								<img src="assets/imgs/project/New folder/Dubai, Global Freight Summit 2022/imresizer-1726551548932.jpg"
 									alt="">
-								<div
+								<!-- <div
 									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
 									21 Oct
-								</div>
+								</div> -->
 							</div>
 							<div class="ft-blog-text-2 headline pera-content">
 								<h3><a href="Dubai22.html">Dubai 2022
@@ -2033,6 +2119,56 @@
 			});
 		});
 	</script>
+
+
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+	  // Function to animate the counter
+	  function animateCounter(element, end, duration) {
+		let start = 0;
+		const increment = end / (duration / 50);
+		const counter = setInterval(function () {
+		  start += increment;
+		  if (start >= end) {
+			element.textContent = Math.floor(end); // Ensure final value is exact
+			clearInterval(counter);
+		  } else {
+			element.textContent = Math.floor(start);
+		  }
+		}, 50);
+	  }
+  
+	  // Function to check if an element is visible on the screen
+	  function isElementInView(el) {
+		const rect = el.getBoundingClientRect();
+		return rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+	  }
+  
+	  const counters = document.querySelectorAll('.counter');
+	  let counterStarted = false;
+  
+	  // Function to start counter animation when section is in view
+	  function checkAndAnimateCounters() {
+		if (!counterStarted) {
+		  counters.forEach(counter => {
+			if (isElementInView(counter)) {
+			  const endValue = parseInt(counter.getAttribute('data-stop'));
+			  animateCounter(counter, endValue, 2000);
+			  counterStarted = true; // Prevent multiple triggers
+			}
+		  });
+		}
+	  }
+  
+	  // Check on scroll
+	  window.addEventListener('scroll', checkAndAnimateCounters);
+  
+	  // Also check on initial page load in case the counters are already in view
+	  checkAndAnimateCounters();
+	});
+  </script>
+  
+  
 
 
 

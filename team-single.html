@@ -24,6 +24,35 @@
 	<link rel="stylesheet" href="assets/css/rs6.css">
 	<link rel="stylesheet" href="assets/css/slick-theme.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+
+
+
+		<!-- index-6 -->
+		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/flaticon.css">
+		<link rel="stylesheet" href="assets/css/flaticon-02.css">
+		<link rel="stylesheet" href="assets/css/fontawesome-all.css">
+		<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+		<link rel="stylesheet" href="assets/css/jquery-ui.css">
+		<link rel="stylesheet" href="assets/css/animate.css">
+		<link rel="stylesheet" href="assets/css/custom-animate.css">
+		<link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/responsive.css">
+	
+		<link href="assets/plugins/revolution/css/settings.css" rel="stylesheet" type="text/css">
+		<!-- REVOLUTION SETTINGS STYLES -->
+		<link href="assets/plugins/revolution/css/layers.css" rel="stylesheet" type="text/css">
+		<!-- REVOLUTION LAYERS STYLES -->
+		<link href="assets/plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css">
+		<!-- REVOLUTION NAVIGATION STYLES -->
+	
+	
+	
+		<script src="assets/js/jquery.js"></script>
+	
+		<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<style>
 		/* CSS for large screens (1024px and above) */
 .btn-box {
@@ -37,6 +66,47 @@
     }
 }
 
+	/* header update */
+
+	.header-upper .inner-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.header-upper .logo-box {
+		margin-left: 5px;
+		/* Removes any additional left margin */
+	}
+
+	.header-upper .pull-left.logo-box {
+		float: none;
+		/* Override float if necessary */
+		display: flex;
+		/* Make it part of the flex layout */
+		justify-content: flex-start;
+		/* Align logo to the start (left) */
+	}
+
+	.header-upper .logo a {
+		display: inline-block;
+	}
+
+	.auto-container {
+		max-width: 100%;
+		/* Ensure the container takes full width */
+		padding-left: 0;
+		/* Remove any left padding */
+		padding-right: 0;
+		/* Optional: Remove any right padding */
+	}
+
+	.sticky-header {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+
+	}
 	</style>
 </head>
 
@@ -47,35 +117,75 @@
 	</div>
 	<!-- Start of header section
 	============================================= -->
-	<header id="ft-header" class="ft-header-section header-style-two">
 
-		<div  class="ft-header-main-menu-wrapper">
-			<div class="container">
-				<div class="ft-header-main-menu-area position-relative">
-					<div
-						class="ft-header-main-menu d-flex align-items-center justify-content-between position-relative">
-						<div class="ft-site-logo-area">
-							<div class="ft-site-logo position-relative">
-								<a href="index.html"><img src="assets/images/imresizer-1726802846647.jpg" alt=""></a>
+	
+	<header class="ft1-main-header ft3-header-style-three">
+
+		<!-- Header Top Three -->
+		<!-- <div class="ft3-header-top-three">
+			<div class="auto-container">
+				<div class="inner-container clearfix">
+					<div class="ft3-top-left pull-left">
+						<ul class="top-list">
+							<li><span class="icon fab fa-phone"></span>Need any help? Call Us: +91 9289799144</li>
+							<li><span class="icon fab fa-map-marker"></span>15A, 3rd Floor, Mayur Vihar Phase 1, Pocket -1, Delhi, 110091</li>
+
+
+
+						</ul>
+					</div>
+					
+					
+					<div class="ft3-top-right pull-right">
+					
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- Header Upper -->
+		<div class="header-upper">
+			<div class="auto-container">
+				<div class="inner-container clearfix">
+
+					<!-- Logo -->
+					<div class="pull-left logo-box">
+						<div class="logo"><a href="index11.html"><img src="assets/images/imresizer-1726802846647.jpg"
+									alt="" title=""></a></div>
+					</div>
+
+					<div class="nav-outer clearfix">
+						<!-- Mobile Navigation Toggler -->
+						<div class="mobile-nav-toggler"><span class="icon"><img src="assets/images/icons/menu.png"
+									alt="" /></span></div>
+						<!-- Main Menu -->
+						<nav class="main-menu navbar-expand-md">
+							<div class="navbar-header">
+								<!-- Toggle Button -->
+								<button class="navbar-toggler" type="button" data-toggle="collapse"
+									data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+									aria-expanded="false" aria-label="Toggle navigation">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
 							</div>
-						</div>
-						<div class="ft-main-navigation-area">
-							<nav class="ft-main-navigation clearfix ul-li">
-								<ul id="ft-main-nav" class="nav navbar-nav clearfix">
-									<li class="">
-										<a href="index11.html">Home</a>
-									
+
+							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+								<ul class="navigation clearfix">
+									<li class="current"><a href="index11.html">Home</a>
+
 									</li>
-									<li class="dropdown">
-										<a href="about.html">About Us</a>
-										<ul class="dropdown-menu clearfix">
-											<li><a href="about.html">About Us </a></li>
+									<li class="dropdown"><a href="about.html">About us</a>
+										<ul>
+											<li><a href="about.html">About us</a></li>
 											<li><a href="team-single.html">Management</a></li>
+
 										</ul>
+
 									</li>
-									<li class="dropdown">
-										<a href="%21.html#">Service</a>
-										<ul class="dropdown-menu clearfix">
+									<li class="dropdown"><a href="#">Services</a>
+										<ul>
 											<li><a href="service.html">Services</a></li>
 											<li><a href="industries.html">Industries</a></li>
 											<li><a href="network.html">Network</a></li>
@@ -83,10 +193,8 @@
 
 										</ul>
 									</li>
-									
-
 									<li class="dropdown"><a href="#">Tools</a>
-										<ul class="dropdown-menu clearfix">
+										<ul>
 											<li><a href="Container.html">Container Dimensions </a></li>
 											<li><a href="metric.html">Metric Conversions </a></li>
 											<li><a href="ulds.html">ULDS</a></li>
@@ -98,10 +206,8 @@
 
 										</ul>
 									</li>
-
-
 									<li class="dropdown"><a href="#">Others</a>
-										<ul class="dropdown-menu clearfix">
+										<ul>
 
 											<li><a href="Career.html">Career </a></li>
 											<li><a href="Participation.html">Events and Participation </a></li>
@@ -109,98 +215,64 @@
 											<li><a href="associations.html">Associations and Certificates</a></li>
 										</ul>
 									</li>
-									<li class="">
-										<a href="contact.html">Contact</a>
-									
-									</li>
-								
-									
-								</ul>
-							</nav>
-						</div>
-						<div class="outer-box clearfix">
+									<li><a href="contact.html">Contact Us</a>
 
-							<!-- Btn Box -->
-							<div class="btn-box">
-								<a href="Quote.html" class="theme-btn btn-style-one">Get Quote <span
-										class="icon fas fa-angle-double-right"></span></a>
-								
-	
+									</li>
+									<!-- <li><a href="contact.html">Contact Page</a></li> -->
+									<div class="outer-box clearfix">
+
+										<!-- Btn Box -->
+										<div class="btn-box">
+
+											<a href="Quote.html" class="theme-btn btn-style-one">Get Quote<span
+													class="icon fas fa-angle-double-right"></span></a>
+
+
+											<a href="https://stanza.manage.shipthis.co/"
+												class="theme-btn btn-style-one">Login<span
+													class="icon fas fa-angle-double-right"></span></a>
+
+
+
+
+										</div>
+
+
+										<!-- Mobile Navigation Toggler -->
+										<!-- <div class="mobile-nav-toggler"><span class="icon"><img
+													src="assets/images/icons/menu.png" alt="" /></span></div> -->
+
+									</div>
+								</ul>
 							</div>
-	
-	
-	
-						</div>
+						</nav>
+
 					</div>
-					<div class="mobile_menu position-relative">
-						<div class="mobile_menu_button open_mobile_menu">
-							<i style="color: black;" class="fal fa-bars"></i>
-						</div>
-						<div class="mobile_menu_wrap">
-							<div class="mobile_menu_overlay open_mobile_menu"></div>
-							<div class="mobile_menu_content">
-								<div class="mobile_menu_close open_mobile_menu">
-									<i class="fal fa-times"></i>
-								</div>
-								<div class="m-brand-logo">
-									<a href="%21.html#"><img src="assets/images/imresizer-1726802846647.jpg" alt=""></a>
-								</div>
-								<nav class="mobile-main-navigation  clearfix ul-li">
-									<ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
-										<li class="dropdown">
-											<a href="%21.html#">Home</a>
-											<ul class="dropdown-menu clearfix">
-												<li><a href="index-1.html">Home Page 1</a></li>
-												<li><a href="index-2.html">Home Page 2</a></li>
-												<li><a href="index-3.html">Home Page 3</a></li>
-												<li><a href="index-4.html">Home Page 4</a></li>
-												<li><a href="index-5.html">Home Page 5</a></li>
-												<li><a href="index-6.html">Home Page 6</a></li>
-											</ul>
-										</li>
-										<li><a href="about.html">About</a></li>
-										<li class="dropdown">
-											<a href="%21.html#">Service</a>
-											<ul class="dropdown-menu clearfix">
-												<li><a href="service.html">Service Page </a></li>
-												<li><a href="service-single.html">Service Details</a></li>
-											</ul>
-										</li>
-										<li class="dropdown">
-											<a href="%21.html#">Project</a>
-											<ul class="dropdown-menu clearfix">
-												<li><a href="project.html">Services</a></li>
-												<li><a href="project-single.html">Team Page</a></li>
-											</ul>
-										</li>
-										<li class="dropdown">
-											<a href="%21.html#">News</a>
-											<ul class="dropdown-menu clearfix">
-												<li><a href="blog.html">News </a></li>
-												<li><a href="blog-single.html">News Details</a></li>
-											</ul>
-										</li>
-										<li class="dropdown">
-											<a href="%21.html#">Others</a>
-											<ul class="dropdown-menu clearfix">
-												<li><a href="team.html">Team Page </a></li>
-												<li><a href="team-single.html">Team Details </a></li>
-												<li><a href="coming-soon.html">Coming Soon</a></li>
-												<li><a href="contact.html">Contact page</a></li>
-												<li><a href="faq.html">Faq Page</a></li>
-												<li><a href="pricing.html">Pricing Page</a></li>
-											</ul>
-										</li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-						<!-- /Mobile-Menu -->
-					</div>
+
 				</div>
 			</div>
 		</div>
+		<!--End Header Upper-->
+
+
+
+		<!-- Mobile Menu  -->
+		<div class="mobile-menu">
+			<div class="menu-backdrop"></div>
+			<div class="close-btn"><span class="icon fas fa-times"></span></div>
+
+			<nav class="menu-box">
+				<div class="nav-logo"><a href="index.html"><img src="assets/images/imresizer-1727268006872.jpg" alt=""
+							title=""></a></div>
+				<div class="menu-outer">
+				</div>
+			</nav>
+		</div>
+
+		<!-- End Mobile Menu -->
+
 	</header>
+
 	<!-- End of header section
 	============================================= -->
 
@@ -226,7 +298,7 @@
 
 	<!-- Start of Team Details section
 	============================================= -->
-	<section style="margin-top: 100px;" id="ft-team-details" class="ft-team-details-section page-padding">
+	<section style="margin-top: 0px;" id="ft-team-details" class="ft-team-details-section page-padding">
 		<div class="container">
 			<div class="ft-team-details-content position-relative">
 				<span class="design-shape position-absolute"><img src="assets/img/shape/tmd-sh.png" alt=""></span>
@@ -596,6 +668,8 @@
 
 	<!-- End of FAQ why choose  section
 	============================================= -->
+	<script src="assets/js/script-two.js"></script>
+
 
 	<!-- For Js Library -->
 	<script src="assets/js/jquery.min.js"></script>

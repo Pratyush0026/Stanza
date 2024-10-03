@@ -506,58 +506,114 @@ Last change:    00/00/00
 						}
 						]
 					});
+					// $('.ft-portfolio-slider-2').slick({
+					// 	arrow: false,
+					// 	infinite: false,
+					// 	slidesToShow: 4,
+					// 	slidesToScroll: 1,
+					// 	dots: true,
+					// 	responsive: [
+					// 	{
+					// 		breakpoint: 1200,
+					// 		settings: {
+					// 			slidesToShow: 3,
+					// 			slidesToScroll: 1,
+					// 			infinite: true,
+					// 		}
+					// 	},
+					// 	{
+					// 		breakpoint: 800,
+					// 		settings: {
+					// 			slidesToShow: 3,
+					// 			slidesToScroll: 1
+					// 		}
+					// 	},
+					// 	{
+					// 		breakpoint: 799,
+					// 		settings: {
+					// 			slidesToShow: 2,
+					// 			slidesToScroll: 1
+					// 		}
+					// 	},
+					// 	{
+					// 		breakpoint: 600,
+					// 		settings: {
+					// 			slidesToShow: 2,
+					// 			slidesToScroll: 1
+					// 		}
+					// 	},
+					// 	{
+					// 		breakpoint: 599,
+					// 		settings: {
+					// 			slidesToShow: 1,
+					// 			slidesToScroll: 1
+					// 		}
+					// 	},
+					// 	{
+					// 		breakpoint: 500,
+					// 		settings: {
+					// 			slidesToShow: 1,
+					// 			slidesToScroll: 1
+					// 		}
+					// 	}
+					// 	]
+					// });
+
 					$('.ft-portfolio-slider-2').slick({
-						arrow: false,
+						arrow: true, // Change to true to allow arrows
 						infinite: false,
 						slidesToShow: 4,
 						slidesToScroll: 1,
 						dots: true,
+						prevArrow: ".portfolio-left_arrow", // Add custom left arrow class
+						nextArrow: ".portfolio-right_arrow", // Add custom right arrow class
 						responsive: [
-						{
-							breakpoint: 1200,
-							settings: {
-								slidesToShow: 3,
-								slidesToScroll: 1,
-								infinite: true,
-							}
-						},
-						{
-							breakpoint: 800,
-							settings: {
-								slidesToShow: 3,
-								slidesToScroll: 1
-							}
-						},
-						{
-							breakpoint: 799,
-							settings: {
-								slidesToShow: 2,
-								slidesToScroll: 1
-							}
-						},
-						{
-							breakpoint: 600,
-							settings: {
-								slidesToShow: 2,
-								slidesToScroll: 1
-							}
-						},
-						{
-							breakpoint: 599,
-							settings: {
-								slidesToShow: 1,
-								slidesToScroll: 1
-							}
-						},
-						{
-							breakpoint: 500,
-							settings: {
-								slidesToShow: 1,
-								slidesToScroll: 1
-							}
-						}
+						   {
+							  breakpoint: 1200,
+							  settings: {
+								 slidesToShow: 3,
+								 slidesToScroll: 1,
+								 infinite: true,
+							  }
+						   },
+						   {
+							  breakpoint: 800,
+							  settings: {
+								 slidesToShow: 3,
+								 slidesToScroll: 1
+							  }
+						   },
+						   {
+							  breakpoint: 799,
+							  settings: {
+								 slidesToShow: 2,
+								 slidesToScroll: 1
+							  }
+						   },
+						   {
+							  breakpoint: 600,
+							  settings: {
+								 slidesToShow: 2,
+								 slidesToScroll: 1
+							  }
+						   },
+						   {
+							  breakpoint: 599,
+							  settings: {
+								 slidesToShow: 1,
+								 slidesToScroll: 1
+							  }
+						   },
+						   {
+							  breakpoint: 500,
+							  settings: {
+								 slidesToShow: 1,
+								 slidesToScroll: 1
+							  }
+						   }
 						]
-					});
+					 });
+					 
 					$('.ft-blog-slider-2').slick({
 						arrow: true,
 						dots: false,
