@@ -55,107 +55,103 @@
 
 
 <style>
-.slider-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    background-color: #ffffff;
-}
+	.slider-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 20px 0;
+		background-color: #ffffff;
+	}
 
-.slider-heading {
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-}
+	.slider-heading {
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 20px;
+	}
 
-.slider-wrapper {
-    width: 100%;
-    max-width: 1200px;
-    overflow: hidden;
-    position: relative;
-}
+	.slider-wrapper {
+		width: 100%;
+		max-width: 1200px;
+		overflow: hidden;
+		position: relative;
+	}
 
-.slider {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    animation: slide-left 20s linear infinite; /* Adjust animation for the first slider */
-}
+	.slider {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		/* Ensures all logos are centered vertically */
+		animation: slide 20s linear infinite;
+	}
 
-.slider-left-right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    animation: slide-right 20s linear infinite; /* New animation for the second slider */
-}
+	.slide {
+		flex: 0 0 auto;
+		width: 150px;
+		/* Consistent width for all logos */
+		margin: 0 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: transform 0.5s ease-in-out;
+	}
 
-.slide {
-    flex: 0 0 auto;
-    width: 150px;
-    margin: 0 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.5s ease-in-out;
-}
+	.slider:hover {
+		animation-play-state: paused;
+		/* Pause the animation on hover */
+	}
 
-.slide img {
-    max-width: 100%;
-    max-height: 100px;
-    height: auto;
-    display: block;
-}
+	.slide img {
+		max-width: 100%;
+		/* Ensure the image doesn't overflow */
+		max-height: 100px;
+		/* Set a max height to make all logos uniform */
+		height: auto;
+		display: block;
+	}
 
-@keyframes slide-left {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
+	@keyframes slide {
+		0% {
+			transform: translateX(0);
+		}
 
-@keyframes slide-right {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
+		100% {
+			transform: translateX(-100%);
+		}
+	}
 
-@media (max-width: 768px) {
-    .slider-heading {
-        font-size: 20px;
-    }
+	@media (max-width: 768px) {
+		.slider-heading {
+			font-size: 20px;
+		}
 
-    .slide {
-        width: 120px;
-        margin: 0 10px;
-    }
+		.slide {
+			width: 120px;
+			margin: 0 10px;
+		}
 
-    .slide img {
-        max-height: 80px;
-    }
-}
+		.slide img {
+			max-height: 80px;
+			/* Adjust for smaller screens */
+		}
+	}
 
-@media (max-width: 480px) {
-    .slider-heading {
-        font-size: 18px;
-    }
+	@media (max-width: 480px) {
+		.slider-heading {
+			font-size: 18px;
+		}
 
-    .slide {
-        width: 100px;
-        margin: 0 5px;
-    }
+		.slide {
+			width: 100px;
+			margin: 0 5px;
+		}
 
-    .slide img {
-        max-height: 60px;
-    }
-}
+		.slide img {
+			max-height: 60px;
+			/* Further adjust for very small screens */
+		}
+	}
 
 
 
@@ -230,6 +226,56 @@
 	.whatsapp-button img {
 		width: 100%;
 		/* Image should take up full button size */
+		height: auto;
+	}
+
+	.phone-button {
+		position: fixed;
+		bottom: 22px;
+		/* Adjusted to make it float above WhatsApp button */
+		right: 40px;
+		background-color: #007BFF;
+		/* Blue color for phone button */
+		border-radius: 50%;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+		z-index: 1000;
+	}
+
+	.phone-button a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 60px;
+		height: 60px;
+		text-decoration: none;
+	}
+
+	.phone-button img {
+		width: 100%;
+		height: auto;
+	}
+
+	.whatsapp-button {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		background-color: #25D366;
+		border-radius: 50%;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+		z-index: 1000;
+	}
+
+	.whatsapp-button a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 60px;
+		height: 60px;
+		text-decoration: none;
+	}
+
+	.whatsapp-button img {
+		width: 100%;
 		height: auto;
 	}
 
@@ -342,8 +388,8 @@
 
 					<div class="nav-outer clearfix">
 						<!-- Mobile Navigation Toggler -->
-						<div class="mobile-nav-toggler"><span class="icon"><img src="assets/images/icons/menu.png"
-									alt="" /></span></div>
+						<div style="margin-left: 100px;" class="mobile-nav-toggler"><span class="icon"><img
+									src="assets/images/icons/menu.png" alt="" /></span></div>
 						<!-- Main Menu -->
 						<nav class="main-menu navbar-expand-md">
 							<div class="navbar-header">
@@ -379,9 +425,11 @@
 								<li class="dropdown"><a style="text-decoration: none;" href="#">Services</a>
 									<ul>
 										<li><a style="text-decoration: none;" href="service.html">Services</a></li>
-										<li><a style="text-decoration: none;" href="industries.html">Industries Served</a>
+										<li><a style="text-decoration: none;" href="industries.html">Industries
+												Served</a>
 										</li>
-										<li><a style="text-decoration: none;" href="network.html">Our Worldwide Network</a></li>
+										<li><a style="text-decoration: none;" href="network.html">Our Worldwide
+												Network</a></li>
 										<li><a style="text-decoration: none;" href="software.html">Software</a></li>
 										<li><a style="text-decoration: none;" href="project.html">Our Movements</a></li>
 
@@ -431,8 +479,9 @@
 
 
 									<!-- Mobile Navigation Toggler -->
-									<div class="mobile-nav-toggler"><span class="icon"><img
-												src="assets/images/icons/menu.png" alt="" /></span></div>
+									<div class="mobile-nav-toggler"><span class="icon">
+											<!-- <img src="assets/images/icons/menu.png" alt="" /></span> -->
+									</div>
 
 								</div>
 								</ul>
@@ -467,6 +516,13 @@
 	<div style="margin-right:80px !important;" class="whatsapp-button" id="whatsapp-button">
 		<a href="https://wa.me/919289799144" target="_blank" id="whatsapp-link">
 			<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+		</a>
+	</div>
+
+	<div style="margin-right:140px !important;" class="phone-button" id="phone-button">
+		<a href="tel:+919289799144" target="_blank" id="phone-link">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Phone_icon.png/512px-Phone_icon.png"
+				alt="Phone" />
 		</a>
 	</div>
 
@@ -566,7 +622,7 @@
 																	With <strong>Stanza Logistics</strong>, land
 																	transportation is smooth, safe, and
 																	reliable. From local deliveries to long-haul routes
-																	across Europe, we make sure your
+																	globally, we make sure your
 																	goods arrive on time, every time.
 																</div>
 																<a href="service.html" class="read-more theme-btn">Read
@@ -832,7 +888,7 @@
 		</div>
 	</section> -->
 
-
+<!-- 
 	<section style="margin-bottom: 100px; background-color: rgb(236, 230, 230);" id="ft-funfact"
 		class="ft-funfact-section">
 		<div class="container">
@@ -885,7 +941,62 @@
 				</div>
 			</div>
 		</div>
+	</section> -->
+
+
+	<section style="margin-bottom: 100px; background-color: rgb(236, 230, 230);" id="ft-funfact" class="ft-funfact-section">
+		<div class="container">
+			<div class="ft-funfact-content">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="ft-funfact-innerbox text-center">
+							<div class="ft-funfact-icon">
+								<i class="fal fa-clipboard-list-check"></i>
+							</div>
+							<div class="ft-funfact-text headline pera-content">
+								<h3><span id="counternew1" class="counter" data-stop="52480">0</span>+</h3>
+								<p>Tons of Cargo Moved</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ft-funfact-innerbox text-center">
+							<div class="ft-funfact-icon">
+								<i class="fal fa-users"></i>
+							</div>
+							<div class="ft-funfact-text headline pera-content">
+								<h3><span id="counternew2" class="counter" data-stop="54">0</span>+</h3>
+								<p>Countries Served</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ft-funfact-innerbox text-center">
+							<div class="ft-funfact-icon">
+								<i class="fas fa-trophy-alt"></i>
+							</div>
+							<div class="ft-funfact-text headline pera-content">
+								<h3><span id="counternew3" class="counter" data-stop="8650">0</span>+</h3>
+								<p>Shipments Completed</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ft-funfact-innerbox text-center">
+							<div class="ft-funfact-icon">
+								<i class="fal fa-medal"></i>
+							</div>
+							<div class="ft-funfact-text headline pera-content">
+								<h3><span id="counternew4" class="counter" data-stop="22">0</span>+</h3>
+								<p>Industries Served</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
+	
 
 
 
@@ -1204,7 +1315,7 @@
 		<!-- <h2 class="slider-heading">Our Partners</h2> -->
 		<br>
 		<div style="margin-top: 10px;" class="slider-wrapper">
-			<div class="slider-left-right">
+			<div class="slider ">
 				<div class="slide"><img src="assets/partnerair/33d9fe22350b552d19704e6359dd1ea9732accd3.png" alt="CTS">
 				</div>
 				<div class="slide"><img src="assets/partnerair/6c026d58-d2cc-49df-8ed6-6e83c035eb39_1000x1000.jpg"
@@ -2167,13 +2278,24 @@
 		});
 
 
+
+		const slidernew = document.querySelector('.slidernew');
+		slider.addEventListener('mouseover', () => {
+			slider.style.animationPlayState = 'paused';
+		});
+
+		slider.addEventListener('mouseout', () => {
+			slider.style.animationPlayState = 'running';
+		});
+
+
 	</script>
 
 
 
 
 
-
+<!-- 
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
 			const counters = document.querySelectorAll('.counter');
@@ -2195,10 +2317,10 @@
 				updateCount();
 			});
 		});
-	</script>
+	</script> -->
 
 
-	<script>
+	<!-- <script>
 		document.addEventListener('DOMContentLoaded', function () {
 			// Function to animate the counter
 			function animateCounter(element, end, duration) {
@@ -2243,13 +2365,128 @@
 			// Also check on initial page load in case the counters are already in view
 			checkAndAnimateCounters();
 		});
-	</script>
+	</script> -->
 
 
 
 
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+    // Function to animate the counter
+    function animateCounter(element, end, duration) {
+        let start = 0;
+        const increment = end / (duration / 50);
+        const counter = setInterval(function () {
+            start += increment;
+            if (start >= end) {
+                element.textContent = Math.floor(end); // Ensure final value is exact
+                clearInterval(counter);
+            } else {
+                element.textContent = Math.floor(start);
+            }
+        }, 50);
+    }
+
+    // Function to check if an element is visible on the screen
+    function isElementInView(el) {
+        const rect = el.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom >= 0; // Adjusted for visibility
+    }
+
+    const counters = document.querySelectorAll('.counter');
+    let hasAnimated = false; // Track if the counters have animated
+
+    // Function to start counter animation when section is in view
+    function checkAndAnimateCounters() {
+        if (!hasAnimated) {
+            let allCountersAnimated = true; // Flag to track if all counters animated
+            counters.forEach(counter => {
+                if (isElementInView(counter)) {
+                    const endValue = parseInt(counter.getAttribute('data-stop'));
+                    animateCounter(counter, endValue, 2000);
+                } else {
+                    allCountersAnimated = false; // Set to false if any counter did not animate
+                }
+            });
+
+            // If counters did not animate on mobile, set their value to 0
+            if (window.innerWidth <= 768 && !allCountersAnimated) {
+                counters.forEach(counter => {
+                    counter.textContent = "0"; // Set final value to 0 on mobile screens
+                });
+            }
+
+            hasAnimated = true; // Prevent multiple triggers
+        }
+    }
+
+    // Debounce function to limit how often a function can run
+    function debounce(func, wait) {
+        let timeout;
+        return function (...args) {
+            const context = this;
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(context, args), wait);
+        };
+    }
+
+    // Check on scroll with debounce
+    window.addEventListener('scroll', debounce(checkAndAnimateCounters, 100));
+
+    // Also check on initial page load in case the counters are already in view
+    checkAndAnimateCounters();
+
+    // Ensure the counters animate if the user resizes the window
+    window.addEventListener('resize', debounce(checkAndAnimateCounters, 100));
+});
+
+</script>
 
 
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+    // Function to animate the counter
+    function animateCounter(element, end, duration) {
+        let start = 0;
+        const increment = end / (duration / 50);
+        const counter = setInterval(function () {
+            start += increment;
+            if (start >= end) {
+                element.textContent = Math.floor(end); // Ensure final value is exact
+                clearInterval(counter);
+            } else {
+                element.textContent = Math.floor(start);
+            }
+        }, 50);
+    }
+
+    // Function to check if an element is visible on the screen
+    function isElementInView(el) {
+        const rect = el.getBoundingClientRect();
+        return rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+    }
+
+    // Function to animate all counters
+    function animateCounters() {
+        const counters = document.querySelectorAll('.counter');
+        counters.forEach(counter => {
+            const endValue = parseInt(counter.getAttribute('data-stop'));
+            if (isElementInView(counter)) {
+                animateCounter(counter, endValue, 2000);
+            } else {
+                counter.textContent = endValue; // Set final value if not in view
+            }
+        });
+    }
+
+    // Check on scroll
+    window.addEventListener('scroll', animateCounters);
+
+    // Also check on initial page load
+    animateCounters();
+});
+
+</script>
 
 
 
