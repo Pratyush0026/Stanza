@@ -208,84 +208,6 @@
 
 	}
 
-	.whatsapp-button {
-		position: fixed;
-		bottom: 20px;
-		right: 20px;
-		background-color: #25D366;
-		/* WhatsApp green color */
-		border-radius: 50%;
-		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-		z-index: 1000;
-	}
-
-	.whatsapp-button a {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 60px;
-		/* Button size */
-		height: 60px;
-		/* Button size */
-		text-decoration: none;
-	}
-
-	.whatsapp-button img {
-		width: 100%;
-		/* Image should take up full button size */
-		height: auto;
-	}
-
-	.phone-button {
-		position: fixed;
-		bottom: 22px;
-		/* Adjusted to make it float above WhatsApp button */
-		right: 40px;
-		background-color: #007BFF;
-		/* Blue color for phone button */
-		border-radius: 50%;
-		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-		z-index: 1000;
-	}
-
-	.phone-button a {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 60px;
-		height: 60px;
-		text-decoration: none;
-	}
-
-	.phone-button img {
-		width: 100%;
-		height: auto;
-	}
-
-	.whatsapp-button {
-		position: fixed;
-		bottom: 20px;
-		right: 20px;
-		background-color: #25D366;
-		border-radius: 50%;
-		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-		z-index: 1000;
-	}
-
-	.whatsapp-button a {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 60px;
-		height: 60px;
-		text-decoration: none;
-	}
-
-	.whatsapp-button img {
-		width: 100%;
-		height: auto;
-	}
-
 
 
 	/* Portfolio Slider Navigation Buttons */
@@ -329,72 +251,105 @@
 	}
 
 
+
+
+
 	.contact-button {
-		position: fixed;
-		bottom: 20px;
-		right: 20px;
-		background-color: #007BFF;
-		border-radius: 50%;
-		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-		z-index: 1000;
-	}
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
 
-	.contact-button a {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 60px;
-		height: 60px;
-		text-decoration: none;
-	}
+.contact-button a {
+    text-decoration: none;
+    color: white;
+}
 
-	.contact-button img {
-		width: 100%;
-		height: auto;
-	}
-
-
-
-	.floating-buttons {
+.floating-buttons {
     position: fixed;
     bottom: 80px;
     right: 20px;
-    display: flex;
+    display: none;
     flex-direction: column;
     z-index: 999;
-
 }
 
-.whatsapp-button {
-    margin-bottom: 70px; /* Add margin to create gap below the WhatsApp button */
-    background-color: #25D366;
-    border-radius: 50%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-	margin-right: 25px;
-}
-
+/* Phone Button */
 .phone-button {
-    background-color: white !important;
-    border-radius: 50%;
+    background-color: #007BFF; /* Original phone icon color */
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
+.phone-button i {
+    font-size: 24px;
+    color: white;
+    margin-right: 10px;
+}
 
-	.whatsapp-button a,
-	.phone-button a {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 60px;
-		height: 60px;
-		text-decoration: none;
-	}
+/* Gmail Button */
+.gmail-button {
+    background-color: #D44638; /* Gmail red */
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
 
-	.whatsapp-button img,
-	.phone-button img {
-		width: 100%;
-		height: auto;
-	}
+.gmail-button i {
+    font-size: 24px;
+    color: white;
+    margin-right: 10px;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-button i {
+    font-size: 24px;
+    color: white;
+    margin-right: 10px;
+}
+
+.phone-button:hover,
+.gmail-button:hover,
+.whatsapp-button:hover {
+    opacity: 0.8;
+}
+
+.phone-button a, .gmail-button a, .whatsapp-button a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
 </style>
 
 <body class="nlhu-body">
@@ -586,28 +541,39 @@
 
 
 
-	<div style="margin-right:80px !important;" class="contact-button" id="contact-button">
+
+
+
+	<div class="contact-button" id="contact-button">
 		<a href="javascript:void(0)" id="contact-link">
 			<i class="fas fa-address-book" style="font-size: 28px; color: white;"></i>
 		</a>
 	</div>
 	
 	<div class="floating-buttons" id="floating-buttons" style="display: none;">
-		<div class="whatsapp-button">
-			<a href="https://wa.me/919289799144" target="_blank">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+		<!-- Phone Button -->
+		<div class="phone-button">
+			<a href="javascript:void(0)">
+				<i class="fas fa-phone"></i> +91-74787 80000
 			</a>
 		</div>
 	
-		<div class="phone-button">
-			<a href="tel:+919289799144" target="_blank">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Phone_icon.png/512px-Phone_icon.png"
-					alt="Phone" />
+		<!-- Gmail Button -->
+		<div class="gmail-button">
+			<a href="mailto:info@stanzalogistics.com" target="_blank">
+				<i class="fas fa-envelope"></i> info@stanzalogistics.com
+			</a>
+		</div>
+	
+		<!-- WhatsApp Button -->
+		<div class="whatsapp-button">
+			<a href="https://wa.me/917478780000" target="_blank">
+				<i class="fab fa-whatsapp"></i> +91-74787 80000
 			</a>
 		</div>
 	</div>
 	
-	
+
 
 
 	<!-- End Main Header -->
@@ -2330,7 +2296,7 @@
 
 
 	<script>
-	
+
 
 		const slider = document.querySelector('.slider');
 		slider.addEventListener('mouseover', () => {
@@ -2355,7 +2321,7 @@
 
 	</script>
 
-	<script>
+	<!-- <script>
 		document.getElementById('contact-button').addEventListener('click', function () {
 			const floatingButtons = document.getElementById('floating-buttons');
 			if (floatingButtons.style.display === 'none' || floatingButtons.style.display === '') {
@@ -2365,65 +2331,78 @@
 			}
 		});
 
+	</script> -->
+
+
+	<script>
+		document.getElementById('contact-button').addEventListener('click', function () {
+			const floatingButtons = document.getElementById('floating-buttons');
+			if (floatingButtons.style.display === 'none' || floatingButtons.style.display === '') {
+				floatingButtons.style.display = 'block'; // Show buttons
+			} else {
+				floatingButtons.style.display = 'none'; // Hide buttons
+			}
+		});
+
 	</script>
 
-<script>
-	document.addEventListener('DOMContentLoaded', function () {
-		// Function to animate the counter
-		function animateCounter(element, end, duration) {
-			let start = 0;
-			const increment = end / (duration / 50);
-			const counter = setInterval(function () {
-				start += increment;
-				if (start >= end) {
-					element.textContent = Math.floor(end); // Ensure final value is exact
-					clearInterval(counter);
-				} else {
-					element.textContent = Math.floor(start);
-				}
-			}, 50);
-		}
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Function to animate the counter
+			function animateCounter(element, end, duration) {
+				let start = 0;
+				const increment = end / (duration / 50);
+				const counter = setInterval(function () {
+					start += increment;
+					if (start >= end) {
+						element.textContent = Math.floor(end); // Ensure final value is exact
+						clearInterval(counter);
+					} else {
+						element.textContent = Math.floor(start);
+					}
+				}, 50);
+			}
 
-		// Function to check if an element is visible on the screen
-		function isElementInView(el) {
-			const rect = el.getBoundingClientRect();
-			return rect.top < window.innerHeight && rect.bottom >= 0; // Adjusted for visibility
-		}
+			// Function to check if an element is visible on the screen
+			function isElementInView(el) {
+				const rect = el.getBoundingClientRect();
+				return rect.top < window.innerHeight && rect.bottom >= 0; // Adjusted for visibility
+			}
 
-		const counters = document.querySelectorAll('.counter');
+			const counters = document.querySelectorAll('.counter');
 
-		// Function to start counter animation when section is in view
-		function checkAndAnimateCounters() {
-			counters.forEach(counter => {
-				// Check if the counter has already animated by a custom attribute
-				if (!counter.getAttribute('data-animated') && isElementInView(counter)) {
-					const endValue = parseInt(counter.getAttribute('data-stop'));
-					animateCounter(counter, endValue, 2000);
-					counter.setAttribute('data-animated', 'true'); // Mark this counter as animated
-				}
-			});
-		}
+			// Function to start counter animation when section is in view
+			function checkAndAnimateCounters() {
+				counters.forEach(counter => {
+					// Check if the counter has already animated by a custom attribute
+					if (!counter.getAttribute('data-animated') && isElementInView(counter)) {
+						const endValue = parseInt(counter.getAttribute('data-stop'));
+						animateCounter(counter, endValue, 2000);
+						counter.setAttribute('data-animated', 'true'); // Mark this counter as animated
+					}
+				});
+			}
 
-		// Debounce function to limit how often a function can run
-		function debounce(func, wait) {
-			let timeout;
-			return function (...args) {
-				const context = this;
-				clearTimeout(timeout);
-				timeout = setTimeout(() => func.apply(context, args), wait);
-			};
-		}
+			// Debounce function to limit how often a function can run
+			function debounce(func, wait) {
+				let timeout;
+				return function (...args) {
+					const context = this;
+					clearTimeout(timeout);
+					timeout = setTimeout(() => func.apply(context, args), wait);
+				};
+			}
 
-		// Check on scroll with debounce
-		window.addEventListener('scroll', debounce(checkAndAnimateCounters, 100));
+			// Check on scroll with debounce
+			window.addEventListener('scroll', debounce(checkAndAnimateCounters, 100));
 
-		// Also check on initial page load in case the counters are already in view
-		checkAndAnimateCounters();
+			// Also check on initial page load in case the counters are already in view
+			checkAndAnimateCounters();
 
-		// Ensure the counters animate if the user resizes the window
-		window.addEventListener('resize', debounce(checkAndAnimateCounters, 100));
-	});
-</script>
+			// Ensure the counters animate if the user resizes the window
+			window.addEventListener('resize', debounce(checkAndAnimateCounters, 100));
+		});
+	</script>
 
 
 
