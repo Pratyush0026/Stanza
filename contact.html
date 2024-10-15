@@ -129,7 +129,7 @@
 					<div class="ft3-top-left pull-left">
 						<ul class="top-list">
 							<li><span class="icon fab fa-phone"></span>Need any help? Call Us: +91 9289799144</li>
-							<li><span class="icon fab fa-map-marker"></span>15A, 3rd Floor, Pratap Nagar
+							<li><span class="icon fab fa-map-marker"></span>15A, 3rd Floor, Pratap Nagar,
 Mayur Vihar, Phase 1,Pocket 1
 Delhi, India - 110091</li>
 
@@ -306,7 +306,7 @@ Delhi, India - 110091</li>
 									</div>
 									<div class="ft-contact-cta-text headline pera-content">
 										<h3>Office address</h3>
-										<p>15A, 3rd Floor, Pratap Nagar
+										<p>15A, 3rd Floor, Pratap Nagar,
 											Mayur Vihar, Phase 1,Pocket 1
 											Delhi, India - 110091</p>
 									</div>
@@ -371,31 +371,33 @@ Delhi, India - 110091</li>
 							<form id="contact-form">
 								<div class="row">
 									<div class="col-lg-6">
-										<input type="text" name="name" placeholder="Your Name" required>
+										<input type="text" id="name" name="name" placeholder="Your Name" required>
 									</div>
 									<div class="col-lg-6">
-										<input type="email" name="email" placeholder="Your Email" required>
+										<input type="email" id="email" name="email" placeholder="Your Email" required>
 									</div>
 									<div class="col-lg-6">
-										<input type="text" name="affi" placeholder="organization">
+										<input type="text" id="affi" name="affi" placeholder="Organization">
 									</div>
 									<div class="col-lg-6">
-										<input type="text" name="number" placeholder="Number">
+										<input type="text" id="number" name="number" placeholder="Number">
 									</div>
 									<div class="col-lg-6">
-										<input type="text" name="department" placeholder="Inquiry Department">
-									</div>
-									<div class="col-lg-6">
-										<input type="text" name="date" placeholder="Date">
+										<input type="text" id="department" name="department"
+											placeholder="Inquiry Department">
 									</div>
 									<div class="col-lg-12">
-										<textarea name="message" placeholder="Your Message" required></textarea>
+										<textarea id="message" name="message" placeholder="Your Message"
+											required></textarea>
 									</div>
 									<div class="col-lg-12">
 										<button type="button" onclick="sendEmail()">Send Details</button>
 									</div>
 								</div>
 							</form>
+
+
+
 
 						</div>
 					</div>
@@ -424,7 +426,7 @@ Delhi, India - 110091</li>
 											alt=""></a>
 								</div>
 								<div class="ft-footer-address">
-									<span>Address: 15A, 3rd Floor, Pratap Nagar
+									<span>Address: 15A, 3rd Floor, Pratap Nagar,
 										Mayur Vihar, Phase 1,Pocket 1
 										Delhi, India - 110091</span>
 									<span> www.Stanzalogistics.com</span>
@@ -491,6 +493,43 @@ Delhi, India - 110091</li>
 	</footer>
 
 
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script type="text/javascript">
+	(function () {
+		emailjs.init("AStUEHyGQi7sE-6W-"); // Replace with your EmailJS public key
+	})();
+
+</script>
+
+
+	<script type="text/javascript">
+		function sendEmail() {
+			var templateParams = {
+				from_name: document.getElementById("name").value,
+				from_email: document.getElementById("email").value,
+				organization: document.getElementById("affi").value,
+				number: document.getElementById("number").value,
+				department: document.getElementById("department").value,
+				message: document.getElementById("message").value
+			};
+
+			emailjs.send("service_dec05fm", "template_pbunl6a", templateParams)
+				.then(function (response) {
+					console.log('SUCCESS!', response.status, response.text);
+					alert("Message Sent Successfully");
+				}, function (error) {
+					console.log('FAILED...', error);
+					alert("Message Failed to Send");
+				});
+		}
+	</script>
+
+
+
+
 	<script src="assets/js/script-two.js"></script>
 
 	<!-- For Js Library -->
@@ -518,34 +557,6 @@ Delhi, India - 110091</li>
 
 
 
-	<script>
-		function sendEmail() {
-			// Collect form data
-			const name = document.querySelector('input[name="name"]').value;
-			const email = document.querySelector('input[name="email"]').value;
-			const affiliation = document.querySelector('input[name="affi"]').value;
-			const number = document.querySelector('input[name="number"]').value;
-			const department = document.querySelector('input[name="department"]').value;
-			const date = document.querySelector('input[name="date"]').value;
-			const message = document.querySelector('textarea[name="message"]').value;
-
-			// Construct the mailto link
-			const subject = encodeURIComponent("New Contact Form Submission");
-			const body = encodeURIComponent(
-				`Name: ${name}\n` +
-				`Email: ${email}\n` +
-				`Affiliation: ${affiliation}\n` +
-				`Number: ${number}\n` +
-				`Department: ${department}\n` +
-				`Date: ${date}\n` +
-				`Message:\n${message}`
-			);
-
-			// Use mailto link
-			const mailtoLink = `mailto:pratyushnarayan17@gmail.com?subject=${subject}&body=${body}`;
-			window.location.href = mailtoLink;
-		}
-	</script>
 
 </body>
 
