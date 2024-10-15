@@ -3,14 +3,33 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Home Page 3</title>
-	<meta name="description" content="Stanza - Logistics & Delivery Company HTML template">
-	<meta name="keywords"
-		content="cargo, clean, contractor, corporate, freight, industry, localization, logistics, page builder, shipment, transport, transportation, truck, trucking">
-	<meta name="author" content="Themexriver">
+	<title>Stanza Logistics -International Logistics Experts </title>
 	<link rel="shortcut icon" href="assets/images/fav.jpg" type="image/x-icon">
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<!--Css Fils -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/flaticon.css">
+	<link rel="stylesheet" href="assets/css/flaticon-02.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.css">
+	<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="assets/css/jquery-ui.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/custom-animate.css">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+	<link href="assets/plugins/revolution/css/settings.css" rel="stylesheet" type="text/css">
+	<!-- REVOLUTION SETTINGS STYLES -->
+	<link href="assets/plugins/revolution/css/layers.css" rel="stylesheet" type="text/css">
+	<!-- REVOLUTION LAYERS STYLES -->
+	<link href="assets/plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css">
+	<!-- REVOLUTION NAVIGATION STYLES -->
+
 
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/fontawesome-all.css">
@@ -23,7 +42,22 @@
 	<link rel="stylesheet" href="assets/css/slick.css">
 	<link rel="stylesheet" href="assets/css/rs6.css">
 	<link rel="stylesheet" href="assets/css/slick-theme.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countTo/1.2.0/jquery.countTo.min.js"></script>
+
+
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+
+
+
+
+	<script src="assets/js/jquery.js"></script>
+
+	<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
 </head>
 
 
@@ -68,6 +102,11 @@
 		justify-content: center;
 		align-items: center;
 		transition: transform 0.5s ease-in-out;
+	}
+
+	.slider:hover {
+		animation-play-state: paused;
+		/* Pause the animation on hover */
 	}
 
 	.slide img {
@@ -122,962 +161,710 @@
 	}
 
 
-	.ft-banner-text-content h1 {
-		margin-top: -200px;
-		/* Adjust this value to move the text further up */
+
+
+
+
+
+	/* header update */
+
+	.header-upper .inner-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.header-upper .logo-box {
+		margin-left: 5px;
+		/* Removes any additional left margin */
+	}
+
+	.header-upper .pull-left.logo-box {
+		float: none;
+		/* Override float if necessary */
+		display: flex;
+		/* Make it part of the flex layout */
+		justify-content: flex-start;
+		/* Align logo to the start (left) */
+	}
+
+	.header-upper .logo a {
+		display: inline-block;
+	}
+
+	.auto-container {
+		max-width: 100%;
+		/* Ensure the container takes full width */
+		padding-left: 0;
+		/* Remove any left padding */
+		padding-right: 0;
+		/* Optional: Remove any right padding */
+	}
+
+	.sticky-header {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+
+	}
+
+
+
+	/* Portfolio Slider Navigation Buttons */
+	.portfolio-left_arrow,
+	.portfolio-right_arrow {
+		position: absolute;
+		top: 50%;
+		/* Center vertically */
+		transform: translateY(-50%);
+		background-color: white;
+		/* Semi-transparent background */
+		color: orangered;
+		/* White arrow color */
+		border: none;
+		/* Remove default borders */
+		border-radius: 50%;
+		/* Make them circular */
+		padding: 10px 10px;
+		cursor: pointer;
+		z-index: 10;
+		/* Ensure it's above other elements */
+		font-size: 28px;
+	}
+
+	.portfolio-left_arrow {
+		left: -5px;
+		/* Move the left arrow outside the slider */
+	}
+
+	.portfolio-right_arrow {
+		right: -5px;
+		/* Move the right arrow outside the slider */
+	}
+
+	/* Hover effect for buttons */
+	.portfolio-left_arrow:hover,
+	.portfolio-right_arrow:hover {
+		background-color: rgba(0, 0, 0, 0.8);
+		/* Darken background on hover */
+		color: white;
+	}
+
+
+
+
+
+	.contact-button {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		background-color: #007BFF;
+		border-radius: 50%;
+		width: 60px;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+		z-index: 1000;
+	}
+
+	.contact-button a {
+		text-decoration: none;
+		color: white;
+	}
+
+	.floating-buttons {
+		position: fixed;
+		bottom: 80px;
+		right: 20px;
+		display: none;
+		flex-direction: column;
+		z-index: 999;
+	}
+
+	/* Phone Button */
+	.phone-button {
+		background-color: #007BFF;
+		/* Original phone icon color */
+		color: white;
+		border-radius: 8px;
+		padding: 10px;
+		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	}
+
+	.phone-button i {
+		font-size: 24px;
+		color: white;
+		margin-right: 10px;
+	}
+
+	/* Gmail Button */
+	.gmail-button {
+		background-color: #D44638;
+		/* Gmail red */
+		color: white;
+		border-radius: 8px;
+		padding: 10px;
+		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	}
+
+	.gmail-button i {
+		font-size: 24px;
+		color: white;
+		margin-right: 10px;
+	}
+
+	/* WhatsApp Button */
+	.whatsapp-button {
+		background-color: #25D366;
+		/* WhatsApp green */
+		color: white;
+		border-radius: 8px;
+		padding: 10px;
+		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	}
+
+	.whatsapp-button i {
+		font-size: 24px;
+		color: white;
+		margin-right: 10px;
+	}
+
+	.phone-button:hover,
+	.gmail-button:hover,
+	.whatsapp-button:hover {
+		opacity: 0.8;
+	}
+
+	.phone-button a,
+	.gmail-button a,
+	.whatsapp-button a {
+		color: white;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
 	}
 </style>
 
-<body>
-	<div id="preloader"></div>
-	<div class="up">
+<body class="nlhu-body">
+	<!-- <div id="preloader"></div> -->
+	<!-- <div class="up">
 		<a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
+	</div> -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&amp;family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto:wght@100;300;400;500;700;900&amp;display=swap"
+		rel="stylesheet">
+
+	<div class="nlhu-body-overlay"></div>
+
+	<!-- Preloader-->
+	<div class="loading-preloader">
+		<div id="loading-preloader">
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+			<div class="line_shape"></div>
+		</div>
 	</div>
-	<!-- Start of header section
-	============================================= -->
-	<header id="ft-header" class="ft-header-section header-style-two">
-		<!-- <div class="ft-header-top">
-			<div class="container">
-				<div class="ft-header-top-content d-flex justify-content-between align-items-center">
-					<div class="ft-header-top-cta ul-li">
-						<ul>
-							<li><i class="fal fa-envelope"></i>info@stanzalogistics.com</li>
-							<li><i class="fal fa-map-marker-alt"></i>15A, 3rd Floor, Mayur Vihar Phase 1, Pocket -1,
-								Delhi, 110091</li>
+	<!-- Preloader End -->
+
+	<!-- Main Header / Header Style Three -->
+	<header class="ft1-main-header ft3-header-style-three">
+
+		<!-- Header Top Three -->
+		<!-- <div class="ft3-header-top-three">
+			<div class="auto-container">
+				<div class="inner-container clearfix">
+					<div class="ft3-top-left pull-left">
+						<ul class="top-list">
+							<li><span class="icon fab fa-phone"></span>Need any help? Call Us: +91 9289799144</li>
+							<li><span class="icon fab fa-map-marker"></span>15A, 3rd Floor, Pratap Nagar,
+Mayur Vihar, Phase 1,Pocket 1
+Delhi, India - 110091</li>
+
+
+
 						</ul>
 					</div>
-					<div class="ft-header-cta-info d-flex">
-						<div class="ft-header-cta-icon d-flex justify-content-center align-items-center">
-							<i class="flaticon-call"></i>
-						</div>
-						<div class="ft-header-cta-text headline pera-content">
-							<p>Get In Touch</p>
-							<h3>
-								+91 9289799144 
-							
-							</h3>
-						</div>
-						<div  class="ft-header-cta-text headline pera-content">
-							<a href="https://wa.me/919289799144" target="_blank" style="margin-left: 30px;">
-								<i class="fab fa-whatsapp" style="font-size: 40px; color: green;"></i>
-							</a>
-						</div>
+					
+					
+					<div class="ft3-top-right pull-right">
+					
 					</div>
 				</div>
 			</div>
 		</div> -->
 
-		<div class="ft-header-main-menu-wrapper">
-			<div class="container">
-				<div class="ft-header-main-menu-area position-relative">
-					<div
-						class="ft-header-main-menu d-flex align-items-center justify-content-between position-relative">
-						<div class="ft-site-logo-area">
-							<div class="ft-site-logo position-relative">
-								<a href="index.html"><img src="assets/img/logo/stanza1.png" alt=""></a>
-							</div>
+		<!-- Header Upper -->
+		<div class="header-upper">
+			<div class="auto-container">
+				<div class="inner-container clearfix">
+
+					<!-- Logo -->
+					<div class="pull-left logo-box">
+						<div class="logo"><a href="index.html"><img src="assets/images/l6.png" alt="" title=""></a>
 						</div>
-						<div class="ft-main-navigation-area">
-							<nav class="ft-main-navigation clearfix ul-li">
-								<ul id="ft-main-nav" class="nav navbar-nav clearfix">
-									<li class="dropdown">
-										<a href="%21.html#">Home</a>
-										<ul class="dropdown-menu clearfix">
-											<li><a href="index-1.html">Home Page 1</a></li>
-											<li><a href="index-2.html">Home Page 2</a></li>
-											<li><a href="index-3.html">Home Page 3</a></li>
-											<li><a href="index-4.html">Home Page 4</a></li>
-											<li><a href="index-5.html">Home Page 5</a></li>
-											<li><a href="index-6.html">Home Page 6</a></li>
-											<li><a href="index-7.html">Home Page 7</a></li>
-											<li><a href="index-8.html">Home Page 8</a></li>
-											<li><a href="index-9.html">Home Page 9</a></li>
-										</ul>
-									</li>
-									<li><a href="about.html">About us</a></li>
-									<li class="dropdown">
-										<a href="%21.html#">Service</a>
-										<ul class="dropdown-menu clearfix">
-											<li><a href="service.html">Service Page </a></li>
-											<li><a href="service-single.html">Service Details</a></li>
-										</ul>
-									</li>
-
-									<li class="dropdown">
-										<a href="%21.html#">News</a>
-										<ul class="dropdown-menu clearfix">
-											<li><a href="blog.html">News </a></li>
-											<li><a href="Participation.html">Events and Participation </a></li>
-											<li><a href="associations.html">Our Associations and Certificates</a></li>
-
-											<li><a href="movements.html">Our Movements </a></li>
-
-
-											<li><a href="blog-single.html">News Details</a></li>
-										</ul>
-									</li>
-									<li class="dropdown">
-										<a href="%21.html#">Tools</a>
-										<ul class="dropdown-menu clearfix">
-											<li><a href="metric.html">Metric Conversions </a></li>
-											<li><a href="Container.html">Container Dimensions </a></li>
-											<li><a href="ulds.html">ULDS</a></li>
-
-											<li><a href="Incoterms.html">Incoterms </a></li>
-
-
-											<li><a href="usefullinks.html">Useful Links</a></li>
-										</ul>
-									</li>
-									<li class="dropdown">
-										<a href="%21.html#">Others</a>
-										<ul class="dropdown-menu clearfix">
-											<li><a href="Career.html">Career </a></li>
-											<li><a href="software.html">Software </a></li>
-											<li><a href="network.html">Our Network</a></li>
-
-											<li><a href="project.html">Project Page</a></li>
-											<li><a href="project-single.html">Project Details</a></li>
-
-
-											<li><a href="team.html">Team Page </a></li>
-											<li><a href="team-single.html">Team Details </a></li>
-											<li><a href="coming-soon.html">Coming Soon</a></li>
-											<li><a href="contact.html">Contact Page</a></li>
-											<li><a href="faq.html">Faq Page</a></li>
-											<li><a href="pricing.html">Pricing Page</a></li>
-										</ul>
-									</li>
-								</ul>
-							</nav>
-						</div>
-						<div class="ft-header-cta-btn">
-							<a class="d-flex justify-content-center align-items-center" href="Quote.html">Get Free
-								Quote</a>
-						</div>
-
-
 					</div>
-					<div class="mobile_menu position-relative">
-						<div class="mobile_menu_button open_mobile_menu">
-							<i class="fal fa-bars"></i>
-						</div>
-						<div class="mobile_menu_wrap">
-							<div class="mobile_menu_overlay open_mobile_menu"></div>
-							<div class="mobile_menu_content">
-								<div class="mobile_menu_close open_mobile_menu">
-									<i class="fal fa-times"></i>
-								</div>
-								<div class="m-brand-logo">
-									<a href="/index.html"><img src="assets/img/logo/stanza1.png" alt=""></a>
-								</div>
-								<nav class="mobile-main-navigation  clearfix ul-li">
-									<ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
-										<li class="dropdown">
-											<a href="%21.html#">Home</a>
-											<ul class="dropdown-menu clearfix">
-												<li><a href="index-1.html">Home Page 1</a></li>
-												<li><a href="index-2.html">Home Page 2</a></li>
-												<li><a href="index-3.html">Home Page 3</a></li>
-												<li><a href="index-4.html">Home Page 4</a></li>
-												<li><a href="index-5.html">Home Page 5</a></li>
-												<li><a href="index-6.html">Home Page 6</a></li>
-												<li><a href="index-7.html">Home Page 7</a></li>
-												<li><a href="index-8.html">Home Page 8</a></li>
-												<li><a href="index-9.html">Home Page 9</a></li>
-											</ul>
-										</li>
-										<li><a href="about.html">About</a></li>
-										<li class="dropdown">
-											<a href="%21.html#">Service</a>
-											<ul class="dropdown-menu clearfix">
-												<li><a href="service.html">Service Page </a></li>
-												<li><a href="service-single.html">Service Details</a></li>
-											</ul>
-										</li>
-										<li class="dropdown">
-											<a href="%21.html#">Project</a>
-											<ul class="dropdown-menu clearfix">
-												<li><a href="project.html">Project</a></li>
-												<li><a href="project-single.html">Project Details</a></li>
-											</ul>
-										</li>
-										<li class="dropdown">
-											<a href="%21.html#">News</a>
-											<ul class="dropdown-menu clearfix">
-												<li><a href="blog.html">News </a></li>
-												<li><a href="blog-single.html">News Details</a></li>
 
-											</ul>
-										</li>
-										<li class="dropdown">
-											<a href="%21.html#">Others</a>
-											<ul class="dropdown-menu clearfix">
+					<div class="nav-outer clearfix">
+						<!-- Mobile Navigation Toggler -->
+						<div style="margin-left: 100px;" class="mobile-nav-toggler"><span class="icon"><img
+									src="assets/images/icons/menu.png" alt="" /></span></div>
+						<!-- Main Menu -->
+						<nav class="main-menu navbar-expand-md">
+							<div class="navbar-header">
+								<!-- Toggle Button -->
+								<button class="navbar-toggler" type="button" data-toggle="collapse"
+									data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+									aria-expanded="false" aria-label="Toggle navigation">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
 
-												<li><a href="team.html">Team Page </a></li>
-												<li><a href="team-single.html">Team Details </a></li>
-												<li><a href="coming-soon.html">Coming Soon</a></li>
-												<li><a href="contact.html">Contact Page</a></li>
-												<li><a href="faq.html">Faq Page</a></li>
-												<li><a href="pricing.html">Pricing Page</a></li>
+							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+								<ul class="navigation clearfix">
+									<li class="current"><a style="text-decoration: none;" href="index.html">Home</a>
 
-											</ul>
+									</li>
+									<li class="dropdown"><a style="text-decoration: none;" href="about.html">About
+											us</a>
+										<ul>
+											<li><a style="text-decoration: none;" href="about.html">About us</a></li>
+											<li><a style="text-decoration: none;" href="team-single.html">Management</a>
+											<li><a style="text-decoration: none;" href="associations.html"> Our
+													Associations</a></li>
+
+									</li>
+
+								</ul>
+
+								</li>
+								<li class="dropdown"><a style="text-decoration: none;" href="#">Services</a>
+									<ul>
+										<li><a style="text-decoration: none;" href="service.html">Services</a></li>
+										<li><a style="text-decoration: none;" href="industries.html">Industries
+												Served</a>
 										</li>
+										<li><a style="text-decoration: none;" href="network.html">Our Worldwide
+												Network</a></li>
+										<li><a style="text-decoration: none;" href="India.html">Our India
+												Network</a></li>
+										<li><a style="text-decoration: none;" href="software.html"> Our Software</a>
+										</li>
+
 									</ul>
-								</nav>
+								</li>
+								<li class="dropdown"><a style="text-decoration: none;" href="#">Tools</a>
+									<ul>
+										<li><a style="text-decoration: none;" href="Container.html">Container
+												Dimensions </a></li>
+										<li><a style="text-decoration: none;" href="metric.html">Metric Conversions
+											</a></li>
+										<li><a style="text-decoration: none;" href="ulds.html">ULDS</a></li>
+
+										<li><a style="text-decoration: none;" href="Incoterms.html">Incoterms </a>
+										</li>
+
+
+										<li><a style="text-decoration: none;" href="usefullinks.html">Useful
+												Links</a></li>
+
+									</ul>
+								</li>
+								<li class="dropdown"><a style="text-decoration: none;" href="#">Others</a>
+									<ul>
+										<li><a style="text-decoration: none;" href="project.html">Our Key Movements</a>
+										</li>
+
+										<li><a style="text-decoration: none;" href="Participation.html">Events and
+												Participation </a></li>
+										<li><a style="text-decoration: none;" href="Career.html">Career</a></li>
+
+
+									</ul>
+								</li>
+								<li><a style="text-decoration: none;" href="contact.html">Contact Us</a>
+
+								</li>
+								<!-- <li><a href="contact.html">Contact Page</a></li> -->
+								<div class="outer-box clearfix">
+
+									<!-- Btn Box -->
+									<div class="btn-box">
+
+										<a style="text-decoration: none;" href="Quote.html"
+											class="theme-btn btn-style-one">Get Quote<span
+												class="icon fas fa-angle-double-right"></span></a>
+
+										<a style="text-decoration: none;"
+											href="https://stanza.app.shipthis.co/session/signin"
+											class="theme-btn btn-style-one" target="_blank" rel="noopener noreferrer">
+											Login<span class="icon fas fa-angle-double-right"></span>
+										</a>
+
+
+
+
+
+									</div>
+
+
+
+								</div>
+								</ul>
 							</div>
-						</div>
-						<!-- /Mobile-Menu -->
+						</nav>
+
 					</div>
+
 				</div>
 			</div>
 		</div>
+		<!--End Header Upper-->
+
+
+
+		<!-- Mobile Menu  -->
+		<div class="mobile-menu">
+			<div class="menu-backdrop"></div>
+			<div class="close-btn"><span class="icon fas fa-times"></span></div>
+
+			<nav class="menu-box">
+				<div class="nav-logo"><a href="index.html"><img src="assets/images/l6.png" alt="" title=""></a></div>
+				<div class="menu-outer">
+				</div>
+			</nav>
+		</div>
+		<!-- End Mobile Menu -->
+
 	</header>
-	<!-- End of header section
-	============================================= -->
-
-	<!-- Start of banner section
-	============================================= -->
-	<!-- <section id="ft-thx-banner" class="ft-thx-banner-section position-relative" data-background="assets/imgs/bg/banner-bg.jpg">
-		<div class="background_overlay"></div>
-		<div class="container"> -->
-	<section id="ft-banner" class="ft-banner-section" data-background="assets/img/bg/slider1-bg.jpg">
-		<div class="ft-banner-content">
-			<div class="container">
-				<div class="ft-banner-text-content headline pera-content text-center">
-					<h1 class="cd-headline letters scale">Shipping Products
-						<span class="cd-words-wrapper">
-							<!-- <b class="is-visible">WorldWide</b> -->
-							<!-- <b>Safely</b> -->
-							<b class="is-visible">96.5% On Time Delivery</b>
-
-							<b>Priority Sailings</b>
-							<b>Zero Hidden Charges</b>
-							<b>Quick Quotes</b>
-							<!-- <b>Everywhere</b> -->
-						</span>
-					</h1>
-					<br>
 
 
-					<br>
-					<br>
-					<div class="ft-funfact-inner-items-wrapper position-relative">
-						<div class="row">
-							<div class="col-lg-3 col-md-6">
-								<div class="ft-funfact-inner-items text-center">
-									<div
-										class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
-										<i class="flaticon-delivery-truck"></i>
-									</div>
-									<div class="ft-funfact-inner-text headline pera-content">
-										<h3><span class="counter">50000</span>+</h3>
-										<p style="color: white; font-weight: bold;">Goods Moved</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="ft-funfact-inner-items text-center">
-									<div
-										class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
-										<i class="flaticon-community"></i>
-									</div>
-									<div class="ft-funfact-inner-text headline pera-content">
-										<h3><span class="counter">50</span>+</h3>
-										<p style="color: white; font-weight: bold;">Countries</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="ft-funfact-inner-items text-center">
-									<div
-										class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
-										<i class="flaticon-compliance"></i>
-									</div>
-									<div class="ft-funfact-inner-text headline pera-content">
-										<h3><span class="counter">5000</span>+</h3>
-										<p style="color: white; font-weight: bold;">Delivery Completed</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="ft-funfact-inner-items text-center">
-									<div
-										class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
-										<i class="flaticon-face-detection"></i>
-									</div>
-									<div class="ft-funfact-inner-text headline pera-content">
-										<h3><span class="counter">155</span>+</h3>
-										<p style="color: white; font-weight: bold;">Team Members</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<br>
-					<!-- <p> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
-						ultrices gravida. </p> -->
-					<div class="ft-banner-btn-wrapper d-flex justify-content-center align-items-center">
-						<div class="ft-banner-btn">
-							<a class="d-flex justify-content-center align-items-center" href="service.html">Our
-								Services</a>
-						</div>
-						<div class="ft-banner-video-btn">
-							<a class="video_box" href="https://www.youtube.com/watch?v=C4jjFanHZo8">
-								<i class="fas fa-play"></i>
-								<span>How It Work</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
+
+
+
+
+	<div class="contact-button" id="contact-button">
+		<a href="javascript:void(0)" id="contact-link">
+			<i class="fas fa-address-book" style="font-size: 28px; color: white;"></i>
+		</a>
+	</div>
+
+	<div class="floating-buttons" id="floating-buttons" style="display: none;">
+		<!-- Phone Button -->
+		<div class="phone-button">
+			<a href="javascript:void(0)">
+				<i class="fas fa-phone"></i> +91 92897 99144
+			</a>
 		</div>
-	</section>
 
-
-	<!-- End of banner section
-	============================================= -->
-
-	<!-- Start of Service section
-	============================================= -->
-	<section id="ft-service-2" class="ft-service-section-2 position-relative">
-		<span class="ft-service-bg position-absolute"> <img src="assets/img/bg/ser-bg.png" alt=""></span>
-		<div class="container">
-			<div class="ft-section-title-2 headline pera-content text-center">
-				<h2>What We Do</h2>
-				<!-- <h2>We are optimists who Love
-					to work together.
-				</h2> -->
-			</div>
-			<div class="ft-service-content-2">
-				<div class="ft-service-slider-2">
-
-					<div class="ft-item-innerbox">
-						<div class="ft-service-innerbox-2 position-relative">
-							<div class="ft-service-img text-center">
-								<img src="assets/img/service/ser4.4.jpg" alt="">
-							</div>
-							<div class="ft-service-text position-relative headline">
-								<div
-									class="ft-service-icon position-absolute d-flex align-items-center justify-content-center">
-									<i class="flaticon-boat"></i>
-								</div>
-								<h3><a href="service-single.html">Ocean Freight</a></h3>
-								<div class="ft-btn-2">
-									<a href="service-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
-								</div>
-							</div>
-							<div class="ft-service-serial position-absolute">
-								1
-							</div>
-						</div>
-					</div>
-					<div class="ft-item-innerbox">
-						<div class="ft-service-innerbox-2 position-relative">
-							<div class="ft-service-img text-center">
-								<img src="assets/img/service/ser4.3.jpg" alt="">
-							</div>
-							<div class="ft-service-text position-relative headline">
-								<div
-									class="ft-service-icon position-absolute d-flex align-items-center justify-content-center">
-									<i class="flaticon-free-shipping"></i>
-								</div>
-								<h3><a href="service-single.html">Air Freight</a></h3>
-								<div class="ft-btn-2">
-									<a href="service-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
-								</div>
-							</div>
-							<div class="ft-service-serial position-absolute">
-								2
-							</div>
-						</div>
-					</div>
-					<div class="ft-item-innerbox">
-						<div class="ft-service-innerbox-2 position-relative">
-							<div class="ft-service-img text-center">
-								<img src="assets/img/service/ser4.2.jpg" alt="">
-							</div>
-							<div class="ft-service-text position-relative headline">
-								<div
-									class="ft-service-icon position-absolute d-flex align-items-center justify-content-center">
-									<i class="flaticon-plane"></i>
-								</div>
-								<h3><a href="service-single.html">PART LOAD (LCL)</a></h3>
-								<div class="ft-btn-2">
-									<a href="service-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
-								</div>
-							</div>
-							<div class="ft-service-serial position-absolute">
-								3
-							</div>
-						</div>
-					</div>
-					<div class="ft-item-innerbox">
-						<div class="ft-service-innerbox-2 position-relative">
-							<div class="ft-service-img text-center">
-								<img src="assets/img/service/ser4.jpg" alt="">
-							</div>
-							<div class="ft-service-text position-relative headline">
-								<div
-									class="ft-service-icon position-absolute d-flex align-items-center justify-content-center">
-									<i class="flaticon-train"></i>
-								</div>
-								<h3><a href="service-single.html">Custom Clearance</a></h3>
-								<div class="ft-btn-2">
-									<a href="service-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
-								</div>
-							</div>
-							<div class="ft-service-serial position-absolute">
-								4
-							</div>
-						</div>
-					</div>
-					<!-- <div class="ft-item-innerbox">
-						<div class="ft-service-innerbox-2 position-relative">
-							<div class="ft-service-img text-center">
-								<img src="assets/img/service/ser4.3.jpg" alt="">
-							</div>
-							<div class="ft-service-text position-relative headline">
-								<div
-									class="ft-service-icon position-absolute d-flex align-items-center justify-content-center">
-									<i class="flaticon-free-shipping"></i>
-								</div>
-								<h3><a href="service-single.html">Part Load (LCL)</a></h3>
-								<div class="ft-btn-2">
-									<a href="service-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
-								</div>
-							</div>
-							<div class="ft-service-serial position-absolute">
-								5
-							</div>
-						</div>
-					</div>   -->
-					<div class="ft-item-innerbox">
-						<div class="ft-service-innerbox-2 position-relative">
-							<div class="ft-service-img text-center">
-								<img src="assets/img/service/ser4.4.jpg" alt="">
-							</div>
-							<div class="ft-service-text position-relative headline">
-								<div
-									class="ft-service-icon position-absolute d-flex align-items-center justify-content-center">
-									<i class="flaticon-boat"></i>
-								</div>
-								<h3><a href="service-single.html">Warehousing</a></h3>
-								<div class="ft-btn-2">
-									<a href="service-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
-								</div>
-							</div>
-							<div class="ft-service-serial position-absolute">
-								5
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<!-- Gmail Button -->
+		<div class="gmail-button">
+			<a href="mailto:info@stanzalogistics.com" target="_blank">
+				<i class="fas fa-envelope"></i> info@stanzalogistics.com
+			</a>
 		</div>
-	</section>
-	<!-- End of Service section
-	============================================= -->
 
-	<!-- Start of featured section
-	============================================= -->
-	<section id="ft-featured" class="ft-featured-section">
-		<div class="container">
-			<div class="ft-section-title-2 headline pera-content text-center">
-				<span class="sub-title">Featured</span>
-				<h2>The unique qualities that make
-					<span>Stanza</span> special.
-				</h2>
-			</div>
-			<div class="ft-featured-content">
-				<div class="row justify-content-center">
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-						<div class="ft-featured-innerbox position-relative">
-							<div class="ft-featured-icon">
-								<i class="flaticon-pricing"></i>
-							</div>
-							<div class="ft-featured-text headline pera-content">
-								<h3><a href="service-single.html">Quick Quotations</a></h3>
-								<p>Receive detailed pricing estimates swiftly, allowing you to make informed decisions
-									without delay.</p>
-								<div class="ft-btn-2">
-									<a href="service-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-						<div class="ft-featured-innerbox position-relative">
-							<div class="ft-featured-icon">
-								<i class="flaticon-deadline"></i>
-							</div>
-							<div class="ft-featured-text headline pera-content">
-								<h3><a href="service-single.html">Real-Time Tracking</a></h3>
-								<p>Stay updated with live tracking for every stage of your project, ensuring
-									transparency and control.</p>
-								<div class="ft-btn-2">
-									<a href="service-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
-						<div class="ft-featured-innerbox position-relative">
-							<div class="ft-featured-icon">
-								<i class="flaticon-warehouse"></i>
-							</div>
-							<div class="ft-featured-text headline pera-content">
-								<h3><a href="service-single.html">End-to-End Solutions</a></h3>
-								<p>From inception to completion, we handle every detail, offering seamless and
-									comprehensive services.</p>
-								<div class="ft-btn-2">
-									<a href="service-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<!-- WhatsApp Button -->
+		<div class="whatsapp-button">
+			<a href="https://wa.me/919289799144" target="_blank">
+				<i class="fab fa-whatsapp"></i> +91-9289799144
+			</a>
 		</div>
-	</section>
-
-	<!-- End of featured section
-	============================================= -->
+	</div>
 
 
 
-	<!-- Start of Fun fact section
-	============================================= -->
-	<!-- <section id="ft-funfact-2" class="ft-funfact-section-2" data-background="assets/img/bg/shape-bg.jpg">
-		<div class="container">
-			<div class="ft-section-title-3 headline text-center">
-				<span class="text-uppercase">We specialise in the transportation</span>
-				<h2>Together, we have your logistical
-					challenges covered.</h2>
-			</div>
-			<div class="ft-funfact-content-2 position-relative">
-				<span class="map-bg position-absolute text-center"><img src="assets/img/bg/map.png" alt=""></span>
-				<div class="ft-funfact-inner-items-wrapper position-relative">
-					<div class="row">
-						<div class="col-lg-3 col-md-6">
-							<div class="ft-funfact-inner-items text-center">
-								<div
-									class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
-									<i class="flaticon-delivery-truck"></i>
-								</div>
-								<div class="ft-funfact-inner-text headline pera-content">
-									<h3><span class="counter">1656</span></h3>
-									<p>Completed Delivery</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="ft-funfact-inner-items text-center">
-								<div
-									class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
-									<i class="flaticon-community"></i>
-								</div>
-								<div class="ft-funfact-inner-text headline pera-content">
-									<h3><span class="counter">1250</span></h3>
-									<p>Satisfied Clients</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="ft-funfact-inner-items text-center">
-								<div
-									class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
-									<i class="flaticon-compliance"></i>
-								</div>
-								<div class="ft-funfact-inner-text headline pera-content">
-									<h3><span class="counter">30</span>+</h3>
-									<p>Awards Winner</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="ft-funfact-inner-items text-center">
-								<div
-									class="ft-funfact-inner-icon d-flex align-items-center justify-content-center position-relative">
-									<i class="flaticon-face-detection"></i>
-								</div>
-								<div class="ft-funfact-inner-text headline pera-content">
-									<h3><span class="counter">155</span>+</h3>
-									<p>Team Members</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="ft-funfact-slug-text text-center">
-					<span>Join over 3000 people who engage with sector. <a href="#">Join Now!</a></span>
-				</div>
-			</div>
-		</div>
-	</section>  -->
-	<!-- End of Fun fact section
-	============================================= -->
 
-	<!-- Start of Product mesurment section
-	============================================= -->
-	<section id="ft-product-mesurment" class="ft-product-mesurment-section">
-		<div class="container">
-			<div class="ft-product-mesurment-content position-relative">
-				<span class="ft-pm-bg-img position-absolute"><img src="assets/img/bg/pm-bg.png" alt=""></span>
-				<div class="row">
-					<div class="col-lg-8">
-						<div class="ft-product-mesurment-form">
-							<div class="ft-product-mesurment-tab-btn">
-								<ul class="nav nav-tabs" id="myTab" role="tablist">
-									<li class="nav-item" role="presentation">
-										<button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-											data-bs-target="#home" type="button" role="tab" aria-controls="home"
-											aria-selected="true">Request A Quote</button>
-									</li>
-									<!-- <li class="nav-item" role="presentation">
-										<button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-											data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
-											aria-selected="false">Track & Trace</button>
-									</li> -->
-								</ul>
-							</div>
-							<div class="tab-content" id="myTabContent">
-								<div class="tab-pane fade show active" id="home" role="tabpanel"
-									aria-labelledby="home-tab">
-									<div class="ft-product-mesurment-form-input">
-										<form action="#">
-											<div class="ft-product-mesurment-form-input-area">
-												<label class="ft-pm-title">Personal Data</label>
-												<div class="row">
-													<div class="col-lg-4">
-														<div class="ft-pm-input">
-															<input type="text" placeholder="First Name">
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<div class="ft-pm-input">
-															<input type="text" placeholder="Last Name">
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<div class="ft-pm-input">
-															<input type="email" placeholder="Your Email">
+	<!-- End Main Header -->
+
+	<!-- Main Slider Two -->
+
+	<section class="ft3-main-slider-two">
+		<!-- Shop Single -->
+		<div class="product-details">
+			<!-- Basic Details -->
+			<div class="basic-details">
+				<div class="image-column">
+					<div class="carousel-outer">
+						<ul class="image-carousel owl-carousel owl-theme">
+							<!-- Ocean Freight Slide -->
+							<li>
+								<div class="slide-two-content">
+									<div class="inner-box">
+										<div class="image-box">
+											<div class="image">
+												<img class="wow fadeIn" data-wow-delay="0ms" data-wow-duration="2500ms"
+													src="assets/img/bg/banner-bg1.jpg" alt="Ocean Freight" />
+												<div class="overlay-box">
+													<div class="overlay-inner">
+														<div class="content">
+															<div class="content-inner">
+																<h2><a href="#">Ocean Freight</a></h2>
+																<div class="text">
+																	At <strong>Stanza Logistics</strong>, our Ocean
+																	Freight solutions ensure safe, timely,
+																	and cost-efficient delivery across continents. With
+																	a vast network of vessels, we handle
+																	everything from full container loads to smaller
+																	shipments. Let your goods sail smoothly
+																	with Stanza!
+																</div>
+																<a href="service.html" class="read-more theme-btn">Read
+																	more</a>
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-											<div class="ft-product-mesurment-form-input-area">
-												<label class="ft-pm-title">Shipment Date</label>
-												<div class="row">
-													<div class="col-lg-4">
-														<div class="ft-pm-input ft-select-option position-relative">
-															<select name="#">
-																<option value="#">Shipment Type</option>
-																<option value="#">By Air</option>
-																<option value="#">By Ship</option>
-																<option value="#">By Road</option>
-															</select>
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<div class="ft-pm-input">
-															<input type="text" placeholder="City Type Departure">
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<div class="ft-pm-input">
-															<input type="Text" placeholder="Delivery City">
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<div class="ft-pm-input ft-select-option position-relative">
-															<select name="#">
-																<option value="#">Incoterms</option>
-																<option value="#">FOB</option>
-																<option value="#">EX WORKS</option>
-																<option value="#">CIF</option>
-															</select>
-														</div>
-													</div>
-													<div class="col-lg-2">
-														<div class="ft-pm-input">
-															<input type="Text" placeholder="Weight">
-														</div>
-													</div>
-													<div class="col-lg-2">
-														<div class="ft-pm-input">
-															<input type="Text" placeholder="CBM">
-														</div>
-													</div>
-													<div class="col-lg-3">
-														<div class="ft-pm-input">
-															<input type="Text" placeholder="SIZE: 20/40 ft.">
-														</div>
-													</div>
-													<div class="col-lg-2">
-														<div class="ft-pm-input">
-															<input type="Text" placeholder="Qty.">
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<!-- Air Freight Slide -->
+							<li>
+								<div class="slide-two-content">
+									<div class="inner-box">
+										<div class="image-box">
+											<div class="image">
+												<img class="wow fadeIn" data-wow-delay="0ms" data-wow-duration="2500ms"
+													src="assets/images/main-slider/plane.jpg" alt="Air Freight" />
+												<div class="overlay-box">
+													<div class="overlay-inner">
+														<div class="content">
+															<div class="content-inner">
+																<h2><a href="#">Air Freight</a></h2>
+																<div class="text">
+																	Speed and reliability are at the core of our Air
+																	Freight services at <strong>Stanza
+																		Logistics</strong>. Whether you have urgent
+																	cargo or scheduled shipments, we’ll get
+																	your goods to their destination in record time,
+																	covering all major airports globally.
+																</div>
+																<a href="service.html" class="read-more theme-btn">Read
+																	more</a>
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-											<!-- <div class="ft-product-mesurment-checkbox">
-												<label>
-													<input class="condition" name="#" type="radio" value="#" checked="">
-													<span class="checkmark-circle"></span>
-													<span class="slug">Incoterms</span>
-												</label>
-												<label>
-													<input class="condition" name="#" type="radio" value="#">
-													<span class="checkmark-circle"></span>
-													<span class="slug">Express Delivery</span>
-												</label>
-												<label>
-													<input class="condition" name="#" type="radio" value="#">
-													<span class="checkmark-circle"></span>
-													<span class="slug">Insurance</span>
-												</label>
-												<label>
-													<input class="condition" name="#" type="radio" value="#">
-													<span class="checkmark-circle"></span>
-													<span class="slug">Packaging</span>
-												</label>
-											</div> -->
-											<button>Request For A Quote</button>
-										</form>
+										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-									<div class="ft-product-mesurment-form-input">
-										<form action="#">
-											<div class="ft-product-mesurment-form-input-area">
-												<label class="ft-pm-title">Personal Data</label>
-												<div class="row">
-													<div class="col-lg-4">
-														<div class="ft-pm-input">
-															<input type="text" placeholder="First Name">
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<div class="ft-pm-input">
-															<input type="text" placeholder="Last Name">
-														</div>
-													</div>
-													<div class="col-lg-4">
-														<div class="ft-pm-input">
-															<input type="email" placeholder="Your Email">
-														</div>
-													</div>
-													<div class="col-lg-12">
-														<div class="ft-pm-input">
-															<input type="text" placeholder="Your Tracking Id">
+							</li>
+
+							<!-- Transportation Slide -->
+							<li>
+								<div class="slide-two-content">
+									<div class="inner-box">
+										<div class="image-box">
+											<div class="image">
+												<img class="wow fadeIn" data-wow-delay="0ms" data-wow-duration="2500ms"
+													src="assets/images/main-slider/roadn.jpg" alt="Transportation" />
+												<div class="overlay-box">
+													<div class="overlay-inner">
+														<div class="content">
+															<div class="content-inner">
+																<h2><a href="#">Transportation</a></h2>
+																<div class="text">
+																	With <strong>Stanza Logistics</strong>, land
+																	transportation is smooth, safe, and
+																	reliable. From local deliveries to long-haul routes
+																	globally, we make sure your
+																	goods arrive on time, every time.
+																</div>
+																<a href="service.html" class="read-more theme-btn">Read
+																	more</a>
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-											<button>Track & Trace</button>
-										</form>
+										</div>
 									</div>
 								</div>
-							</div>
-						</div>
+							</li>
+
+							<!-- Warehousing Slide -->
+							<li>
+								<div class="slide-two-content">
+									<div class="inner-box">
+										<div class="image-box">
+											<div class="image">
+												<img class="wow fadeIn" data-wow-delay="0ms" data-wow-duration="2500ms"
+													src="assets/images/main-slider/banner-2.jpg" alt="Warehousing" />
+												<div class="overlay-box">
+													<div class="overlay-inner">
+														<div class="content">
+															<div class="content-inner">
+																<h2><a href="#">Warehousing</a></h2>
+																<div class="text">
+																	Our state-of-the-art warehouses provide secure and
+																	efficient storage solutions.
+																	<strong>Stanza Logistics</strong> ensures your
+																	inventory is safely managed, whether you
+																	need short-term or long-term warehousing options.
+																</div>
+																<a href="service.html" class="read-more theme-btn">Read
+																	more</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<!-- Custom Clearance Slide -->
+							<li>
+								<div class="slide-two-content">
+									<div class="inner-box">
+										<div class="image-box">
+											<div class="image">
+												<img class="wow fadeIn" data-wow-delay="0ms" data-wow-duration="2500ms"
+													src="assets/images/main-slider/imresizer-1727523961158.jpg"
+													alt="Custom Clearance" />
+												<div class="overlay-box">
+													<div class="overlay-inner">
+														<div class="content">
+															<div class="content-inner">
+																<h2><a href="#">Custom Clearance</a></h2>
+																<div class="text">
+																	Navigating through complex customs regulations?
+																	<strong>Stanza Logistics</strong> makes
+																	customs clearance simple and seamless, ensuring that
+																	your goods cross borders without
+																	delays.
+																</div>
+																<a href="service.html" class="read-more theme-btn">Read
+																	more</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<!-- Part Load Slide -->
+							<li>
+								<div class="slide-two-content">
+									<div class="inner-box">
+										<div class="image-box">
+											<div class="image">
+												<img class="wow fadeIn" data-wow-delay="0ms" data-wow-duration="2500ms"
+													src="assets/images/main-slider/pl.jpg" alt="Part Load" />
+												<div class="overlay-box">
+													<div class="overlay-inner">
+														<div class="content">
+															<div class="content-inner">
+																<h2><a href="#">Part Load</a></h2>
+																<div class="text">
+																	Need to ship a smaller load? With our flexible Part
+																	Load services, <strong>Stanza
+																		Logistics</strong> can manage even smaller
+																	consignments, ensuring efficient space
+																	utilization and cost savings.
+																</div>
+																<a href="service.html" class="read-more theme-btn">Read
+																	more</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="thumbs-carousel owl-carousel owl-theme">
+							<li>Ocean Freight</li>
+							<li>Air Freight</li>
+							<li>Custom Clearance</li>
+							<li>Transportation</li>
+							<li>Warehousing</li>
+						</ul>
+
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- End of Product mesurment section
-	============================================= -->
 
 
 
-	<!-- Start of About section
-	============================================= -->
-	<section id="ft-about-2" class="ft-about-section-2">
+	<section style="margin-bottom: 100px; background-color: rgb(236, 230, 230);" id="ft-funfact"
+		class="ft-funfact-section">
 		<div class="container">
-			<div class="ft-about-content-2">
+			<div class="ft-funfact-content">
 				<div class="row">
-					<div class="col-lg-6">
-						<div class="ft-about-text-wrapper-2">
-							<div class="ft-section-title-2 headline pera-content wow fadeInUp" data-wow-delay="200ms"
-								data-wow-duration="1500ms">
-								<span class="sub-title">About Us</span>
-								<h2>Your Trusted Global Logistics Partner</h2>
-								<p>We are a global logistics company specializing in ocean & air freight, warehousing,
-									and customs clearance. Our steady growth, driven by customer referrals and repeat
-									business, reflects our competence, expertise, and commitment to excellent service at
-									competitive rates. We operate as an extension of your team, ensuring seamless
-									logistics solutions.</p>
+					<div class="col-lg-3 col-md-6">
+						<div class="ft-funfact-innerbox text-center">
+							<div class="ft-funfact-icon">
+								<i class="fal fa-clipboard-list-check"></i>
 							</div>
-							<div class="ft-about-feature-wrapper-2">
-								<div class="row">
-									<div class="col-lg-6 wow fadeInUp" data-wow-delay="400ms"
-										data-wow-duration="1500ms">
-										<div class="ft-about-feature-list-item d-flex align-items-center">
-											<div
-												class="ft-about-feature-icon d-flex align-items-center justify-content-center">
-												<i class="fal fa-bullseye-arrow"></i>
-											</div>
-											<div class="ft-about-feature-text headline pera-content">
-												<h3>Our Mission</h3>
-												<p>Delivering exceptional logistics services with precision and
-													dedication.</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-6 wow fadeInUp" data-wow-delay="600ms"
-										data-wow-duration="1500ms">
-										<div class="ft-about-feature-list-item d-flex align-items-center">
-											<div
-												class="ft-about-feature-icon d-flex align-items-center justify-content-center">
-												<i class="fal fa-bullseye-arrow"></i>
-											</div>
-											<div class="ft-about-feature-text headline pera-content">
-												<h3>Our Vision</h3>
-												<p>To be the leading global logistics provider known for reliability and
-													innovation.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="ft-btn-3">
-									<a class="d-flex justify-content-center align-items-center" href="about.html">Learn
-										More <i class="flaticon-right-arrow"></i></a>
-								</div>
+							<div class="ft-funfact-text headline pera-content">
+								<h3><span id="counternew1" class="counter" data-stop="52480">0</span>+</h3>
+								<p>Tons of Cargo Moved</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
-						<div class="ft-about-img-2-wrapper position-relative">
-							<span class="ft-about-shape1 position-absolute"><img src="assets/img/shape/ab-sh1.png"
-									alt=""></span>
-							<span class="ft-about-shape2 position-absolute"><img src="assets/img/shape/ab-sh2.png"
-									alt=""></span>
-							<div class="ft-about-img-2">
-								<img src="assets/img/about/ab2.jpg" alt="About Us Image">
+					<div class="col-lg-3 col-md-6">
+						<div class="ft-funfact-innerbox text-center">
+							<div class="ft-funfact-icon">
+								<i class="fal fa-users"></i>
+							</div>
+							<div class="ft-funfact-text headline pera-content">
+								<h3><span id="counternew2" class="counter" data-stop="54">0</span>+</h3>
+								<p>Countries Served</p>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- End of About section
-	============================================= -->
-
-
-	<section id="ft-thx-why-choose-us" class="ft-thx-why-choose-us-section">
-		<div class="container">
-			<div class="ft-thx-why-choose-us-content">
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="pr-an-why-choose-feature">
-							<div class="row">
-								<div class="col-md-6 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-									<div class="pr-an-why-choose-feature-item">
-										<div
-											class="pr-an-why-choose-ft-icon d-flex justify-content-center align-items-center">
-											<i class="flaticon-logistics"></i>
-										</div>
-										<div class="pr-an-why-choose-ft-text headline pera-content">
-											<h3><a href="#">Safe Packing</a></h3>
-											<p>At Stanza Logistics, we ensure your items are packed with care,
-												guaranteeing safe delivery to any destination worldwide.</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-									<div class="pr-an-why-choose-feature-item">
-										<div
-											class="pr-an-why-choose-ft-icon d-flex justify-content-center align-items-center">
-											<i class="flaticon-delivery-truck"></i>
-										</div>
-										<div class="pr-an-why-choose-ft-text headline pera-content">
-											<h3><a href="#">Right Time Delivery</a></h3>
-											<p>We pride ourselves on punctual deliveries, ensuring your shipments arrive
-												at the right time, every time.</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-									<div class="pr-an-why-choose-feature-item">
-										<div
-											class="pr-an-why-choose-ft-icon d-flex justify-content-center align-items-center">
-											<i class="flaticon-worldwide"></i>
-										</div>
-										<div class="pr-an-why-choose-ft-text headline pera-content">
-											<h3><a href="#">Ship Everywhere</a></h3>
-											<p>Whether it's across the street or across the globe, Stanza Logistics
-												ensures your shipment reaches its destination efficiently and safely.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
-									<div class="pr-an-why-choose-feature-item">
-										<div
-											class="pr-an-why-choose-ft-icon d-flex justify-content-center align-items-center">
-											<i class="flaticon-free-shipping"></i>
-										</div>
-										<div class="pr-an-why-choose-ft-text headline pera-content">
-											<h3><a href="#">Fastest Shipping</a></h3>
-											<p>With Stanza Logistics, you can count on the fastest shipping services,
-												minimizing transit times while maintaining the highest standards of
-												service.</p>
-										</div>
-									</div>
-								</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ft-funfact-innerbox text-center">
+							<div class="ft-funfact-icon">
+								<i class="fas fa-trophy-alt"></i>
+							</div>
+							<div class="ft-funfact-text headline pera-content">
+								<h3><span id="counternew3" class="counter" data-stop="8650">0</span>+</h3>
+								<p>Shipments Completed</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6">
-						<div class="pr-an-why-choose-text-wrapper">
-							<div class="pr-cor-section-title headline pera-content wow fadeInUp" data-wow-delay="0ms"
-								data-wow-duration="1500ms">
-								<span class="pr-cor-title-tag">Why Choose Us</span>
-								<h2>We Provide the Best Facilities For Transport</h2>
-								<p>At Stanza Logistics, we offer top-notch transport services, ensuring every step of
-									the shipping process is handled with the utmost care and efficiency.</p>
+					<div class="col-lg-3 col-md-6">
+						<div class="ft-funfact-innerbox text-center">
+							<div class="ft-funfact-icon">
+								<i class="fal fa-medal"></i>
 							</div>
-							<div class="pr-an-why-choose-list ul-li-block wow fadeInUp" data-wow-delay="200ms"
-								data-wow-duration="1500ms">
-								<ul>
-									<li>We've been supporting logistics services worldwide for years.</li>
-									<li>Perfect for businesses or individuals needing reliable shipping services.</li>
-									<li>Our user-friendly interface allows you to manage shipments with ease.</li>
-								</ul>
-							</div>
-							<div class="ft-thx-btn text-center wow flipInX" data-wow-delay="200ms"
-								data-wow-duration="1500ms">
-								<a class="d-flex justify-content-center align-items-center" href="#">Learn More</a>
+							<div class="ft-funfact-text headline pera-content">
+								<h3><span id="counternew4" class="counter" data-stop="22">0</span>+</h3>
+								<p>Industries Served</p>
 							</div>
 						</div>
 					</div>
@@ -1087,73 +874,297 @@
 	</section>
 
 
-	<!-- Start of Experience section
-	============================================= -->
-	<!-- <section id="ft-experience" class="ft-experience-section">
-		<div class="container">
-			<div class="ft-experience-content">
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="ft-experience-text">
-							<div class="ft-section-title-2 headline pera-content">
-								<span class="sub-title">Experience</span>
-								<h2>Global Shipping Partner
-									To World’s Famous Companies
-								</h2>
+
+
+
+
+
+
+
+
+
+
+	<!-- Services Section Four -->
+	<section class="ft3-services-section-four">
+		<div class="auto-container">
+			<div class="inner-container">
+				<div class="clearfix">
+					<!-- 						
+						<div class="ft3-service-block-three col-lg-4 col-md-6 col-sm-12">
+							<div class="inner-box">
+								<div class="image-layer" style="background-image:url(assets/images/resource/service-5.jpg)"></div>
+								<h5><a href="#">Air Freight</a></h5>
+								<div class="text">To be travel management leaders in regions in which we operate, innovative technology to improve the customer experience and bring positive change to the market.</div>
+								<a href="#" class="read-more">Read More</a>
+								
+								<div class="overlay-box">
+									<div class="overlay-image-layer" style="background-image:url(assets/images/resource/service-5.jpg)"></div>
+									<div class="shape-layer"></div>
+									<div class="overlay-inner">
+										<div class="content">
+											<div class="icon-box">
+												<span class="icon flaticon-airplane"></span>
+											</div>
+											<h5><a href="#">Air Freight</a></h5>
+											<div class="lower-text">To be travel management leaders in <br> regions in which we operate.</div>
+											<a href="#" class="more">Read More <span class="fa fa-angle-right"></span></a>
+										</div>
+									</div>
+								</div>
+								
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="ft-experience-circle-progress">
-							<div class="row">
-								<div class="col-lg-4">
-									<div class="counter-boxed text-center headline position-relative">
-										<div class="graph-outer">
-											<input type="text" class="dial" data-fgColor="#f22728" data-bgColor="#fff"
-												data-width="80" data-height="80" data-linecap="round" value="95">
-											<div class="inner-text count-box"><span class="count-text" data-stop="95"
-													data-speed="3500"></span>%</div>
+						
+						<div class="ft3-service-block-three active col-lg-4 col-md-6 col-sm-12">
+							<div class="inner-box">
+								<div class="image-layer" style="background-image:url(assets/images/resource/service-5.jpg)"></div>
+								<h5><a href="#">Ocean Freight</a></h5>
+								<div class="text">To be travel management leaders in regions in which we operate, innovative technology to improve the customer experience and bring positive change to the market.</div>
+								<a href="#" class="read-more">Read More</a>
+								
+								<div class="overlay-box">
+									<div class="overlay-image-layer" style="background-image:url(assets/images/resource/service-5.jpg)"></div>
+									<div class="shape-layer"></div>
+									<div class="overlay-inner">
+										<div class="content">
+											<div class="icon-box">
+												<span class="icon flaticon-boat"></span>
+											</div>
+											<h5><a href="#">Ocean Freight</a></h5>
+											<div class="lower-text">To be travel management leaders in <br> regions in which we operate.</div>
+											<a href="#" class="more">Read More <span class="fa fa-angle-right"></span></a>
 										</div>
-										<h3>Warehousing</h3>
 									</div>
 								</div>
-								<div class="col-lg-4">
-									<div class="counter-boxed text-center headline position-relative">
-										<div class="graph-outer">
-											<input type="text" class="dial" data-fgColor="#f22728" data-bgColor="#fff"
-												data-width="80" data-height="80" data-linecap="round" value="85">
-											<div class="inner-text count-box"><span class="count-text" data-stop="85"
-													data-speed="3500"></span>%</div>
+								
+							</div>
+						</div>
+						
+						<div class="ft3-service-block-three col-lg-4 col-md-6 col-sm-12">
+							<div class="inner-box">
+								<div class="image-layer" style="background-image:url(assets/images/resource/service-5.jpg)"></div>
+								<h5><a href="#">Road Freight</a></h5>
+								<div class="text">To be travel management leaders in regions in which we operate, innovative technology to improve the customer experience and bring positive change to the market.</div>
+								<a href="#" class="read-more">Read More</a>
+								
+								<div class="overlay-box">
+									<div class="overlay-image-layer" style="background-image:url(assets/images/resource/service-5.jpg)"></div>
+									<div class="shape-layer"></div>
+									<div class="overlay-inner">
+										<div class="content">
+											<div class="icon-box">
+												<span class="icon flaticon-delivery-1"></span>
+											</div>
+											<h5><a href="#">Road Freight</a></h5>
+											<div class="lower-text">To be travel management leaders in <br> regions in which we operate.</div>
+											<a href="#" class="more">Read More <span class="fa fa-angle-right"></span></a>
 										</div>
-										<h3>Oceann Freight</h3>
 									</div>
 								</div>
-								<div class="col-lg-4">
-									<div class="counter-boxed text-center headline position-relative">
-										<div class="graph-outer">
-											<input type="text" class="dial" data-fgColor="#f22728" data-bgColor="#fff"
-												data-width="80" data-height="80" data-linecap="round" value="90">
-											<div class="inner-text count-box"><span class="count-text" data-stop="90"
-													data-speed="3500"></span>%</div>
+								
+							</div>
+						</div>
+						<div class="ft3-service-block-three col-lg-4 col-md-6 col-sm-12">
+							<div class="inner-box">
+								<div class="image-layer" style="background-image:url(assets/images/resource/service-5.jpg)"></div>
+								<h5><a href="#">Road Freight</a></h5>
+								<div class="text">To be travel management leaders in regions in which we operate, innovative technology to improve the customer experience and bring positive change to the market.</div>
+								<a href="#" class="read-more">Read More</a>
+								
+								<div class="overlay-box">
+									<div class="overlay-image-layer" style="background-image:url(assets/images/resource/service-5.jpg)"></div>
+									<div class="shape-layer"></div>
+									<div class="overlay-inner">
+										<div class="content">
+											<div class="icon-box">
+												<span class="icon flaticon-delivery-1"></span>
+											</div>
+											<h5><a href="#">Road Freight</a></h5>
+											<div class="lower-text">To be travel management leaders in <br> regions in which we operate.</div>
+											<a href="#" class="more">Read More <span class="fa fa-angle-right"></span></a>
 										</div>
-										<h3>Air Freight</h3>
 									</div>
 								</div>
+								
+							</div>
+						</div> -->
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section style="padding-top: 30px; padding-bottom: 0px; margin-bottom: 0px;" id="ft-portfolio-2"
+		class="ft-portfolio-section-2 position-relative">
+		<div class="ft-section-title-2 headline pera-content text-center">
+			<span class="sub-title"> Our Movements</span>
+			<h2>Checkout our All
+				Latest Movements
+			</h2>
+		</div>
+		<div class="ft-portfolio-content-2">
+
+
+			<div class="ft-portfolio-slider-2">
+				<div class="ft-portfolio-slider-item">
+					<div class="ft-portfolio-slider-innerbox position-relative">
+						<div class="ft-portfolio-img">
+							<img src="assets/img/project/imresizer-1726555496214.jpg" alt="">
+						</div>
+						<div class="ft-portfolio-text headline headline pera-content">
+							<h3><a href="project.html">Oversized/Flat Rack Movement</a></h3>
+							<p>Specialized logistics for flat rack and oversized cargo, ensuring secure and smooth
+								delivery of bulky items.</p>
+							<div class="ft-btn-3">
+								<a class="d-flex justify-content-center align-items-center" href="project.html">Read
+									More <i class="flaticon-right-arrow"></i></a>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="ft-portfolio-slider-item">
+					<div class="ft-portfolio-slider-innerbox position-relative">
+						<div class="ft-portfolio-img">
+							<img src="assets/img/project/DG movement/imresizer-1726555460209.jpg" alt="">
+						</div>
+						<div class="ft-portfolio-text headline headline pera-content">
+							<h3><a href="project.html">Dangerous Goods Movement</a></h3>
+							<p>Expert handling and transportation of hazardous materials with full compliance to global
+								safety regulations. </p>
+							<div class="ft-btn-3">
+								<a class="d-flex justify-content-center align-items-center" href="project.html">Read
+									More <i class="flaticon-right-arrow"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="ft-portfolio-slider-item">
+					<div class="ft-portfolio-slider-innerbox position-relative">
+						<div class="ft-portfolio-img">
+							<img src="assets/img/project/wc.jpg" alt="">
+						</div>
+						<div class="ft-portfolio-text headline headline pera-content">
+							<h3><a href="project.html"> ICC Cricket World Cup 2024</a></h3>
+							<p> Fast and secure shipping for your World Cup jerseys, delivering team spirit worldwide
+								with timely service. </p>
+							<div class="ft-btn-3">
+								<a class="d-flex justify-content-center align-items-center" href="project.html">Read
+									More <i class="flaticon-right-arrow"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="ft-portfolio-slider-item">
+					<div class="ft-portfolio-slider-innerbox position-relative">
+						<div class="ft-portfolio-img">
+							<img src="assets/img/project/GC/imresizer-1727618836021.jpg" alt="">
+						</div>
+						<div class="ft-portfolio-text headline headline pera-content">
+							<h3><a href="project.html"> General Cargo</a></h3>
+							<p> Reliable and efficient solutions for moving general cargo worldwide, tailored to meet
+								your specific needs.</p>
+							<div class="ft-btn-3">
+								<a class="d-flex justify-content-center align-items-center" href="project.html">Read
+									More <i class="flaticon-right-arrow"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ft-portfolio-slider-item">
+					<div class="ft-portfolio-slider-innerbox position-relative">
+						<div class="ft-portfolio-img">
+							<img src="assets/img/project/Flat rck movement/imresizer-1727275514095.jpg" alt="">
+						</div>
+						<div class="ft-portfolio-text headline headline pera-content">
+							<h3><a href="project.html">Oversized/Flat Rack Movement</a></h3>
+							<p>Specialized logistics for flat rack and oversized cargo, ensuring secure and smooth
+								delivery of bulky items.</p>
+							<div class="ft-btn-3">
+								<a class="d-flex justify-content-center align-items-center" href="project.html">Read
+									More <i class="flaticon-right-arrow"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ft-portfolio-slider-item">
+					<div class="ft-portfolio-slider-innerbox position-relative">
+						<div class="ft-portfolio-img">
+							<img src="assets/img/project/DG movement/imresizer-1726555481605.jpg" alt="">
+						</div>
+						<div class="ft-portfolio-text headline headline pera-content">
+							<h3><a href="project.html">Dangerous Goods Movement</a></h3>
+							<p>Expert handling and transportation of hazardous materials with full compliance to global
+								safety regulations.</p>
+							<div class="ft-btn-3">
+								<a class="d-flex justify-content-center align-items-center" href="project.html">Read
+									More <i class="flaticon-right-arrow"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ft-portfolio-slider-item">
+					<div class="ft-portfolio-slider-innerbox position-relative">
+						<div class="ft-portfolio-img">
+							<img src="assets/img/project/GC/imresizer-1727618865987.jpg" alt="">
+						</div>
+						<div class="ft-portfolio-text headline headline pera-content">
+							<h3><a href="project.html">General Cargo</a></h3>
+							<p> Reliable and efficient solutions for moving general cargo worldwide, tailored to meet
+								your specific needs.</p>
+							<div class="ft-btn-3">
+								<a class="d-flex justify-content-center align-items-center" href="project.html">Read
+									More <i class="flaticon-right-arrow"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="ft-portfolio-slider-item">
+					<div class="ft-portfolio-slider-innerbox position-relative">
+						<div class="ft-portfolio-img">
+							<img src="assets/img/project/DG movement/imresizer-1726555473427.jpg" alt="">
+						</div>
+						<div class="ft-portfolio-text headline headline pera-content">
+							<h3><a href="project-single.html">Dangerous Goods</a></h3>
+							<p>dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo vel
+								facilisis. </p>
+							<div class="ft-btn-3">
+								<a class="d-flex justify-content-center align-items-center"
+									href="portfolio-single.html">Read More <i class="flaticon-right-arrow"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
 			</div>
+
+			<div class="carousel_nav clearfix">
+				<button type="button" class="portfolio-left_arrow"><i class="far fa-arrow-left"></i></button>
+				<button type="button" class="portfolio-right_arrow"><i class="far fa-arrow-right"></i></button>
+			</div>
+
+
+
+
 		</div>
-	</section> -->
-	<!-- End of Experience section
-	============================================= -->
+	</section>
 
 
-	<section class="slider-section">
+
+	<section style="margin-top: 0px; padding-top: 0px;" class="slider-section">
 		<h2 class="slider-heading">Our Partners</h2>
 		<br>
-		<div style="margin-top: 50px;" class="slider-wrapper">
+		<div style="margin-top: 10px;" class="slider-wrapper">
 			<div class="slider">
 				<div class="slide"><img src="assets/partner/MmzJFy1R1646704953.png" alt="CTS"></div>
 				<div class="slide"><img src="assets/partner/6579882a8dc4fd2275cdedfb_6578c0b49f90df5ad405b228_OOCL.png"
@@ -1176,333 +1187,288 @@
 		</div>
 	</section>
 
+	<section style="margin-top: 0px; padding-top: 0px;" class="slider-section">
+		<!-- <h2 class="slider-heading">Our Partners</h2> -->
+		<br>
+		<div style="margin-top: 10px;" class="slider-wrapper">
+			<div class="slider ">
+				<div class="slide"><img src="assets/partnerair/33d9fe22350b552d19704e6359dd1ea9732accd3.png" alt="CTS">
+				</div>
+				<div class="slide"><img src="assets/partnerair/6c026d58-d2cc-49df-8ed6-6e83c035eb39_1000x1000.jpg"
+						alt="EY"></div>
+				<div class="slide"><img src="assets/partnerair/Cargolux_Logo.svg.png" alt="Deloitte"></div>
+				<div class="slide"><img
+						src="assets/partnerair/cathay-cargo_master-logo_vertical-green-english-scaled.jpg"
+						alt="Accenture"></div>
+				<div class="slide"><img src="assets/partnerair/images (2).png" alt="Accenture"></div>
+				<div class="slide"><img src="assets/partnerair/images (1).png" alt="Accenture"></div>
+				<div class="slide"><img src="assets/partnerair/images (3).png" alt="Accenture"></div>
+				<div class="slide"><img src="assets/partnerair/images (4).png" alt="Accenture"></div>
+				<div class="slide"><img src="assets/partnerair/images (7).png" alt="Accenture"></div>
+				<div class="slide"><img src="assets/partnerair/images (8).png" alt="Accenture"></div>
+				<div class="slide"><img src="assets/partnerair/images.jpeg" alt="Accenture"></div>
+				<div class="slide"><img src="assets/partnerair/images.png" alt="Accenture"></div>
+				<div class="slide"><img src="assets/partnerair/logo-mobile.jpg" alt="Accenture"></div>
+				<div class="slide"><img src="assets/partnerair/United_Parcel_Service_logo_2014.svg.png" alt="Accenture">
+				</div>
+				<div class="slide"><img src="assets/partnerair/unnamed.png" alt="Accenture"></div>
 
 
-
-	<!-- Start of Project section
-	============================================= -->
-	<section id="ft-portfolio-2" class="ft-portfolio-section-2 position-relative">
-		<div class="ft-section-title-2 headline pera-content text-center">
-			<span class="sub-title">Project</span>
-			<h2>Let's Checkout our All
-				Latest Project
-			</h2>
-		</div>
-		<div class="ft-portfolio-content-2">
-			<div class="ft-portfolio-slider-2">
-				<div class="ft-portfolio-slider-item">
-					<div class="ft-portfolio-slider-innerbox position-relative">
-						<div class="ft-portfolio-img">
-							<img src="assets/img/project/port1.jpg" alt="">
-						</div>
-						<div class="ft-portfolio-text headline headline pera-content">
-							<h3><a href="project-single.html">Service & Aftermarket
-									Logistics</a></h3>
-							<p>dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo vel
-								facilisis. </p>
-							<div class="ft-btn-3">
-								<a class="d-flex justify-content-center align-items-center"
-									href="portfolio-single.html">Read More <i class="flaticon-right-arrow"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="ft-portfolio-slider-item">
-					<div class="ft-portfolio-slider-innerbox position-relative">
-						<div class="ft-portfolio-img">
-							<img src="assets/img/project/port2.jpg" alt="">
-						</div>
-						<div class="ft-portfolio-text headline headline pera-content">
-							<h3><a href="project-single.html">Service & Aftermarket
-									Logistics</a></h3>
-							<p>dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo vel
-								facilisis. </p>
-							<div class="ft-btn-3">
-								<a class="d-flex justify-content-center align-items-center"
-									href="portfolio-single.html">Read More <i class="flaticon-right-arrow"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="ft-portfolio-slider-item">
-					<div class="ft-portfolio-slider-innerbox position-relative">
-						<div class="ft-portfolio-img">
-							<img src="assets/img/project/port3.jpg" alt="">
-						</div>
-						<div class="ft-portfolio-text headline headline pera-content">
-							<h3><a href="project-single.html">Service & Aftermarket
-									Logistics</a></h3>
-							<p>dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo vel
-								facilisis. </p>
-							<div class="ft-btn-3">
-								<a class="d-flex justify-content-center align-items-center"
-									href="portfolio-single.html">Read More <i class="flaticon-right-arrow"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="ft-portfolio-slider-item">
-					<div class="ft-portfolio-slider-innerbox position-relative">
-						<div class="ft-portfolio-img">
-							<img src="assets/img/project/port4.jpg" alt="">
-						</div>
-						<div class="ft-portfolio-text headline headline pera-content">
-							<h3><a href="project-single.html">Service & Aftermarket
-									Logistics</a></h3>
-							<p>dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo vel
-								facilisis. </p>
-							<div class="ft-btn-3">
-								<a class="d-flex justify-content-center align-items-center"
-									href="portfolio-single.html">Read More <i class="flaticon-right-arrow"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="ft-portfolio-slider-item">
-					<div class="ft-portfolio-slider-innerbox position-relative">
-						<div class="ft-portfolio-img">
-							<img src="assets/img/project/port1.jpg" alt="">
-						</div>
-						<div class="ft-portfolio-text headline headline pera-content">
-							<h3><a href="project-single.html">Service & Aftermarket
-									Logistics</a></h3>
-							<p>dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo vel
-								facilisis. </p>
-							<div class="ft-btn-3">
-								<a class="d-flex justify-content-center align-items-center"
-									href="portfolio-single.html">Read More <i class="flaticon-right-arrow"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="ft-portfolio-slider-item">
-					<div class="ft-portfolio-slider-innerbox position-relative">
-						<div class="ft-portfolio-img">
-							<img src="assets/img/project/port2.jpg" alt="">
-						</div>
-						<div class="ft-portfolio-text headline headline pera-content">
-							<h3><a href="project-single.html">Service & Aftermarket
-									Logistics</a></h3>
-							<p>dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo vel
-								facilisis. </p>
-							<div class="ft-btn-3">
-								<a class="d-flex justify-content-center align-items-center"
-									href="portfolio-single.html">Read More <i class="flaticon-right-arrow"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="ft-portfolio-slider-item">
-					<div class="ft-portfolio-slider-innerbox position-relative">
-						<div class="ft-portfolio-img">
-							<img src="assets/img/project/port3.jpg" alt="">
-						</div>
-						<div class="ft-portfolio-text headline headline pera-content">
-							<h3><a href="project-single.html">Service & Aftermarket
-									Logistics</a></h3>
-							<p>dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo vel
-								facilisis. </p>
-							<div class="ft-btn-3">
-								<a class="d-flex justify-content-center align-items-center"
-									href="portfolio-single.html">Read More <i class="flaticon-right-arrow"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
+				<!-- Add more slides as needed -->
 			</div>
 		</div>
 	</section>
-	<!-- End of Project section
-	============================================= -->
 
-	<!-- Start of Testimonial section
-	============================================= -->
-	<section id="ft-testimonial-2" class="ft-testimonial-section-2">
+
+
+
+
+
+
+	<section id="ft-blog-2" class="ft-blog-section-2 position-relative">
 		<div class="container">
-			<div class="ft-testimonial-top-content-2 d-flex justify-content-between align-items-end flex-wrap">
-				<div class="ft-section-title-2 headline pera-content">
-					<span class="sub-title">Testimonial</span>
-					<h2>What People & Clients
-						Think About Us?
-					</h2>
+			<div class="ft-section-title-2 headline pera-content text-center">
+				<span class="sub-title">Key Moments</span>
+				<h2> Major Event and Highlights
+				</h2>
+			</div>
+			<div class="ft-blog-content-2">
+				<div class="ft-blog-slider-2">
+
+
+					<div class="ft-item-innerbox">
+						<div class="ft-blog-innerbox-2">
+							<div class="ft-blog-img-2 position-relative">
+								<img src="assets/imgs/project/New folder/Delhi, Norway India Chamber of commerece , 2023/WhatsApp Image 2024-09-08 at 16.38.59_11fac46e.jpg"
+									alt="">
+								<!-- <div
+									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
+									21 Oct
+								</div> -->
+							</div>
+							<div class="ft-blog-text-2 headline pera-content">
+								<h3><a href="Norway.html">Norway/India 2023
+									</a></h3>
+								<p>Part of Indio-Norway chamber of commerce delegation </p>
+								<div class="ft-btn-2">
+									<a href="Norway.html">
+										<i class="icon-first flaticon-right-arrow"></i>
+										<span>Read More</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="ft-item-innerbox">
+						<div class="ft-blog-innerbox-2">
+							<div class="ft-blog-img-2 position-relative">
+								<img src="assets/imgs/project/New folder/Hong Kong , Jc trans Expo 2023/imresizer-1726550019941.jpg"
+									alt="">
+								<!-- <div
+									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
+									21 Oct
+								</div> -->
+							</div>
+							<div class="ft-blog-text-2 headline pera-content">
+								<h3><a href="hongkong.html">Hong Kong 2023
+									</a></h3>
+								<p>JCtrans The 13th JCtrans Global Freight Forwarders Expo 2023 </p>
+								<div class="ft-btn-2">
+									<a href="hongkong.html">
+										<i class="icon-first flaticon-right-arrow"></i>
+										<span>Read More</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ft-item-innerbox">
+						<div class="ft-blog-innerbox-2">
+							<div class="ft-blog-img-2 position-relative">
+								<img src="assets/imgs/project/e22.jpg" alt="">
+								<!-- <div
+									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
+									21 Oct
+								</div> -->
+							</div>
+							<div class="ft-blog-text-2 headline pera-content">
+								<h3><a href="Participation.html">Istanbul 2023
+									</a></h3>
+								<p>JCtrans Global Freight Forwarders Expo, Istanbul </p>
+								<div class="ft-btn-2">
+									<a href="Participation.html">
+										<i class="icon-first flaticon-right-arrow"></i>
+										<span>Read More</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ft-item-innerbox">
+						<div class="ft-blog-innerbox-2">
+							<div class="ft-blog-img-2 position-relative">
+								<img src="assets/imgs/project/New folder/Mumbai, Pamex 2023/imresizer-1726551878169.jpg"
+									alt="">
+								<!-- <div
+									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
+									21 Oct
+								</div> -->
+							</div>
+							<div class="ft-blog-text-2 headline pera-content">
+								<h3><a href="Mumbai23.html">Mumbai 2023
+									</a></h3>
+								<p>Pamex 2023, Packaging machinery exhibition </p>
+								<div class="ft-btn-2">
+									<a href="Mumbai23.html">
+										<i class="icon-first flaticon-right-arrow"></i>
+										<span>Read More</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ft-item-innerbox">
+						<div class="ft-blog-innerbox-2">
+							<div class="ft-blog-img-2 position-relative">
+								<img src="assets/imgs/project/New folder/Dubai, Paper Arabia 2023/imresizer-1726551180295.jpg"
+									alt="">
+								<!-- <div
+									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
+									21 Oct
+								</div> -->
+							</div>
+							<div class="ft-blog-text-2 headline pera-content">
+								<h3><a href="Dubai23.html">Dubai 2023
+									</a></h3>
+								<p>Dubai 2023- Paper Arabia 2023 </p>
+								<div class="ft-btn-2">
+									<a href="Dubai23.html">
+										<i class="icon-first flaticon-right-arrow"></i>
+										<span>Read More</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ft-item-innerbox">
+						<div class="ft-blog-innerbox-2">
+							<div class="ft-blog-img-2 position-relative">
+								<img src="assets/imgs/project/New folder/Dubai, Global Freight Summit 2022/imresizer-1726551548932.jpg"
+									alt="">
+								<!-- <div
+									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
+									21 Oct
+								</div> -->
+							</div>
+							<div class="ft-blog-text-2 headline pera-content">
+								<h3><a style="text-decoration: none;" href="Dubai22.html">Dubai 2022
+									</a></h3>
+								<p>Dubai 2022- Global freight submit,2022 </p>
+								<div class="ft-btn-2">
+									<a href="Dubai22.html">
+										<i class="icon-first flaticon-right-arrow"></i>
+										<span>Read More</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
-				<div class="ft-title-text">
-					We pride ourselves on delivering exceptional service and creating value for our clients. Here's what
-					some of our clients have to say about their experiences working with us. Their feedback helps us
-					continue improving and striving for excellence.
+				<div class="carousel_nav  clearfix">
+					<button type="button" class="blg-left_arrow"><i class="far fa-arrow-left"></i></button>
+					<button type="button" class="blg-right_arrow"><i class="far fa-arrow-right"></i></button>
 				</div>
 			</div>
-			<div class="ft-testimonial-slider-wrapper-2 swiper-container">
-				<div class="ft-testimonial-slider-2">
-					<div class="choose_slider_items ul-li choose_slider">
-						<ul id="mySlider1">
-							<li class="current_item">
-								<div class="ft-testimonial-innerbox-item-2 text-center">
-									<div class="ft-testimonial-img">
-										<img src="assets/img/testimonial/test2.1.jpg" alt="">
-									</div>
-									<div class="ft-testimonial-text headline pera-content">
-										<div class="ft-testimonial-meta">
-											<h3>Gallen Maxwell</h3>
-											<span>UI/UX Designer</span>
-										</div>
-										<p>The team at [Your Company] exceeded my expectations. Their attention to
-											detail and dedication to understanding my needs were truly impressive. The
-											UI/UX design they created was not only visually appealing but also
-											user-friendly. I highly recommend their services to anyone looking to
-											elevate their digital presence.</p>
-										<div class="ft-testimonial-rate ul-li">
-											<ul>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-											</ul>
-										</div>
-									</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+	<section id="ft-featured" class="ft-featured-section">
+		<div class="container">
+			<div class="ft-section-title-2 headline pera-content text-center">
+				<span class="sub-title">Featured</span>
+				<h2>The unique qualities that make
+					<span>Stanza</span> special.
+				</h2>
+			</div>
+			<div class="ft-featured-content">
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+						<div class="ft-featured-innerbox position-relative">
+							<div class="ft-featured-icon">
+								<i class="flaticon-pricing"></i>
+							</div>
+							<div class="ft-featured-text headline pera-content">
+								<h3><a href="software.html">Quick Quotations</a></h3>
+								<p>Receive detailed pricing estimates swiftly, allowing you to make informed decisions
+									without delay.</p>
+								<div class="ft-btn-2">
+									<a href="software.html">
+										<i class="icon-first flaticon-right-arrow"></i>
+										<span>Read More</span>
+									</a>
 								</div>
-							</li>
-							<li class="current_item">
-								<div class="ft-testimonial-innerbox-item-2 text-center">
-									<div class="ft-testimonial-img">
-										<img src="assets/img/testimonial/test2.1.jpg" alt="">
-									</div>
-									<div class="ft-testimonial-text headline pera-content">
-										<div class="ft-testimonial-meta">
-											<h3>Jordan Avery</h3>
-											<span>Project Manager</span>
-										</div>
-										<p>Working with [Your Company] was a seamless experience from start to finish.
-											Their project management skills were top-notch, and they delivered
-											everything on time and within budget. Their ability to solve problems and
-											communicate effectively made the project a success.</p>
-										<div class="ft-testimonial-rate ul-li">
-											<ul>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-											</ul>
-										</div>
-									</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+						<div class="ft-featured-innerbox position-relative">
+							<div class="ft-featured-icon">
+								<i class="flaticon-deadline"></i>
+							</div>
+							<div class="ft-featured-text headline pera-content">
+								<h3><a href="software.html">Real-Time Tracking</a></h3>
+								<p>Stay updated with live tracking for every stage of your project, ensuring
+									transparency and control.</p>
+								<div class="ft-btn-2">
+									<a href="software.html">
+										<i class="icon-first flaticon-right-arrow"></i>
+										<span>Read More</span>
+									</a>
 								</div>
-							</li>
-							<li class="current_item">
-								<div class="ft-testimonial-innerbox-item-2 text-center">
-									<div class="ft-testimonial-img">
-										<img src="assets/img/testimonial/test2.1.jpg" alt="">
-									</div>
-									<div class="ft-testimonial-text headline pera-content">
-										<div class="ft-testimonial-meta">
-											<h3>Jessica Harper</h3>
-											<span>Marketing Director</span>
-										</div>
-										<p>[Your Company] brought our vision to life with their creative marketing
-											strategies. Their expertise in digital marketing helped us reach new
-											audiences and grow our brand. The team was responsive, professional, and
-											truly invested in our success.</p>
-										<div class="ft-testimonial-rate ul-li">
-											<ul>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-											</ul>
-										</div>
-									</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+						<div class="ft-featured-innerbox position-relative">
+							<div class="ft-featured-icon">
+								<i class="flaticon-warehouse"></i>
+							</div>
+							<div class="ft-featured-text headline pera-content">
+								<h3><a href="software.html">End-to-End Solutions</a></h3>
+								<p>From inception to completion, we handle every detail, offering seamless and
+									comprehensive services.</p>
+								<div class="ft-btn-2">
+									<a href="software.html">
+										<i class="icon-first flaticon-right-arrow"></i>
+										<span>Read More</span>
+									</a>
 								</div>
-							</li>
-							<li class="current_item">
-								<div class="ft-testimonial-innerbox-item-2 text-center">
-									<div class="ft-testimonial-img">
-										<img src="assets/img/testimonial/test2.1.jpg" alt="">
-									</div>
-									<div class="ft-testimonial-text headline pera-content">
-										<div class="ft-testimonial-meta">
-											<h3>Samuel Davis</h3>
-											<span>Business Owner</span>
-										</div>
-										<p>As a small business owner, finding reliable partners is crucial. [Your
-											Company] provided outstanding service, helping us to optimize our processes
-											and improve efficiency. Their solutions were tailored to our specific needs,
-											and the results have been phenomenal.</p>
-										<div class="ft-testimonial-rate ul-li">
-											<ul>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="current_item">
-								<div class="ft-testimonial-innerbox-item-2 text-center">
-									<div class="ft-testimonial-img">
-										<img src="assets/img/testimonial/test2.1.jpg" alt="">
-									</div>
-									<div class="ft-testimonial-text headline pera-content">
-										<div class="ft-testimonial-meta">
-											<h3>Emily Turner</h3>
-											<span>Software Engineer</span>
-										</div>
-										<p>I was thoroughly impressed by the technical expertise and innovative
-											solutions provided by [Your Company]. They tackled complex challenges with
-											ease and delivered a product that exceeded our expectations. Their
-											commitment to quality is evident in everything they do.</p>
-										<div class="ft-testimonial-rate ul-li">
-											<ul>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="current_item">
-								<div class="ft-testimonial-innerbox-item-2 text-center">
-									<div class="ft-testimonial-img">
-										<img src="assets/img/testimonial/test2.1.jpg" alt="">
-									</div>
-									<div class="ft-testimonial-text headline pera-content">
-										<div class="ft-testimonial-meta">
-											<h3>Michael Roberts</h3>
-											<span>Entrepreneur</span>
-										</div>
-										<p>[Your Company] is a true partner in business. Their guidance and support have
-											been invaluable as we've grown our company. They bring a wealth of knowledge
-											and a personal touch that makes working with them a pleasure.</p>
-										<div class="ft-testimonial-rate ul-li">
-											<ul>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-												<li><i class="fas fa-star"></i></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-						<div><a id="btn_next1" href="#"><i class="far fa-arrow-right"></i></a></div>
-						<div><a id="btn_prev1" href="#"><i class="far fa-arrow-left"></i></a></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- End of Testimonial section
-	============================================= -->
+
+
+
+
+
+
 
 	<!-- Start of FAQ why choose  section
 	============================================= -->
@@ -1673,170 +1639,10 @@
 	</section>
 
 
-	<!-- End ofFAQ why choose  section
-	============================================= -->
-
-	<!-- Start of blog  section
-	============================================= -->
-	<section id="ft-blog-2" class="ft-blog-section-2 position-relative">
-		<div class="container">
-			<div class="ft-section-title-2 headline pera-content text-center">
-				<span class="sub-title">Key Moments</span>
-				<h2> Major Event and Highlights
-				</h2>
-			</div>
-			<div class="ft-blog-content-2">
-				<div class="ft-blog-slider-2">
-					<div class="ft-item-innerbox">
-						<div class="ft-blog-innerbox-2">
-							<div class="ft-blog-img-2 position-relative">
-								<img src="assets/imgs/project/e11.jpg" alt="">
-								<div
-									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
-									21 Oct
-								</div>
-							</div>
-							<div class="ft-blog-text-2 headline pera-content">
-								<h3><a href="blog-single.html">Hong Kong 2023
-									</a></h3>
-								<p>Masum suspendisse ultrices gravida. Risuslac vel facilisis gravida. </p>
-								<div class="ft-btn-2">
-									<a href="blog-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="ft-item-innerbox">
-						<div class="ft-blog-innerbox-2">
-							<div class="ft-blog-img-2 position-relative">
-								<img src="assets/imgs/project/e22.jpg" alt="">
-								<div
-									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
-									21 Oct
-								</div>
-							</div>
-							<div class="ft-blog-text-2 headline pera-content">
-								<h3><a href="blog-single.html">Istanbul 2023
-									</a></h3>
-								<p>Masum suspendisse ultrices gravida. Risuslac vel facilisis gravida. </p>
-								<div class="ft-btn-2">
-									<a href="blog-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="ft-item-innerbox">
-						<div class="ft-blog-innerbox-2">
-							<div class="ft-blog-img-2 position-relative">
-								<img src="assets/img/blog/blg2.3.jpg" alt="">
-								<div
-									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
-									21 Oct
-								</div>
-							</div>
-							<div class="ft-blog-text-2 headline pera-content">
-								<h3><a href="blog-single.html">Dubai 2022
-									</a></h3>
-								<p>Masum suspendisse ultrices gravida. Risuslac vel facilisis gravida. </p>
-								<div class="ft-btn-2">
-									<a href="blog-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="ft-item-innerbox">
-						<div class="ft-blog-innerbox-2">
-							<div class="ft-blog-img-2 position-relative">
-								<img src="assets/img/blog/blg2.1.jpg" alt="">
-								<div
-									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
-									21 Oct
-								</div>
-							</div>
-							<div class="ft-blog-text-2 headline pera-content">
-								<h3><a href="blog-single.html">5 Benefits of Working with
-										a Freight Broker
-									</a></h3>
-								<p>Masum suspendisse ultrices gravida. Risuslac vel facilisis gravida. </p>
-								<div class="ft-btn-2">
-									<a href="blog-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="ft-item-innerbox">
-						<div class="ft-blog-innerbox-2">
-							<div class="ft-blog-img-2 position-relative">
-								<img src="assets/img/blog/blg2.2.jpg" alt="">
-								<div
-									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
-									21 Oct
-								</div>
-							</div>
-							<div class="ft-blog-text-2 headline pera-content">
-								<h3><a href="blog-single.html">Packaging And logistics
-										services to the world
-									</a></h3>
-								<p>Masum suspendisse ultrices gravida. Risuslac vel facilisis gravida. </p>
-								<div class="ft-btn-2">
-									<a href="blog-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="ft-item-innerbox">
-						<div class="ft-blog-innerbox-2">
-							<div class="ft-blog-img-2 position-relative">
-								<img src="assets/img/blog/blg2.3.jpg" alt="">
-								<div
-									class="ft-blog-meta text-center d-flex align-items-center justify-content-center position-absolute">
-									21 Oct
-								</div>
-							</div>
-							<div class="ft-blog-text-2 headline pera-content">
-								<h3><a href="blog-single.html">Key Logistics Trends in Life
-										Sciences 2021
-									</a></h3>
-								<p>Masum suspendisse ultrices gravida. Risuslac vel facilisis gravida. </p>
-								<div class="ft-btn-2">
-									<a href="blog-single.html">
-										<i class="icon-first flaticon-right-arrow"></i>
-										<span>Read More</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="carousel_nav  clearfix">
-					<button type="button" class="blg-left_arrow"><i class="far fa-arrow-left"></i></button>
-					<button type="button" class="blg-right_arrow"><i class="far fa-arrow-right"></i></button>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End of blog  section
-	============================================= -->
 
 	<!-- Start of Footer   section
 	============================================= -->
 	<footer id="ft-footer-2" class="ft-footer-section-2" data-background="assets/img/bg/f-bg.png">
-
 		<div class="ft-footer-widget-wrapper-2">
 			<div class="container">
 				<div class="row">
@@ -1844,15 +1650,15 @@
 						<div class="ft-footer-widget ul-li-block headline pera-content">
 							<div class="logo-widget">
 								<div class="site-logo">
-									<a href="#"><img style="width: 200px;" src="assets/img/logo/stanza.jpeg" alt=""></a>
+									<a href="#"><img style="width: 200px; " src="assets/images/l6.png" alt=""></a>
 								</div>
 								<div class="ft-footer-address">
 									<span>Address: 15A, 3rd Floor, Pratap Nagar,
 										Mayur Vihar, Phase 1,Pocket 1
 										Delhi, India - 110091</span>
-									<span>Website: www.Stanzalogistics.com</span>
-									<span>Email: info@stanzalogistics.com</span>
-									<span>Phone: +91 9289799144</span>
+									<span> www.Stanzalogistics.com</span>
+									<span>info@stanzalogistics.com</span>
+									<span>+91 9289799144</span>
 								</div>
 							</div>
 						</div>
@@ -1862,11 +1668,12 @@
 							<div class="menu-widget">
 								<h3 class="widget-title">Our Services</h3>
 								<ul>
-									<li><a href="service-single.html">Air Freight</a></li>
-									<li><a href="service-single.html">Ocen Freight</a></li>
-									<li><a href="service-single.html">Warehousing</a></li>
-									<li><a href="service-single.html">Global stock transparency</a></li>
-									<li><a href="service-single.html">Transport consolidation</a></li>
+									<li><a href="service.html">Air Freight</a></li>
+									<li><a href="service.html">Ocen Freight</a></li>
+									<li><a href="service.html">Transportation</a></li>
+									<li><a href="service.html">Warehousing</a></li>
+									<li><a href="service.html">Part Load(LCL)</a></li>
+									<li><a href="service.html">Custom Clearance</a></li>
 								</ul>
 							</div>
 						</div>
@@ -1874,13 +1681,18 @@
 					<div class="col-lg-3 col-md-6">
 						<div class="ft-footer-widget ul-li-block headline pera-content">
 							<div class="menu-widget">
-								<h3 class="widget-title">Industry Sectors</h3>
+								<h3 class="widget-title">Tools and Utilities</h3>
 								<ul>
-									<li><a href="service-single.html">Electronics Industry</a></li>
-									<li><a href="service-single.html">Industrial & Manufacturing</a></li>
-									<li><a href="service-single.html">Semicon & Solar</a></li>
-									<li><a href="service-single.html">Oil & Gas Cargo</a></li>
-									<li><a href="service-single.html">Energy & Chemicals</a></li>
+									<li><a href="Container.html">Container Dimensions </a></li>
+
+									<li><a href="metric.html">Metric Conversions </a></li>
+									<li><a href="ulds.html">ULDS</a></li>
+
+									<li><a href="Incoterms.html">Incoterms </a></li>
+
+
+									<li><a href="usefullinks.html">Useful Links</a></li>
+
 								</ul>
 							</div>
 						</div>
@@ -1890,11 +1702,11 @@
 							<div class="menu-widget">
 								<h3 class="widget-title">Quick Links</h3>
 								<ul>
-									<li><a href="service-single.html">How it Works</a></li>
-									<li><a href="service-single.html">Help Link</a></li>
-									<li><a href="service-single.html">Terms & Conditions</a></li>
-									<li><a href="service-single.html">Contact Us</a></li>
-									<li><a href="service-single.html">Privacy Policy</a></li>
+									<li><a href="team-single.html">Our Team</a></li>
+									<li><a href="Participation.html">Events</a></li>
+									<li><a href="ulds.html">Tools and Utility</a></li>
+									<li><a href="contact.html">Contact Us</a></li>
+									<li><a href="Quote.html">Get Quote</a></li>
 								</ul>
 							</div>
 						</div>
@@ -1902,12 +1714,48 @@
 				</div>
 			</div>
 		</div>
-		<div class="ft-footer-copywrite-2 text-center">
-			<span>Copyright @ 2021 Logistics.All Rights Reserved</span>
+		<div style="color: #003440" class="ft-footer-copywrite-2 text-center">
+			<!-- <span>Copyright @ 2021 Logistics.All Rights Reserved</span> -->
+			P
+
 		</div>
 	</footer>
-	<!-- End of FAQ why choose  section
-	============================================= -->
+
+
+	<!-- For Js Library -->
+	<!-- <script src="assets/js/appilo-js-plugin.js"></script> -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/appear-two.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/isotope.pkgd.js"></script>
+	<script src="assets/js/progress-bar.js"></script>
+	<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<!-- Revolution Slider -->
+	<script src="assets/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="assets/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script src="assets/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script src="assets/plugins/revolution/js/main-slider-script.js"></script>
+	<!-- For Js Library -->
+
+	<script src="assets/js/jquery.fancybox.js"></script>
+	<script src="assets/js/wow.js"></script>
+	<script src="assets/js/jquery-ui.js"></script>
+	<script src="assets/js/knob.js"></script>
+	<script src="assets/js/isotope.js"></script>
+	<script src="assets/js/tilt.jquery.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/script-two.js"></script>
 
 
 	<!-- For Js Library -->
@@ -1929,31 +1777,10 @@
 	<script src="assets/js/knob.js"></script>
 	<script src="assets/js/typer.js"></script>
 	<script src="assets/js/script.js"></script>
+
+
 	<script>
-		// 		const slider = document.querySelector('.slider');
-		// const slides = document.querySelectorAll('.slide');
-		// const prevBtn = document.querySelector('.prev-btn');
-		// const nextBtn = document.querySelector('.next-btn');
 
-		// let currentIndex = 0;
-
-		// function showSlide(index) {
-		//     slider.style.transform = `translateX(${-index * 100}%)`;
-		// }
-
-		// prevBtn.addEventListener('click', () => {
-		//     currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
-		//     showSlide(currentIndex);
-		// });
-
-		// nextBtn.addEventListener('click', () => {
-		//     currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
-		//     showSlide(currentIndex);
-		// });
-
-
-		// JavaScript is not needed for the basic automatic sliding functionality
-		// However, you can add event listeners to pause the slider on hover if needed
 
 		const slider = document.querySelector('.slider');
 		slider.addEventListener('mouseover', () => {
@@ -1965,7 +1792,99 @@
 		});
 
 
+
+		const slidernew = document.querySelector('.slidernew');
+		slider.addEventListener('mouseover', () => {
+			slider.style.animationPlayState = 'paused';
+		});
+
+		slider.addEventListener('mouseout', () => {
+			slider.style.animationPlayState = 'running';
+		});
+
+
 	</script>
+
+
+
+
+	<script>
+		document.getElementById('contact-button').addEventListener('click', function () {
+			const floatingButtons = document.getElementById('floating-buttons');
+			if (floatingButtons.style.display === 'none' || floatingButtons.style.display === '') {
+				floatingButtons.style.display = 'block'; // Show buttons
+			} else {
+				floatingButtons.style.display = 'none'; // Hide buttons
+			}
+		});
+
+	</script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Function to animate the counter
+			function animateCounter(element, end, duration) {
+				let start = 0;
+				const increment = end / (duration / 50);
+				const counter = setInterval(function () {
+					start += increment;
+					if (start >= end) {
+						element.textContent = Math.floor(end); // Ensure final value is exact
+						clearInterval(counter);
+					} else {
+						element.textContent = Math.floor(start);
+					}
+				}, 50);
+			}
+
+			// Function to check if an element is visible on the screen
+			function isElementInView(el) {
+				const rect = el.getBoundingClientRect();
+				return rect.top < window.innerHeight && rect.bottom >= 0; // Adjusted for visibility
+			}
+
+			const counters = document.querySelectorAll('.counter');
+
+			// Function to start counter animation when section is in view
+			function checkAndAnimateCounters() {
+				counters.forEach(counter => {
+					// Check if the counter has already animated by a custom attribute
+					if (!counter.getAttribute('data-animated') && isElementInView(counter)) {
+						const endValue = parseInt(counter.getAttribute('data-stop'));
+						animateCounter(counter, endValue, 2000);
+						counter.setAttribute('data-animated', 'true'); // Mark this counter as animated
+					}
+				});
+			}
+
+			// Debounce function to limit how often a function can run
+			function debounce(func, wait) {
+				let timeout;
+				return function (...args) {
+					const context = this;
+					clearTimeout(timeout);
+					timeout = setTimeout(() => func.apply(context, args), wait);
+				};
+			}
+
+			// Check on scroll with debounce
+			window.addEventListener('scroll', debounce(checkAndAnimateCounters, 100));
+
+			// Also check on initial page load in case the counters are already in view
+			checkAndAnimateCounters();
+
+			// Ensure the counters animate if the user resizes the window
+			window.addEventListener('resize', debounce(checkAndAnimateCounters, 100));
+		});
+	</script>
+
+
+
+
+
+
+
+
 </body>
 
 </html>
